@@ -81,6 +81,53 @@ def select_field(path,spec,date,cycle,fh,field,accumulation):
 
 
 
+def select_unambiguous_apcp(candidates, rejected, accumulation_hours, forecast_hour, diagnostics=None):
+    """Collapse only scientifically identical duplicate decoded APCP messages.
+
+    The filter may return multiple APCP records with the same accumulation
+    period.  Two messages can represent one meteorological field only when
+    units, point coordinates, and every finite precipitation value agree.
+    Do not average, sum, or silently select a different forecast product.
+    """
+    if not candidates:
+        raise ValueError(
+            f'No verified NOAA APCP message for {accumulation_hours}h '
+            f'accumulation ending at f{forecast_hour:03d}. Rejected: {rejected[:8]}'
+        )
+    first = candidates[0]
+    disagreements = []
+    for i, item in enumerate(candidates[1:], start=2):
+        if item[:3] != first[:3]:
+            disagreements.append(f'message {i}: accumulation interval or units differ')
+            continue
+        same = all(
+            a.shape == b.shape and np.array_equal(a, b, equal_nan=True)
+            for a, b in zip(first[3:5], item[3:5])
+        )
+        a, b = first[5], item[5]
+        values_match = a.shape == b.shape and np.allclose(
+            a, b, atol=1e-6, rtol=0, equal_nan=True
+        )
+        if not (same and values_match):
+            delta = float(np.nanmax(np.abs(a - b))) if a.shape == b.shape else float('inf')
+            disagreements.append(f'message {i}: differing grid/data, max delta={delta:g} mm')
+    if disagreements:
+        raise ValueError(
+            f'{len(candidates)} valid NOAA APCP messages share the requested '
+            f'{accumulation_hours}h interval ending f{forecast_hour:03d}, '
+            f'but contain conflicting data: {disagreements}. '
+            f'Decoded GRIB metadata: {diagnostics or []}. '
+            'Refusing to choose one or publish an ambiguous precipitation map.'
+        )
+    if len(candidates) > 1:
+        print(
+            f'GRIB APCP: {len(candidates)} identical, source-verified messages '
+            f'for {accumulation_hours}h ending f{forecast_hour:03d}; '
+            'deduplicated safely (not summed).', flush=True
+        )
+    return first
+
+
 def write_verified_precipitation(path, out_csv, date, cycle, forecast_hour, accumulation_hours):
     """Select a *single* NOAA GFS APCP message by its true GRIB time boundaries.
 
@@ -99,6 +146,7 @@ def write_verified_precipitation(path, out_csv, date, cycle, forecast_hour, accu
     expected_cycle = int(cycle) * 100
     candidates = []
     rejected = []
+    diagnostics = []
     with open(path, 'rb') as handle:
         while True:
             gid = codes_grib_new_from_file(handle)
@@ -145,13 +193,30 @@ def write_verified_precipitation(path, out_csv, date, cycle, forecast_hour, accu
                 if np.any(values[np.isfinite(values)] < -0.0001):
                     rejected.append('APCP contains negative accumulation values')
                     continue
+                metadata = {"startStep": start, "endStep": end, "units": units}
+                for diagnostic_key in (
+                    'discipline', 'parameterCategory', 'parameterNumber',
+                    'productDefinitionTemplateNumber', 'numberOfTimeRanges',
+                    'typeOfStatisticalProcessing', 'typeOfGeneratingProcess',
+                    'generatingProcessIdentifier',
+                ):
+                    try:
+                        metadata[diagnostic_key] = key(diagnostic_key)
+                    except Exception:
+                        metadata[diagnostic_key] = 'unavailable'
+                diagnostics.append(metadata)
                 candidates.append((start, end, units, latitudes, longitudes, values))
             finally:
                 codes_release(gid)
 
-    if len(candidates) != 1:
-        raise ValueError(f'Expected exactly one NOAA APCP message with verified {accumulation_hours}h accumulation ending at f{forecast_hour:03d}; got {len(candidates)}. Rejected: {rejected[:5]}')
-    start,end,units,latitudes,longitudes,values = candidates[0]
+    # Recent GFS GRIB2 subsets may contain duplicate APCP messages for the
+    # same verification interval (e.g. overlapping accumulation products at
+    # the first forecast steps).  Never accept an arbitrary "first message".
+    # Collapse duplicates ONLY when their decoded grids and precipitation
+    # values agree point-for-point; otherwise abort with diagnostic metadata.
+    start,end,units,latitudes,longitudes,values = select_unambiguous_apcp(
+        candidates, rejected, accumulation_hours, forecast_hour, diagnostics
+    )
     n = 0
     with out_csv.open('w', newline='', encoding='utf8') as file:
         writer = csv.writer(file)
