@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "id": "gfs-europe-z500-2026112000-f024",
+    "region": "europe",
+    "field": "z500",
+    "label": "ارتفاعات 500 hPa",
+    "model": "GFS",
+    "run": "2026-11-20 00:00",
+    "forecastHour": 24,
+    "valid": "2026-11-21 00:00",
+    "source": "NOAA NOMADS GFS 0.25°",
+    "image": "/images/maps/forecast/gfs-europe-z500-2026112000-f024.png",
+    "calibrationRMSEKm": null,
+    "georeference": "PGW (EPSG:3857 assumed and extent checked)",
+    "coverage": 1.0,
+    "unit": "m"
+  },
+  {
+    "id": "gfs-europe-t850-2026112000-f024",
+    "region": "europe",
+    "field": "t850",
+    "label": "حرارة 850 hPa",
+    "model": "GFS",
+    "run": "2026-11-20 00:00",
+    "forecastHour": 24,
+    "valid": "2026-11-21 00:00",
+    "source": "NOAA NOMADS GFS 0.25°",
+    "image": "/images/maps/forecast/gfs-europe-t850-2026112000-f024.png",
+    "calibrationRMSEKm": null,
+    "georeference": "PGW (EPSG:3857 assumed and extent checked)",
+    "coverage": 1.0,
+    "unit": "K"
+  },
+  {
+    "id": "gfs-levant-t2m-2026112000-f024",
+    "region": "levant",
+    "field": "t2m",
+    "label": "حرارة 2m",
+    "model": "GFS",
+    "run": "2026-11-20 00:00",
+    "forecastHour": 24,
+    "valid": "2026-11-21 00:00",
+    "source": "NOAA NOMADS GFS 0.25°",
+    "image": "/images/maps/forecast/gfs-levant-t2m-2026112000-f024.png",
+    "calibrationRMSEKm": null,
+    "georeference": "PGW (EPSG:3857 assumed and extent checked)",
+    "coverage": 1.0,
+    "unit": "K"
+  }
+]
