@@ -1,0 +1,39 @@
+/* V6: readable RTL daily card controls, illustrated quiz, lightweight animations. */
+.v6-daily-studio{display:block!important;background:linear-gradient(145deg,#0c273b,#123a52)!important;border:1px solid rgba(96,226,222,.32)!important;padding:clamp(18px,3vw,33px)!important}
+.v6-card-panel{display:grid;grid-template-columns:1.2fr 1fr;gap:18px;align-items:center}
+.v6-card-intro{grid-column:1/-1}
+.v6-card-intro h3{font-size:clamp(21px,3vw,30px);margin:3px 0;color:#f2fbff}
+.v6-card-intro p{margin:0;color:#bdd0d9;line-height:1.9}
+.v6-card-preview{position:relative;min-height:240px;border:1px solid rgba(146,236,231,.35);border-radius:21px;overflow:hidden;isolation:isolate;background:linear-gradient(135deg,#082b41,#147b86)}
+.v6-card-preview[data-style="night"]{background:linear-gradient(140deg,#091329,#293e65)}
+.v6-card-preview[data-style="winter"]{background:linear-gradient(140deg,#11273a,#387b9d)}
+.v6-card-scene{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.83;animation:v6SceneFloat 9s ease-in-out infinite alternate}
+.v6-card-preview:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(1,14,30,.90),rgba(1,14,30,.25) 84%);z-index:0}
+.v6-card-info{position:relative;z-index:2;display:flex;flex-direction:column;align-items:flex-start;gap:8px;max-width:55%;padding:25px}
+.v6-card-info span{color:#82eee6;font-weight:700;font-size:13px}.v6-card-info h4{font:800 clamp(23px,3vw,34px) Cairo,sans-serif;color:white;margin:0}.v6-card-info strong{font-size:clamp(30px,4vw,44px);color:white}.v6-card-info small{color:#e1f1f3;line-height:1.6}
+.v6-card-rain{position:absolute;inset:0;z-index:1;pointer-events:none;background-image:repeating-linear-gradient(115deg,transparent 0 30px,rgba(164,228,255,.17) 31px 32px,transparent 33px 48px);background-size:120px 120px;opacity:0}
+.v6-card-preview[data-weather="rain"] .v6-card-rain{opacity:.75;animation:v6Rain 1.8s linear infinite}
+.v6-card-preview[data-weather="snow"] .v6-card-rain{opacity:.65;animation:v6Snow 5s linear infinite;background-image:radial-gradient(circle,#e7faff 1.5px,transparent 2.5px);background-size:28px 28px}
+.v6-card-controls{display:grid;gap:11px;align-content:center}
+.v6-card-controls label{color:#bfd9e2;display:grid;gap:5px;font-weight:700}
+.v6-card-controls select{min-width:0;width:100%;background:#102a3c;color:#f5ffff;border:1px solid #43748a;padding:12px;border-radius:11px;font:inherit}
+.v6-card-controls button{min-height:43px}
+.v6-card-panel>.minor{grid-column:1/-1;line-height:1.6}
+.v6-quiz-levels{display:flex;gap:9px;flex-wrap:wrap;margin:13px 0 21px}
+.v6-quiz-levels button{font:700 13px Cairo,sans-serif;padding:8px 17px;color:#c8f3f6;background:#153750;border:1px solid #326078;border-radius:999px;cursor:pointer}
+.v6-quiz-levels button.is-on{background:#2acdc3;color:#062333;border-color:#90fff7}
+.v6-quiz-illustration{height:145px;border-radius:17px;margin:0 0 16px;position:relative;overflow:hidden;background:linear-gradient(180deg,#2c6491,#9ad9ed 74%,#619577 75%);border:2px solid #75b9d7}
+.v6-quiz-illustration[data-level="advanced"]{background:linear-gradient(165deg,#112544,#395e84 68%,#466b69 69%)}
+.v6-quiz-illustration[data-level="medium"]{background:linear-gradient(165deg,#204e7b,#7dbccc 70%,#4b8781 71%)}
+.v6-quiz-sun{position:absolute;top:17px;left:14%;width:47px;height:47px;border-radius:50%;background:#ffdc67;box-shadow:0 0 0 13px rgba(255,222,103,.16),0 0 33px rgba(255,225,129,.6);animation:v6Sun 4s ease-in-out infinite}
+.v6-quiz-cloud{position:absolute;right:12%;top:18px;font-size:80px;color:#f3fcff;filter:drop-shadow(0 12px 10px #163f5c);animation:v6SceneFloat 5s ease-in-out infinite alternate}
+.v6-quiz-symbol{position:absolute;bottom:5px;left:48%;transform:translateX(-50%);font-size:63px;filter:drop-shadow(1px 9px 4px rgba(0,0,0,.2))}
+.v6-quiz-ground{position:absolute;bottom:0;width:100%;height:18px;background:repeating-linear-gradient(90deg,#32745b 0 28px,#488565 28px 56px)}
+.v5-forecast-case{background:linear-gradient(145deg,rgba(19,50,73,.98),rgba(12,31,49,.95));border:1px solid rgba(120,221,224,.3);border-radius:19px}
+.v5-space-canvas-wrap{background:radial-gradient(circle at 50% 25%,rgba(36,73,150,.32),transparent 60%),#07162c;border-color:rgba(75,214,227,.35)}
+@keyframes v6SceneFloat{from{transform:scale(1.04) translateX(-5px)}to{transform:scale(1.095) translateX(4px)}}
+@keyframes v6Sun{50%{box-shadow:0 0 0 20px rgba(255,222,103,.08),0 0 45px rgba(255,225,129,.8)}}
+@keyframes v6Rain{from{background-position:0 0}to{background-position:60px 160px}}
+@keyframes v6Snow{from{background-position:0 0}to{background-position:28px 135px}}
+@media(max-width:720px){.v6-card-panel{grid-template-columns:1fr}.v6-card-preview{min-height:230px}.v6-card-info{max-width:72%;padding:17px}.v6-daily-studio{margin:10px 0}.v6-card-controls{grid-template-columns:1fr 1fr}.v6-card-controls button{grid-column:span 2}.v6-quiz-illustration{height:120px}}
+@media(prefers-reduced-motion:reduce){.v6-card-scene,.v6-quiz-sun,.v6-quiz-cloud,.v6-card-rain{animation:none!important}}

@@ -84,17 +84,8 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 .v5-forecast-answers button.wrong{border-color:#fe9482;background:#592e3e}
 .v5-answer-feedback{min-height:35px;padding:10px 0;line-height:1.8;font-size:14px}
 .v5-answer-feedback strong{color:#87f6c2}.v5-answer-feedback p{color:#c5e1e4;margin:5px 0}
-.v5-geology-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:17px 0}
-.v5-geology-controls label{display:flex;flex-direction:column;gap:9px;padding:15px;border:1px solid #396179;background:#112e44;border-radius:13px;color:#d4e9ee;font:650 13px Cairo,sans-serif}
-.v5-geology-controls strong{color:#5debdd;font-weight:800}
-.v5-geology-controls input{width:100%}
-.v5-geology-panel{display:grid;grid-template-columns:minmax(0,2.2fr) minmax(165px,1fr);gap:15px}
-#v5GeologyCanvas{width:100%;border-radius:14px;border:1px solid #40677c;background:#112635}
-.v5-geology-results{display:grid;gap:9px}
-.v5-geology-results>div{background:#112e44;border:1px solid #396179;border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:9px;font-size:13px;color:#c1dce5}
-.v5-geology-results b{color:#66ece3;font-size:22px}
-@media(max-width:900px){.v5-map-controls{grid-template-columns:repeat(2,minmax(0,1fr))}.v5-geology-panel{grid-template-columns:1fr}.v5-game-tabs button{min-width:125px}.v5-game-screen{padding:15px}}
-@media(max-width:550px){.v5-ops-tabs,.v5-game-tabs{gap:5px;padding:4px}.v5-ops-tabs button,.v5-game-tabs button{min-width:0;flex:1 1 28%;font-size:11px;padding:11px 5px}.v5-map-center{padding:12px;border-radius:17px}.v5-map-controls{gap:7px}.v5-map-controls label{font-size:11px}.v5-map-controls select{padding:9px 5px;font-size:11px}.v5-map-viewport{height:clamp(310px,70vh,480px)}.v5-map-zooms{right:10px;bottom:10px}.v5-map-notice{font-size:11px;bottom:70px;padding:9px}.v5-map-gradient{font-size:9px}.v5-map-gradient i{width:13px}.v5-map-below{align-items:flex-start}.v5-game-screen{padding:10px;min-height:auto}.v5-game-stats span{padding:6px 7px;font-size:11px}.v5-space-canvas-wrap{aspect-ratio:1.35}.v5-touch-pad button{min-height:43px;min-width:59px}.v5-forecast-case{padding:15px}.v5-geology-controls{grid-template-columns:1fr;gap:7px}.v5-geology-controls label{padding:9px}.v5-geology-results{grid-template-columns:repeat(3,minmax(0,1fr))}.v5-geology-results>div{font-size:11px;padding:8px}.v5-geology-results b{font-size:15px}#space .v5-space-stage .space-canvas{height:440px;min-height:0}}
+@media(max-width:900px){.v5-map-controls{grid-template-columns:repeat(2,minmax(0,1fr))}.v5-game-tabs button{min-width:125px}.v5-game-screen{padding:15px}}
+@media(max-width:550px){.v5-ops-tabs,.v5-game-tabs{gap:5px;padding:4px}.v5-ops-tabs button,.v5-game-tabs button{min-width:0;flex:1 1 28%;font-size:11px;padding:11px 5px}.v5-map-center{padding:12px;border-radius:17px}.v5-map-controls{gap:7px}.v5-map-controls label{font-size:11px}.v5-map-controls select{padding:9px 5px;font-size:11px}.v5-map-viewport{height:clamp(310px,70vh,480px)}.v5-map-zooms{right:10px;bottom:10px}.v5-map-notice{font-size:11px;bottom:70px;padding:9px}.v5-map-gradient{font-size:9px}.v5-map-gradient i{width:13px}.v5-map-below{align-items:flex-start}.v5-game-screen{padding:10px;min-height:auto}.v5-game-stats span{padding:6px 7px;font-size:11px}.v5-space-canvas-wrap{aspect-ratio:1.35}.v5-touch-pad button{min-height:43px;min-width:59px}.v5-forecast-case{padding:15px}#space .v5-space-stage .space-canvas{height:440px;min-height:0}}
 @media(prefers-reduced-motion:reduce){.v5-ops-tabs button,.v5-game-tabs button{transition:none}}
 /* Floating ambient glows must not create a horizontal page scrollbar in RTL. */
 html,body{max-width:100%;overflow-x:clip}
