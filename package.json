@@ -1,1 +1,17 @@
-{"name":"planet-of-climate","private":true,"version":"1.0.0","description":"كوكب المناخ - موقع عربي للأرصاد والفضاء والأرشيف","type":"module","scripts":{"build":"node scripts/sync-cities.mjs && node scripts/build.mjs","build:offline":"node scripts/build.mjs","cities":"node scripts/sync-cities.mjs","preview":"npx serve dist"},"engines":{"node":">=18"}}
+{
+  "name": "planet-of-climate",
+  "private": true,
+  "version": "2.0.0",
+  "description": "Climate Planet V2: Levant weather dashboard, 3D astronomy, Jerusalem snow archive, journal maps",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/sync-cities.mjs && node scripts/build.mjs",
+    "build:offline": "node scripts/build.mjs",
+    "cities": "node scripts/sync-cities.mjs",
+    "preview": "npx serve dist",
+    "archive:seed": "node scripts/create-jerusalem.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
