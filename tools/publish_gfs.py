@@ -79,6 +79,91 @@ def select_field(path,spec,date,cycle,fh,field,accumulation):
     if len(verified)!=1:raise ValueError(f'Expected one verified GRIB variable, got {len(verified)}. Rejected: {issues[:3]}')
     return verified[0]
 
+
+
+def write_verified_precipitation(path, out_csv, date, cycle, forecast_hour, accumulation_hours):
+    """Select a *single* NOAA GFS APCP message by its true GRIB time boundaries.
+
+    ecCodes deliberately displays [0, 6] as stepRange=6 in some GRIB2
+    products. A scalar GRIB_stepRange is therefore insufficient proof of a
+    six-hour period. Read startStep and endStep directly from the source GRIB
+    message, requiring precisely the requested accumulation interval and run.
+    No field is published if the verification is ambiguous or incomplete.
+    """
+    from eccodes import (
+        codes_grib_new_from_file, codes_release, codes_get,
+        codes_get_array, codes_get_values,
+    )
+
+    expected_date = int(date)
+    expected_cycle = int(cycle) * 100
+    candidates = []
+    rejected = []
+    with open(path, 'rb') as handle:
+        while True:
+            gid = codes_grib_new_from_file(handle)
+            if gid is None:
+                break
+            try:
+                def key(name, type_=None):
+                    return codes_get(gid, name) if type_ is None else codes_get(gid, name, type_)
+
+                # Identify the meteorological parameter, GRIB level and true
+                # originating UTC run before accepting temporal metadata.
+                if str(key('shortName')) != 'tp':
+                    continue
+                if str(key('typeOfLevel')) != 'surface' or int(key('level')) != 0:
+                    continue
+                if str(key('stepType')) != 'accum':
+                    rejected.append('APCP message is not accumulated precipitation')
+                    continue
+                if int(key('dataDate')) != expected_date or int(key('dataTime')) != expected_cycle:
+                    rejected.append('APCP analysis date/cycle does not match the request')
+                    continue
+                units = str(key('units'))
+                if units not in SPEC[('levant','rain')]['units']:
+                    rejected.append(f'Unexpected APCP unit {units!r}')
+                    continue
+                step_units = str(key('stepUnits', str)).lower()
+                if step_units not in {'h','1h','hour','hours','1'}:
+                    rejected.append(f'Unsupported accumulation-step unit {step_units!r}')
+                    continue
+                start = int(key('startStep'))
+                end = int(key('endStep'))
+                if start < 0 or end != forecast_hour or end - start != accumulation_hours:
+                    rejected.append(f'APCP covers {start}-{end} hours; requested {forecast_hour-accumulation_hours}-{forecast_hour} hours')
+                    continue
+                latitudes = np.asarray(codes_get_array(gid, 'latitudes'), dtype=float)
+                longitudes = np.asarray(codes_get_array(gid, 'longitudes'), dtype=float)
+                values = np.asarray(codes_get_values(gid), dtype=float)
+                if latitudes.shape != longitudes.shape or values.shape != latitudes.shape:
+                    rejected.append('APCP coordinates and values do not have matching sizes')
+                    continue
+                if np.sum(np.isfinite(latitudes) & np.isfinite(longitudes) & np.isfinite(values)) < 50:
+                    rejected.append('APCP field has fewer than 50 finite source points')
+                    continue
+                if np.any(values[np.isfinite(values)] < -0.0001):
+                    rejected.append('APCP contains negative accumulation values')
+                    continue
+                candidates.append((start, end, units, latitudes, longitudes, values))
+            finally:
+                codes_release(gid)
+
+    if len(candidates) != 1:
+        raise ValueError(f'Expected exactly one NOAA APCP message with verified {accumulation_hours}h accumulation ending at f{forecast_hour:03d}; got {len(candidates)}. Rejected: {rejected[:5]}')
+    start,end,units,latitudes,longitudes,values = candidates[0]
+    n = 0
+    with out_csv.open('w', newline='', encoding='utf8') as file:
+        writer = csv.writer(file)
+        writer.writerow(['lat','lon','value'])
+        for la,lo,v in zip(latitudes,longitudes,values):
+            if not (np.isfinite(la) and np.isfinite(lo) and np.isfinite(v)):
+                continue
+            writer.writerow([float(la), float((lo+180)%360-180), float(max(v,0))])
+            n += 1
+    print(f'GRIB APCP verified from raw ecCodes metadata: {start}-{end}h, {units}, {n} original points')
+    return n
+
 def write_csv(arr,path):
     lat=np.asarray(arr.latitude.values);lon=np.asarray(arr.longitude.values);val=np.asarray(arr.values)
     if lat.ndim!=1 or lon.ndim!=1 or val.shape!=(len(lat),len(lon)):
@@ -121,10 +206,17 @@ def main():
         if args.dry_run:
             print('WORLD FILE EXTENT VERIFIED; NOAA request URL:');subprocess.run(fetch+['--dry-run'],check=True);return
         subprocess.run(fetch,check=True)
-        arr,unit=select_field(file,spec,args.date,args.cycle,args.forecast_hour,args.field,args.accum_hours)
-        n=write_csv(arr,grid);print('Verified real model grid points:',n)
+        if args.field == 'rain':
+            # cfgrib may abbreviate 0-6 as stepRange='6', which is not a
+            # trustworthy indication of the duration. Verify raw GRIB2 keys.
+            n=write_verified_precipitation(file,grid,args.date,args.cycle,args.forecast_hour,args.accum_hours)
+            unit='mm'  # source unit was checked against SPEC for 1:1 mm equivalent
+        else:
+            arr,unit=select_field(file,spec,args.date,args.cycle,args.forecast_hour,args.field,args.accum_hours)
+            n=write_csv(arr,grid)
+        print('Verified real model grid points:',n)
         cmd=[sys.executable,str(ROOT/'tools/render_map.py'),'--csv',str(grid),'--region',args.region,'--field',args.field,'--model','GFS','--run',f'{args.date[:4]}-{args.date[4:6]}-{args.date[6:8]}T{args.cycle}','--forecast-hour',str(args.forecast_hour),'--unit',unit,'--worldfile',str(worldfile),'--source','NOAA NOMADS GFS 0.25°']
         if args.field=='rain':cmd+=['--accum-hours',str(args.accum_hours)]
         subprocess.run(cmd,check=True)
 
-if __name__=='__main__':main()
+if __name__=='__main__':main
