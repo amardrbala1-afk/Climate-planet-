@@ -1,8 +1,8 @@
 {
   "name": "planet-of-climate",
   "private": true,
-  "version": "5.0.0",
-  "description": "Climate Planet V5 — numerical map renderer, 3 science games, calibrated source maps and social media studio",
+  "version": "6.0.0",
+  "description": "Climate Planet V6 — source-attributed meteorological maps, city-specific daily cards, 2 tested science games",
   "type": "module",
   "scripts": {
     "build": "node scripts/sync-cities.mjs && node scripts/build.mjs",
@@ -10,7 +10,8 @@
     "cities": "node scripts/sync-cities.mjs",
     "preview": "npx serve dist",
     "archive:seed": "node scripts/create-jerusalem.mjs",
-    "maps:help": "python tools/render_map.py --help"
+    "maps:help": "python tools/render_map.py --help",
+    "test": "python tests/test_v6_static.py"
   },
   "engines": {
     "node": ">=18"

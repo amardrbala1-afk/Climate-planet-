@@ -1,0 +1,4 @@
+Delete these obsolete V5 code files from the GitHub branch:
+scripts/expand-studio-v5.py
+site/assets/games-v5.js
+site/assets/v4.js
