@@ -1,0 +1,8 @@
+numpy>=1.26
+scipy>=1.12
+Pillow>=10.0
+shapely>=2.0
+# Optional, only for extracting model GRIB2/NetCDF fields:
+# xarray>=2024.1
+# cfgrib>=0.9.15
+# eccodes>=2.37

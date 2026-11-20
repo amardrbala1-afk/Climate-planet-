@@ -1,0 +1,368 @@
+{
+  "release": "5.0.0",
+  "project": "كوكب المناخ",
+  "build": "npm run build / npx wrangler deploy",
+  "fileCount": 90,
+  "contents": [
+    {
+      "path": ".gitignore",
+      "sha256": "07f25cb6d408cd166f1ddb699cb1384c92bd3ab1f6ddf5b822249d95c44c5b47"
+    },
+    {
+      "path": ".pages.yml",
+      "sha256": "7ec31fc330c71d829a5af9e2a6e74fcba3e65a9f860b7404d53a340409ef6cd3"
+    },
+    {
+      "path": "DEPLOY-V2-FAST.md",
+      "sha256": "336db4303c417f7598e6950eb9fde8ba736b1eda6e107d81165edfc048c68f92"
+    },
+    {
+      "path": "DEPLOY-WORKERS-AR.md",
+      "sha256": "d61d7f1919b39bd864bc782eefa8c943ca371db285a3e62848435403d2326f5e"
+    },
+    {
+      "path": "MAP-SOURCES.md",
+      "sha256": "69d4ea256e36e28b87faf5d0b01b8378bd904ffa605223d8b2bff575e2c83b5f"
+    },
+    {
+      "path": "README-AR.md",
+      "sha256": "5bdb9afe4c1c57584ff6483a1633de56fe2ec62f774458dd1581a34f10026553"
+    },
+    {
+      "path": "README-V2-AR.md",
+      "sha256": "2b77ea263bff829c5a5db069c42773ec086174e37ebc173c45e31bea9d65c9f6"
+    },
+    {
+      "path": "README-V3-AR.md",
+      "sha256": "1956514d2d15781eb3a66ea17dc8e123b870e8845ee084098ea6d8623f560c9c"
+    },
+    {
+      "path": "README-V4-AR.md",
+      "sha256": "e89141f250b2438406f0960b9a83385bc10f7fd8ea2f9e58f196c650650b5059"
+    },
+    {
+      "path": "README-V5-AR.md",
+      "sha256": "532fd7194653033b3e465e68d97aeb5eb31ddace9c9f3910092b1c08c2c8cb0f"
+    },
+    {
+      "path": "SPACE-SOURCES.md",
+      "sha256": "46e4d9c46e0aafc92846b16dfcfed3f71cc1491d247117497d944f112ab9ed7c"
+    },
+    {
+      "path": "THIRD-PARTY-ATTRIBUTION.md",
+      "sha256": "24b5292b155fa1daef323517f09b293335dd51fd327ee00edea3342c43af4c08"
+    },
+    {
+      "path": "content/archive/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "content/jerusalem/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "content/maps/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "content/posts/solar-system.md",
+      "sha256": "21c135a0a5b212d44c048d0971e925d93b8da7ce0423d7590fdb6ef4acc70214"
+    },
+    {
+      "path": "content/posts/understanding-500hpa.md",
+      "sha256": "7d0fa72ee2adf06e470eb128064aad6e0432ab86ade29c943bcfbf5d36cf193a"
+    },
+    {
+      "path": "content/posts/what-is-temperature-850hpa.md",
+      "sha256": "9f62d766b841d6d03954302a423b7de5c7f7d3ea808ab1e5720d3510cac738d7"
+    },
+    {
+      "path": "data/README-archive-example.json",
+      "sha256": "92ad2d7213e564aec7ba91edb88fbdbad44101e8a61afad33b37efa157af51ae"
+    },
+    {
+      "path": "data/archive-import-example.csv",
+      "sha256": "3835bddd2fd047ad58b1c22c4ec22d3e4dd1e27661cd7eda81831e8476e17e63"
+    },
+    {
+      "path": "data/cities-seed.json",
+      "sha256": "332b65781cac388912f27b1b60bc6890a9a118e4232fa130bca1fde9a91de85e"
+    },
+    {
+      "path": "data/cities.json",
+      "sha256": "26fe7a38f20a3de43a4da5107fc14ffb0da01ccf708142452b82bc79da1bfe76"
+    },
+    {
+      "path": "data/cosmos-v3.json",
+      "sha256": "52e12ec3d458ed48ad3bd1ab6eeaffbad939352dd438b00fe887013373a2e6bb"
+    },
+    {
+      "path": "data/jerusalem-snow.json",
+      "sha256": "b1e72db7c847157b54fc1e7c5cd883b6588688132b75d690877fa3200c882d58"
+    },
+    {
+      "path": "data/map-products/catalog.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "package.json",
+      "sha256": "479a00cd43edaae8a92c3723b6507c7431116484cf9c0cf9ba9a2624c41761b2"
+    },
+    {
+      "path": "scripts/build.mjs",
+      "sha256": "e677410f05ac208d48422f66cfadaaf609b5bc82f3248869fa5ade4f3bbfd8b2"
+    },
+    {
+      "path": "scripts/create-jerusalem.mjs",
+      "sha256": "9422afdaa1939d3ab61a1ecff5c6eaa9f9f2f6648690faabf006816a59d8056d"
+    },
+    {
+      "path": "scripts/import-archive.mjs",
+      "sha256": "7394e1fc9d5c7b3c49ee1215d075ea7a0935951366dbe1ccd2ee89fb019a1d4e"
+    },
+    {
+      "path": "scripts/make-cosmos-v3.py",
+      "sha256": "43e6ead83f54bac43105b2585f2e11073873e293f8d1377f586dfa1517a15b3d"
+    },
+    {
+      "path": "scripts/make-seed.py",
+      "sha256": "ad8c681a62bd820492bd476198198f62d1d4aecafa7a7dbb122ce6282d45aadd"
+    },
+    {
+      "path": "scripts/patch-js-v3.py",
+      "sha256": "38c30f1c79cf896f7d512fc0552437e5ea3f86794c79d03d3501e916e41daa3b"
+    },
+    {
+      "path": "scripts/sync-cities.mjs",
+      "sha256": "e7b9b07a8201f3158b0646df83cca8facbb1a9de468bae8994305832b8a1c92c"
+    },
+    {
+      "path": "scripts/upgrade-html-v3.py",
+      "sha256": "b90a9651c81a0646e5c0384b22e7941849945c0b2898a68159f74cea5a9b28c4"
+    },
+    {
+      "path": "site/assets/app.js",
+      "sha256": "7d521cca575d03b932687138051b7d47939248d499339d8d1610d5cefa1f2f7a"
+    },
+    {
+      "path": "site/assets/games-v5.js",
+      "sha256": "9d0298de61169d43507dd43c1a3d969e66156eb8088b2696afd785eaf37415f7"
+    },
+    {
+      "path": "site/assets/models.js",
+      "sha256": "49114b5e8361422dc11870df9e6a81ecaa395d3607c7353a474140af01940801"
+    },
+    {
+      "path": "site/assets/operations.js",
+      "sha256": "79c08f1de3aa4ef4b559ff43b82b62d9a7ec1c33ef7063276b139fe1bd7e9e44"
+    },
+    {
+      "path": "site/assets/space.js",
+      "sha256": "2ef28b1db5acd1d2619b8875e0faa44dfab85fcf391cfe7f1364f199fec87cd0"
+    },
+    {
+      "path": "site/assets/style.css",
+      "sha256": "f5bfc671295f3b0f20b05770298f1fe77121fb4dd14da6b0b3a69a3238c6d465"
+    },
+    {
+      "path": "site/assets/v3.css",
+      "sha256": "c3b921501ff426e9a4cfb5cf5384bbace62c4e31ac58f6178edbd376381f3211"
+    },
+    {
+      "path": "site/assets/v3.js",
+      "sha256": "764db45a56d1c05d5365c59a7d2a943ea3f7551bc85eea9d8c5c3a3a8e476457"
+    },
+    {
+      "path": "site/assets/v4.css",
+      "sha256": "c0f6dd38151beedb4d75c150999b96eb285c0318b7269d7600408f5d2a90975c"
+    },
+    {
+      "path": "site/assets/v4.js",
+      "sha256": "91b1d5a5d308c1128038a4885296d92550c4dfa2d04a5319c5f4e06d8a88addb"
+    },
+    {
+      "path": "site/assets/v5.css",
+      "sha256": "c0100c0bb08a455f52d7348374f7ff37fdfa6bf1f5f93abc575ec368a8dde809"
+    },
+    {
+      "path": "site/assets/v5.js",
+      "sha256": "5b63cf545afe65b1879a8673ba26e89333dca4b898c72ff3848dd6c97d9b4ecb"
+    },
+    {
+      "path": "site/images/brand/climate-planet-mark.webp",
+      "sha256": "1365a2ff6809428a87867e2c619972527f64d276c1fc3d207af2c114339ba190"
+    },
+    {
+      "path": "site/images/brand/climate-planet-original.webp",
+      "sha256": "c7caaaa20443b68991fb871d3befe0f97d633a4ed0c6f65a41debc4677e89026"
+    },
+    {
+      "path": "site/images/brand/climate-planet-share.png",
+      "sha256": "0a156b3cd52062e8ed5e878f902f0385b6ce711a1ee16ccd2714c6110939276c"
+    },
+    {
+      "path": "site/images/brand/climate-planet-transparent.png",
+      "sha256": "22b214de790cd9954d78e8ba2e3c1375ef6b2efbc404d50beffb3186398741ce"
+    },
+    {
+      "path": "site/images/brand/icon-192.png",
+      "sha256": "f07d4ece637d763cc9bd89adcfc160837ccdeecb3c14258f5ea3f7dc8cb97943"
+    },
+    {
+      "path": "site/images/brand/icon-512.png",
+      "sha256": "d6e7a6ae87d0d962c807b9f2794fe5988087623c6fc404806041fdaf510b53fc"
+    },
+    {
+      "path": "site/images/icon.svg",
+      "sha256": "69d5146d0279e6f7da8b6f7598f0622dd426e18faef369f86f2776ca7dadfe82"
+    },
+    {
+      "path": "site/images/landmarks/aleppo.svg",
+      "sha256": "bd9cf3e929984731836b1055c092b805464cb5eda5f8797ed4463c2d20210a5e"
+    },
+    {
+      "path": "site/images/landmarks/amman.svg",
+      "sha256": "24c2cd4983cddc19e26b34d97155f97db84754ed9fa091d53d89ec97adca9ac8"
+    },
+    {
+      "path": "site/images/landmarks/aqaba.svg",
+      "sha256": "e2fe98b150f5abc20d85e8adfc8c0c36b01e3bba83f8e2aa5ce1dc1380157445"
+    },
+    {
+      "path": "site/images/landmarks/beirut.svg",
+      "sha256": "014c23ca5eec6b155e1571acec8828b5162378107b5157aad7c911fdb6765752"
+    },
+    {
+      "path": "site/images/landmarks/damascus.svg",
+      "sha256": "647729aaeede681e43faf30f2e6c4e58f5097806ae527d754c4a77326ca52cc6"
+    },
+    {
+      "path": "site/images/landmarks/deir-ez-zor.svg",
+      "sha256": "0a6daee77996b97ab9a1813e39ecadbdd9e95d4d784579b499f26617ed8a720d"
+    },
+    {
+      "path": "site/images/landmarks/gaza.svg",
+      "sha256": "6e48aab5eefd1764c0209c052bdf96de6f1d86fc4f21b325042aef87fc1e063a"
+    },
+    {
+      "path": "site/images/landmarks/generic.svg",
+      "sha256": "07ad37c0e3be4662f4191d18186778751f6bb87bdb29d72579c5aaff88db234b"
+    },
+    {
+      "path": "site/images/landmarks/hama.svg",
+      "sha256": "70022d6ffc7b3f1b085de068bf35d522118378edf59f2cf434ca0cca862e6665"
+    },
+    {
+      "path": "site/images/landmarks/homs.svg",
+      "sha256": "5231d65549da0dd83b94196ac3294172e8658251821d425f945922bc9259f32d"
+    },
+    {
+      "path": "site/images/landmarks/idlib.svg",
+      "sha256": "3d75641cda238db29b9c30bb864e60844be417c8d0a63e31768138fe436f03c8"
+    },
+    {
+      "path": "site/images/landmarks/irbid.svg",
+      "sha256": "e295dce45396e375bf47beb957471979cc5bc63e925a628c585fe614a78a1fe8"
+    },
+    {
+      "path": "site/images/landmarks/jerusalem.svg",
+      "sha256": "6baef3f3bc78d46fa84ab1f6d082040237032d42eefeef91299bbfcfb29a479d"
+    },
+    {
+      "path": "site/images/landmarks/jisr-al-shughur.svg",
+      "sha256": "69190da509d027fe39caa0dd14b3ade0e14169ce94e15de58eb3f981a548b98d"
+    },
+    {
+      "path": "site/images/landmarks/latakia.svg",
+      "sha256": "f9b241a0985851f1078feb05dd41ab30f4aaccdd6f40637ec2e8c54dc3fc317b"
+    },
+    {
+      "path": "site/images/landmarks/nablus.svg",
+      "sha256": "37d1a32c5c80380264f448db177f58699667da54467a0a24f2b4f2b3703acf78"
+    },
+    {
+      "path": "site/images/landmarks/petra.svg",
+      "sha256": "d6e94d31921a57aa0062a60628940255f1f4cd886547c8f4122f6ebd5299d6bc"
+    },
+    {
+      "path": "site/images/landmarks/tripoli.svg",
+      "sha256": "e597d705467832c3175798bea1e291825c653f2396ea8ae80c78891e6a402f60"
+    },
+    {
+      "path": "site/images/maps/europe-base.webp",
+      "sha256": "869ad3e65d11fd68a75a81d7dbe635c0863bde5c738a6a8b0e9610398dd0d527"
+    },
+    {
+      "path": "site/images/maps/levant-base.webp",
+      "sha256": "f3f4ff5f404b5ad439b9fc28809cb254bdf5dbdb5c4f33a0b931e3f3b3473d25"
+    },
+    {
+      "path": "site/images/share-cover.png",
+      "sha256": "d840559298231b4f0e71483b37dac50294343cb018734d67a13f6b3f7c67634f"
+    },
+    {
+      "path": "site/images/share-cover.svg",
+      "sha256": "5738c751ee417ab5a998513352a80ed9cb48c84e2208f4c73f278b7733d4ea7b"
+    },
+    {
+      "path": "site/index.html",
+      "sha256": "f3b71fdbadbf5e5b58b6d251408f6a845e34455a2d7d45080b5cf61caba12e1d"
+    },
+    {
+      "path": "site/manifest.webmanifest",
+      "sha256": "ea0fca2d55c74cde243f076ffbe76edc6bd68a99ee850d5d0bf7a668fcff84bc"
+    },
+    {
+      "path": "site/sw.js",
+      "sha256": "3b040fccfb9eaeb18bc0a6aef148d11bc40b4389a0c89d8de04f211df770ff3b"
+    },
+    {
+      "path": "site/tools/map-calibration.html",
+      "sha256": "843c84c1cef03550f7c2177d889b89a43c818c0cb94dfcf56a9ce0b28ea6834f"
+    },
+    {
+      "path": "tests/browser-inline-v5.py",
+      "sha256": "6ec778127865311ad8c7fa2a90595070a70ef231a370d1f5e50b30f2e05948d8"
+    },
+    {
+      "path": "tests/test_map_engine.py",
+      "sha256": "4cde30e211daa5f79df864c599e87e3761a54e030eac82699958a318a33dc4c4"
+    },
+    {
+      "path": "tests/validate-v3.py",
+      "sha256": "8a922cccdda2f200317710b935520d1d19f71ee119e5d21de021bd22e14594f1"
+    },
+    {
+      "path": "tests/validate-v5.py",
+      "sha256": "728b486ca60d1df9414ed445e094f7dcd59d948c5e0d00546c7afcbb8da939f7"
+    },
+    {
+      "path": "tools/fetch_gfs.py",
+      "sha256": "2624a96cc21dccb8328b5c679e20d14ae5df0ba009e9ae8bfaaea5259ebc061e"
+    },
+    {
+      "path": "tools/grib_to_grid.py",
+      "sha256": "599bce507e8134f2b2e44db7b7be6f110b5526fe2d98a17dd4184752d26b71a2"
+    },
+    {
+      "path": "tools/land/ne-110m-land.geojson",
+      "sha256": "58a1434e75240c0ebbfcf408545b0dec01fca2a1a003f5af38e5a21fc851d176"
+    },
+    {
+      "path": "tools/render_map.py",
+      "sha256": "346e9331410c9dbd7885da389073795e946269270f89b2f27bb945e0a260a652"
+    },
+    {
+      "path": "tools/requirements-grib.txt",
+      "sha256": "95127b4c5d8f04212239d5fa595630f8d6b7ae2b7f3fda211e3007c0f6627fa1"
+    },
+    {
+      "path": "tools/requirements.txt",
+      "sha256": "526d7fdeda08341be50d20b836cc7345cf41fd51687d758da86c5dec12d28e2b"
+    },
+    {
+      "path": "wrangler.jsonc",
+      "sha256": "89e61ae0351ff71f9b19ba0f359a89c96e757187735895316cfe68919ed5c42b"
+    }
+  ]
+}

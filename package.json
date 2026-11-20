@@ -1,15 +1,16 @@
 {
   "name": "planet-of-climate",
   "private": true,
-  "version": "4.0.0",
-  "description": "Climate Planet V4 — interactive solar system, terrain weather maps, landmark cities and social poster studio",
+  "version": "5.0.0",
+  "description": "Climate Planet V5 — numerical map renderer, 3 science games, calibrated source maps and social media studio",
   "type": "module",
   "scripts": {
     "build": "node scripts/sync-cities.mjs && node scripts/build.mjs",
     "build:offline": "node scripts/build.mjs",
     "cities": "node scripts/sync-cities.mjs",
     "preview": "npx serve dist",
-    "archive:seed": "node scripts/create-jerusalem.mjs"
+    "archive:seed": "node scripts/create-jerusalem.mjs",
+    "maps:help": "python tools/render_map.py --help"
   },
   "engines": {
     "node": ">=18"

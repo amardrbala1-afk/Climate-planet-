@@ -56,5 +56,6 @@ el('opsReload').addEventListener('click',()=>run(true));
 async function run(force=false){status('تحميل أحدث توقعات عينة المدن…');el('opsReload').disabled=true;try{
  await mapInit();forecast=await fetchForecast(force);draw();status('✓ توقعات '+forecast.length+' مدينة · آخر جلب '+new Intl.DateTimeFormat('ar',{hour:'2-digit',minute:'2-digit'}).format(new Date())+' · المصدر Open-Meteo');
  }catch(err){console.warn('Operations forecast',err);forecast=[];draw();el('opsCityCards').innerHTML='<div class="empty-inline">تعذر تحميل التوقعات من المصدر الآن. لن نعرض قيَمًا افتراضية أو مخترعة.</div>';status('تعذر الاتصال بالمصدر. جرّب التحديث لاحقًا.')}finally{el('opsReload').disabled=false}}
-document.addEventListener('planet-page',e=>{if(e.detail.page==='operations'){if(!started){started=true;run()}else{setTimeout(()=>map?.invalidateSize(),60)}}else stop()});
-if(location.hash==='#operations'||!location.hash&&document.querySelector('[data-page=operations]')?.classList.contains('is-active')){started=true;run()}
+document.addEventListener('planet-page',e=>{if(e.detail.page==='operations'){if(document.querySelector('[data-v5-panel=cities]')?.hidden)return;if(!started){started=true;run()}else{setTimeout(()=>map?.invalidateSize(),60)}}else stop()});
+document.getElementById('v5OpsTabs')?.addEventListener('click',e=>{if(e.target.closest('[data-v5-ops=cities]')){if(!started){started=true;run()}else{setTimeout(()=>map?.invalidateSize(),80)}}});
+if((location.hash==='#operations'||(!location.hash&&document.querySelector('[data-page=operations]')?.classList.contains('is-active')))&&!document.querySelector('[data-v5-panel=cities]')?.hidden){started=true;run()}

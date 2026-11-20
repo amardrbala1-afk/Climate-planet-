@@ -17,6 +17,14 @@ posts.sort((a,b)=>String(b.date||'').localeCompare(String(a.date||'')));await wr
 for(const [section,file]of[['archive','archive.json'],['maps','maps.json']]){const items=[];const folder=path.join(root,'content',section);for(const name of(await readdir(folder)).filter(x=>x.endsWith('.json'))){try{items.push(JSON.parse(await readFile(path.join(folder,name),'utf8')))}catch(e){console.warn('Skipped malformed entry',name)}}await writeFile(path.join(dist,'data',file),JSON.stringify(items));}
 await cp(path.join(root,'data','cities.json'),path.join(dist,'data','cities.json'));await cp(path.join(root,'data','cosmos-v3.json'),path.join(dist,'data','cosmos-v3.json')); 
 await cp(path.join(root,'data','jerusalem-snow.json'),path.join(dist,'data','jerusalem-snow.json'));
+// Curated, reproducible GRIB/NetCDF overlays; reject missing or misattributed products.
+const mapProducts=JSON.parse(await readFile(path.join(root,'data/map-products/catalog.json'),'utf8'));
+if(!Array.isArray(mapProducts))throw Error('Map catalog must be an array');
+for(const p of mapProducts){
+ if(!p?.id||!['europe','levant'].includes(p.region)||!['z500','t850','t2m','rain'].includes(p.field)||!['ECMWF','GFS','ICON'].includes(p.model)||!p.source||!/^[\w/-]+\.png$/.test(String(p.image||'').replace('/images/maps/forecast/',''))||!String(p.image).startsWith('/images/maps/forecast/'))throw Error('Invalid numerical map metadata: '+p?.id);
+ const file=path.join(dist,p.image.slice(1));await readFile(file);
+}
+await writeFile(path.join(dist,'data/forecast-maps.json'),JSON.stringify(mapProducts));
 // Merge new, source-attributed Jerusalem winter observations published from Pages CMS.
 const jerusalemFile=path.join(dist,'data','jerusalem-snow.json');
 const jerusalem=JSON.parse(await readFile(jerusalemFile,'utf8'));
@@ -34,4 +42,4 @@ for(const file of (await readdir(path.join(root,'content/jerusalem'))).filter(n=
 jerusalem.records=[...byDate.values()].sort((a,b)=>b.date.localeCompare(a.date));
 await writeFile(jerusalemFile,JSON.stringify(jerusalem));
 const domain=(process.env.SITE_URL||process.env.CF_PAGES_URL||DEFAULT_SITE_URL).replace(/\/$/,'');if(domain){const urls=[{loc:domain+'/',last:'2026-11-20'},...posts.map(p=>({loc:domain+'/articles/'+p.slug+'/',last:p.date}))];await writeFile(path.join(dist,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls.map(o=>`<url><loc>${esc(o.loc)}</loc><lastmod>${esc(o.last)}</lastmod></url>`).join('')}</urlset>`);await writeFile(path.join(dist,'robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${domain}/sitemap.xml\n`)}
-console.log(`Built V4: ${posts.length} articles + Jerusalem archive, ${dist}`);
+console.log(`Built V5: ${posts.length} articles + Jerusalem archive, ${dist}`);
