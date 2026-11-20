@@ -1,8 +1,8 @@
 {
   "name": "planet-of-climate",
   "private": true,
-  "version": "2.0.0",
-  "description": "Climate Planet V2: Levant weather dashboard, 3D astronomy, Jerusalem snow archive, journal maps",
+  "version": "3.0.0",
+  "description": "Climate Planet V3: Levant weather dashboard, 3D astronomy, Jerusalem snow archive, journal maps",
   "type": "module",
   "scripts": {
     "build": "node scripts/sync-cities.mjs && node scripts/build.mjs",
