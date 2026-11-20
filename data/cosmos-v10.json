@@ -1,0 +1,3749 @@
+{
+  "updated": "2026-11-20",
+  "method": "محتوى عربي جديد خاص بالموقع، مع إحالة مصدرية لكل جرم؛ ليس نصًا منسوخًا من ويكيبيديا، ويجب مراجعة المحتوى دوريًا.",
+  "objects": [
+    {
+      "id": "io",
+      "category": "moons",
+      "name": "آيو",
+      "latin": "IO (MOON)",
+      "color": "#becde9",
+      "icon": "◐",
+      "summary": "قمر للمشتري تظهر على سطحه براكين نشطة بكثافة استثنائية بفعل قوى المد والجزر.",
+      "facts": [
+        [
+          "التصنيف",
+          "الأقمار"
+        ],
+        [
+          "المعلومة المميزة",
+          "سخونة باطنه مرتبطة بالتشوه الدوري الذي تفرضه جاذبية المشتري وبقية الأقمار."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Io_(moon)"
+    },
+    {
+      "id": "callisto",
+      "category": "moons",
+      "name": "كاليستو",
+      "latin": "CALLISTO (MOON)",
+      "color": "#becde9",
+      "icon": "◐",
+      "summary": "قمر كبير للمشتري تغطي سطحه فوهات اصطدام قديمة للغاية.",
+      "facts": [
+        [
+          "التصنيف",
+          "الأقمار"
+        ],
+        [
+          "المعلومة المميزة",
+          "السطح شديد القدم ولا يظهر نشاطًا جيولوجيًا حديثًا واسعًا مثل آيو."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Callisto_(moon)"
+    },
+    {
+      "id": "enceladus",
+      "category": "moons",
+      "name": "إنسيلادوس",
+      "latin": "ENCELADUS",
+      "color": "#becde9",
+      "icon": "◐",
+      "summary": "قمر جليدي لزحل تنطلق من قطبه الجنوبي نفاثات من الماء والجليد.",
+      "facts": [
+        [
+          "التصنيف",
+          "الأقمار"
+        ],
+        [
+          "المعلومة المميزة",
+          "تعطي النفاثات أدلة على وجود محيط مائي تحت القشرة الجليدية."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Enceladus"
+    },
+    {
+      "id": "mimas",
+      "category": "moons",
+      "name": "ميماس",
+      "latin": "MIMAS",
+      "color": "#becde9",
+      "icon": "◐",
+      "summary": "قمر لزحل مشهور بفوهة هيرشل الضخمة التي تشغل مساحة كبيرة من نصفه الظاهر.",
+      "facts": [
+        [
+          "التصنيف",
+          "الأقمار"
+        ],
+        [
+          "المعلومة المميزة",
+          "يشبه شكله القمر الجليدي المليء بالفوهات أكثر من عوالم النشاط السطحي."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Mimas"
+    },
+    {
+      "id": "iapetus",
+      "category": "moons",
+      "name": "يابيتوس",
+      "latin": "IAPETUS (MOON)",
+      "color": "#becde9",
+      "icon": "◐",
+      "summary": "قمر زحلي ذو اختلاف لافت بين نصفيه الداكن والفاتح وله سلسلة مرتفعات على خط الاستواء.",
+      "facts": [
+        [
+          "التصنيف",
+          "الأقمار"
+        ],
+        [
+          "المعلومة المميزة",
+          "التباين اللوني أحد موضوعات دراسة الترسبات وتطور السطح."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Iapetus_(moon)"
+    },
+    {
+      "id": "dione",
+      "category": "moons",
+      "name": "ديون",
+      "latin": "DIONE (MOON)",
+      "color": "#becde9",
+      "icon": "◐",
+      "summary": "قمر جليدي حول زحل يحمل تضاريس صدعية وخطوطًا لامعة على سطحه.",
+      "facts": [
+        [
+          "التصنيف",
+          "الأقمار"
+        ],
+        [
+          "المعلومة المميزة",
+          "تُظهر الصور مناطق متكسرة مقارنة بسطوح أقدم ذات فوهات."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Dione_(moon)"
+    },
+    {
+      "id": "rhea",
+      "category": "moons",
+      "name": "ريا",
+      "latin": "RHEA (MOON)",
+      "color": "#becde9",
+      "icon": "◐",
+      "summary": "ثاني أكبر أقمار زحل وتغطيه طبقات من الجليد وفوهات كثيرة.",
+      "facts": [
+        [
+          "التصنيف",
+          "الأقمار"
+        ],
+        [
+          "المعلومة المميزة",
+          "يعكس الاختلاف في أعداد الفوهات أعمارًا سطحية نسبية مختلفة."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Rhea_(moon)"
+    },
+    {
+      "id": "tethys",
+      "category": "moons",
+      "name": "تيثيس",
+      "latin": "TETHYS (MOON)",
+      "color": "#becde9",
+      "icon": "◐",
+      "summary": "قمر زحلي جليدي يتميز بفوهة أوديسيوس ووادي إيثاكا تشاسما.",
+      "facts": [
+        [
+          "التصنيف",
+          "الأقمار"
+        ],
+        [
+          "المعلومة المميزة",
+          "يظهر الوادي الطويل كأحد أبرز التراكيب التكتونية على القمر."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Tethys_(moon)"
+    },
+    {
+      "id": "phobos",
+      "category": "moons",
+      "name": "فوبوس",
+      "latin": "PHOBOS (MOON)",
+      "color": "#becde9",
+      "icon": "◐",
+      "summary": "أكبر قمرَي المريخ، جسم صغير غير منتظم قريب جدًا من الكوكب.",
+      "facts": [
+        [
+          "التصنيف",
+          "الأقمار"
+        ],
+        [
+          "المعلومة المميزة",
+          "يدور بسرعة حول المريخ، ويظهر في سمائه أكثر من مرة خلال اليوم."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Phobos_(moon)"
+    },
+    {
+      "id": "deimos",
+      "category": "moons",
+      "name": "ديموس",
+      "latin": "DEIMOS (MOON)",
+      "color": "#becde9",
+      "icon": "◐",
+      "summary": "القمر الأصغر للمريخ، سطحه أقل وعورة ظاهريًا وتغطيه مواد دقيقة.",
+      "facts": [
+        [
+          "التصنيف",
+          "الأقمار"
+        ],
+        [
+          "المعلومة المميزة",
+          "يبدو أكثر نعومة من فوبوس عند مقارنة الصور القريبة."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Deimos_(moon)"
+    },
+    {
+      "id": "triton",
+      "category": "moons",
+      "name": "تريتون",
+      "latin": "TRITON (MOON)",
+      "color": "#becde9",
+      "icon": "◐",
+      "summary": "أكبر أقمار نبتون، يتحرك في مدار رجعي وتوجد على سطحه مؤشرات نشاط جليدي.",
+      "facts": [
+        [
+          "التصنيف",
+          "الأقمار"
+        ],
+        [
+          "المعلومة المميزة",
+          "يُعتقد أنه جسم التُقط من منطقة حزام كايبر."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Triton_(moon)"
+    },
+    {
+      "id": "charon",
+      "category": "moons",
+      "name": "شارون",
+      "latin": "CHARON (MOON)",
+      "color": "#becde9",
+      "icon": "◐",
+      "summary": "أكبر أقمار بلوتو، كبير نسبيًا مقارنة بالكوكب القزم الذي يدور حوله.",
+      "facts": [
+        [
+          "التصنيف",
+          "الأقمار"
+        ],
+        [
+          "المعلومة المميزة",
+          "يُظهر سطحه صدوعًا وتضاريس متنوعة رصدتها نيو هورايزنز."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Charon_(moon)"
+    },
+    {
+      "id": "oberon",
+      "category": "moons",
+      "name": "أوبيرون",
+      "latin": "OBERON (MOON)",
+      "color": "#becde9",
+      "icon": "◐",
+      "summary": "أحد أكبر أقمار أورانوس، يتسم بسطح كثير الفوهات.",
+      "facts": [
+        [
+          "التصنيف",
+          "الأقمار"
+        ],
+        [
+          "المعلومة المميزة",
+          "ارتباطه بأورانوس يجعله جزءًا من منظومة أقمار شديدة الميل بالنسبة لمسار الشمس."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Oberon_(moon)"
+    },
+    {
+      "id": "titania",
+      "category": "moons",
+      "name": "تيتانيا",
+      "latin": "TITANIA (MOON)",
+      "color": "#becde9",
+      "icon": "◐",
+      "summary": "أكبر أقمار أورانوس ويظهر على سطحه عدد من الوديان والتصدعات.",
+      "facts": [
+        [
+          "التصنيف",
+          "الأقمار"
+        ],
+        [
+          "المعلومة المميزة",
+          "يمكن أن تعكس التراكيب آثار تمدد أو تغير قديم في القشرة."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Titania_(moon)"
+    },
+    {
+      "id": "ariel",
+      "category": "moons",
+      "name": "آرييل",
+      "latin": "ARIEL (MOON)",
+      "color": "#becde9",
+      "icon": "◐",
+      "summary": "قمر لأورانوس له مناطق لامعة وأودية سطحية متشابكة.",
+      "facts": [
+        [
+          "التصنيف",
+          "الأقمار"
+        ],
+        [
+          "المعلومة المميزة",
+          "تدل التضاريس على تجدد بعض أجزاء السطح خلال تاريخه."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Ariel_(moon)"
+    },
+    {
+      "id": "miranda",
+      "category": "moons",
+      "name": "ميراندا",
+      "latin": "MIRANDA (MOON)",
+      "color": "#becde9",
+      "icon": "◐",
+      "summary": "قمر صغير لأورانوس تشتهر صوره بتضاريس متقطعة وغير معتادة.",
+      "facts": [
+        [
+          "التصنيف",
+          "الأقمار"
+        ],
+        [
+          "المعلومة المميزة",
+          "تظهر أجزاؤه وكأنها تجمع مناطق جيولوجية مختلفة جنبًا إلى جنب."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Miranda_(moon)"
+    },
+    {
+      "id": "nereid",
+      "category": "moons",
+      "name": "نيريد",
+      "latin": "NEREID (MOON)",
+      "color": "#becde9",
+      "icon": "◐",
+      "summary": "قمر لنبتون له مدار شديد الاستطالة مقارنة بكثير من الأقمار المنتظمة.",
+      "facts": [
+        [
+          "التصنيف",
+          "الأقمار"
+        ],
+        [
+          "المعلومة المميزة",
+          "تستدعي هندسة مداره دراسة اضطرابات قديمة في نظام نبتون."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Nereid_(moon)"
+    },
+    {
+      "id": "amalthea",
+      "category": "moons",
+      "name": "أمالثيا",
+      "latin": "AMALTHEA (MOON)",
+      "color": "#becde9",
+      "icon": "◐",
+      "summary": "قمر داخلي صغير للمشتري ذو هيئة غير كروية ولون مائل إلى الحمرة.",
+      "facts": [
+        [
+          "التصنيف",
+          "الأقمار"
+        ],
+        [
+          "المعلومة المميزة",
+          "تؤثر جاذبية المشتري في الجسيمات والغبار ضمن بيئته المدارية."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Amalthea_(moon)"
+    },
+    {
+      "id": "pluto",
+      "category": "dwarf",
+      "name": "بلوتو",
+      "latin": "PLUTO",
+      "color": "#c7bbfa",
+      "icon": "◌",
+      "summary": "كوكب قزم في حزام كايبر، تظهر على سطحه مناطق جليدية متنوعة وسهل سبوتنيك.",
+      "facts": [
+        [
+          "التصنيف",
+          "الكواكب القزمة"
+        ],
+        [
+          "المعلومة المميزة",
+          "كشفت نيو هورايزنز سنة 2015 عن تضاريس أعقد مما توقعه كثير من العلماء."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Pluto"
+    },
+    {
+      "id": "ceres",
+      "category": "dwarf",
+      "name": "سيريس",
+      "latin": "CERES (DWARF PLANET)",
+      "color": "#c7bbfa",
+      "icon": "◌",
+      "summary": "أكبر جرم في حزام الكويكبات بين المريخ والمشتري ويصنف كوكبًا قزمًا.",
+      "facts": [
+        [
+          "التصنيف",
+          "الكواكب القزمة"
+        ],
+        [
+          "المعلومة المميزة",
+          "رصد المسبار داون رواسب فاتحة مرتبطة بأملاح في فوهة أوكاتور."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Ceres_(dwarf_planet)"
+    },
+    {
+      "id": "eris",
+      "category": "dwarf",
+      "name": "إيريس",
+      "latin": "ERIS (DWARF PLANET)",
+      "color": "#c7bbfa",
+      "icon": "◌",
+      "summary": "كوكب قزم بعيد في النظام الشمسي الخارجي، كان لاكتشافه أثر في نقاش تعريف الكوكب.",
+      "facts": [
+        [
+          "التصنيف",
+          "الكواكب القزمة"
+        ],
+        [
+          "المعلومة المميزة",
+          "يملك قمرًا معروفًا باسم ديسنوميا."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Eris_(dwarf_planet)"
+    },
+    {
+      "id": "haumea",
+      "category": "dwarf",
+      "name": "هاوميا",
+      "latin": "HAUMEA",
+      "color": "#c7bbfa",
+      "icon": "◌",
+      "summary": "كوكب قزم سريع الدوران وشكله ممدود بشكل ملحوظ.",
+      "facts": [
+        [
+          "التصنيف",
+          "الكواكب القزمة"
+        ],
+        [
+          "المعلومة المميزة",
+          "يمتلك حلقة رقيقة وأقمارًا معروفة."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Haumea"
+    },
+    {
+      "id": "makemake",
+      "category": "dwarf",
+      "name": "ماكيماكي",
+      "latin": "MAKEMAKE",
+      "color": "#c7bbfa",
+      "icon": "◌",
+      "summary": "كوكب قزم في حزام كايبر له سطح شديد البرودة غني بمواد متجمدة.",
+      "facts": [
+        [
+          "التصنيف",
+          "الكواكب القزمة"
+        ],
+        [
+          "المعلومة المميزة",
+          "يدور حول الشمس أبعد من نبتون وله قمر صغير مكتشف."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Makemake"
+    },
+    {
+      "id": "sun",
+      "category": "stars",
+      "name": "الشمس",
+      "latin": "SUN",
+      "color": "#ffc977",
+      "icon": "✦",
+      "summary": "نجم من النسق الأساسي ومصدر الضوء والطاقة الرئيسيين للأرض.",
+      "facts": [
+        [
+          "التصنيف",
+          "النجوم"
+        ],
+        [
+          "المعلومة المميزة",
+          "تتولد الطاقة في مركزها باندماج الهيدروجين إلى هيليوم."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Sun"
+    },
+    {
+      "id": "proxima",
+      "category": "stars",
+      "name": "بروكسيما قنطورس",
+      "latin": "PROXIMA CENTAURI",
+      "color": "#ffc977",
+      "icon": "✦",
+      "summary": "أقرب نجم معروف للشمس، وهو قزم أحمر خافت نسبيًا.",
+      "facts": [
+        [
+          "التصنيف",
+          "النجوم"
+        ],
+        [
+          "المعلومة المميزة",
+          "رُصد حوله كوكب خارج المجموعة الشمسية يسمى بروكسيما b."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Proxima_Centauri"
+    },
+    {
+      "id": "alpha-centauri-a",
+      "category": "stars",
+      "name": "ألفا قنطورس A",
+      "latin": "ALPHA CENTAURI A",
+      "color": "#ffc977",
+      "icon": "✦",
+      "summary": "نجم شبيه بالشمس ضمن منظومة ألفا قنطورس القريبة.",
+      "facts": [
+        [
+          "التصنيف",
+          "النجوم"
+        ],
+        [
+          "المعلومة المميزة",
+          "يشكل مع ألفا قنطورس B نظامًا ثنائيًا مرئيًا."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Alpha_Centauri_A"
+    },
+    {
+      "id": "vega",
+      "category": "stars",
+      "name": "النسر الواقع",
+      "latin": "VEGA",
+      "color": "#ffc977",
+      "icon": "✦",
+      "summary": "نجم أزرق أبيض شديد اللمعان في كوكبة القيثارة.",
+      "facts": [
+        [
+          "التصنيف",
+          "النجوم"
+        ],
+        [
+          "المعلومة المميزة",
+          "يمثل أحد نجوم مثلث الصيف الشهير في سماء نصف الكرة الشمالي."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Vega"
+    },
+    {
+      "id": "rigel",
+      "category": "stars",
+      "name": "رِجل الجبار",
+      "latin": "RIGEL",
+      "color": "#ffc977",
+      "icon": "✦",
+      "summary": "نجم أزرق فائق اللمعان في كوكبة الجبار.",
+      "facts": [
+        [
+          "التصنيف",
+          "النجوم"
+        ],
+        [
+          "المعلومة المميزة",
+          "يشغل موضعًا بارزًا قرب إحدى زاويتَي الشكل النجمي المعروف للجبار."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Rigel"
+    },
+    {
+      "id": "deneb",
+      "category": "stars",
+      "name": "ذنب الدجاجة",
+      "latin": "DENEB",
+      "color": "#ffc977",
+      "icon": "✦",
+      "summary": "نجم شديد اللمعان في كوكبة الدجاجة ومن رؤوس مثلث الصيف.",
+      "facts": [
+        [
+          "التصنيف",
+          "النجوم"
+        ],
+        [
+          "المعلومة المميزة",
+          "يمكن رؤيته رغم بعده الهائل لأن لمعانه الذاتي مرتفع جدًا."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Deneb"
+    },
+    {
+      "id": "antares",
+      "category": "stars",
+      "name": "قلب العقرب",
+      "latin": "ANTARES",
+      "color": "#ffc977",
+      "icon": "✦",
+      "summary": "نجم عملاق أحمر فائق في كوكبة العقرب وله لون مميز.",
+      "facts": [
+        [
+          "التصنيف",
+          "النجوم"
+        ],
+        [
+          "المعلومة المميزة",
+          "يمثل جزءًا واضحًا من شكل العقرب في السماء الصيفية."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Antares"
+    },
+    {
+      "id": "arcturus",
+      "category": "stars",
+      "name": "السماك الرامح",
+      "latin": "ARCTURUS",
+      "color": "#ffc977",
+      "icon": "✦",
+      "summary": "نجم برتقالي عملاق في كوكبة العواء يُعد من ألمع نجوم السماء.",
+      "facts": [
+        [
+          "التصنيف",
+          "النجوم"
+        ],
+        [
+          "المعلومة المميزة",
+          "يسهل العثور عليه بمتابعة قوس ذراع الدب الأكبر."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Arcturus"
+    },
+    {
+      "id": "canopus",
+      "category": "stars",
+      "name": "سهيل",
+      "latin": "CANOPUS",
+      "color": "#ffc977",
+      "icon": "✦",
+      "summary": "ثاني ألمع نجوم سماء الليل من حيث السطوع الظاهري.",
+      "facts": [
+        [
+          "التصنيف",
+          "النجوم"
+        ],
+        [
+          "المعلومة المميزة",
+          "يظهر في السماء الجنوبية وتختلف إمكانية رؤيته باختلاف خط العرض."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Canopus"
+    },
+    {
+      "id": "altair",
+      "category": "stars",
+      "name": "النسر الطائر",
+      "latin": "ALTAIR",
+      "color": "#ffc977",
+      "icon": "✦",
+      "summary": "نجم لامع في كوكبة العقاب وهو أحد رؤوس مثلث الصيف.",
+      "facts": [
+        [
+          "التصنيف",
+          "النجوم"
+        ],
+        [
+          "المعلومة المميزة",
+          "يدور حول نفسه بسرعة كبيرة تؤثر في شكله."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Altair"
+    },
+    {
+      "id": "spica",
+      "category": "stars",
+      "name": "السماك الأعزل",
+      "latin": "SPICA",
+      "color": "#ffc977",
+      "icon": "✦",
+      "summary": "نجم لامع في كوكبة العذراء وهو في الواقع نظام نجمي ثنائي قريب.",
+      "facts": [
+        [
+          "التصنيف",
+          "النجوم"
+        ],
+        [
+          "المعلومة المميزة",
+          "يستخدم للمساعدة في تحديد موضع العذراء في سماء الربيع."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Spica"
+    },
+    {
+      "id": "sombrero",
+      "category": "galaxies",
+      "name": "مجرة القبعة",
+      "latin": "SOMBRERO GALAXY",
+      "color": "#be9afa",
+      "icon": "✺",
+      "summary": "مجرة شهيرة ذات حزام غبار داكن ونواة لامعة تبدو من الحافة بشكل مميز.",
+      "facts": [
+        [
+          "التصنيف",
+          "المجرات"
+        ],
+        [
+          "المعلومة المميزة",
+          "توجد في اتجاه كوكبة العذراء وتحمل الاسم M104."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Sombrero_Galaxy"
+    },
+    {
+      "id": "whirlpool",
+      "category": "galaxies",
+      "name": "مجرة الدوامة",
+      "latin": "WHIRLPOOL GALAXY",
+      "color": "#be9afa",
+      "icon": "✺",
+      "summary": "مجرة حلزونية معروفة بذراعَيها الواضحتين وتفاعلها مع مجرة مجاورة.",
+      "facts": [
+        [
+          "التصنيف",
+          "المجرات"
+        ],
+        [
+          "المعلومة المميزة",
+          "تقع في اتجاه كوكبة السلوقيين وتعرف باسم M51."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Whirlpool_Galaxy"
+    },
+    {
+      "id": "pinwheel",
+      "category": "galaxies",
+      "name": "مجرة الدولاب",
+      "latin": "PINWHEEL GALAXY",
+      "color": "#be9afa",
+      "icon": "✺",
+      "summary": "مجرة حلزونية كبيرة تظهر مواجهة تقريبًا للأرض مما يبرز أذرعها.",
+      "facts": [
+        [
+          "التصنيف",
+          "المجرات"
+        ],
+        [
+          "المعلومة المميزة",
+          "تصنف باسم M101 في اتجاه كوكبة الدب الأكبر."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Pinwheel_Galaxy"
+    },
+    {
+      "id": "virgo-a",
+      "category": "galaxies",
+      "name": "مجرة M87",
+      "latin": "MESSIER 87",
+      "color": "#be9afa",
+      "icon": "✺",
+      "summary": "مجرة إهليلجية عملاقة في عنقود العذراء.",
+      "facts": [
+        [
+          "التصنيف",
+          "المجرات"
+        ],
+        [
+          "المعلومة المميزة",
+          "صورت شبكة تلسكوب أفق الحدث ظل الثقب الأسود المركزي عام 2019."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Messier_87"
+    },
+    {
+      "id": "ngc1300",
+      "category": "galaxies",
+      "name": "مجرة NGC 1300",
+      "latin": "NGC 1300",
+      "color": "#be9afa",
+      "icon": "✺",
+      "summary": "مجرة حلزونية قضيبية جميلة تمتلك بنية مركزية واضحة.",
+      "facts": [
+        [
+          "التصنيف",
+          "المجرات"
+        ],
+        [
+          "المعلومة المميزة",
+          "تظهر فيها أذرع تنطلق من طرفَي قضيب نجمي داخلي."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/NGC_1300"
+    },
+    {
+      "id": "lmc",
+      "category": "galaxies",
+      "name": "سحابة ماجلان الكبرى",
+      "latin": "LARGE MAGELLANIC CLOUD",
+      "color": "#be9afa",
+      "icon": "✺",
+      "summary": "مجرة قزمة قريبة من درب التبانة تبدو كسحابة ضوئية في السماء الجنوبية.",
+      "facts": [
+        [
+          "التصنيف",
+          "المجرات"
+        ],
+        [
+          "المعلومة المميزة",
+          "تحتوي على سديم الرتيلاء النشط بتكوّن النجوم."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Large_Magellanic_Cloud"
+    },
+    {
+      "id": "smc",
+      "category": "galaxies",
+      "name": "سحابة ماجلان الصغرى",
+      "latin": "SMALL MAGELLANIC CLOUD",
+      "color": "#be9afa",
+      "icon": "✺",
+      "summary": "مجرة قزمة قريبة من درب التبانة وتشكل زوجًا مرئيًا مع السحابة الكبرى.",
+      "facts": [
+        [
+          "التصنيف",
+          "المجرات"
+        ],
+        [
+          "المعلومة المميزة",
+          "تنتمي إلى بيئة المجموعة المحلية وتتأثر بتفاعلات الجاذبية."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Small_Magellanic_Cloud"
+    },
+    {
+      "id": "sculptor",
+      "category": "galaxies",
+      "name": "مجرة النحات",
+      "latin": "SCULPTOR GALAXY",
+      "color": "#be9afa",
+      "icon": "✺",
+      "summary": "مجرة حلزونية تُعرف باسم NGC 253 ويظهر فيها نشاط لتشكل النجوم.",
+      "facts": [
+        [
+          "التصنيف",
+          "المجرات"
+        ],
+        [
+          "المعلومة المميزة",
+          "تقع في اتجاه كوكبة النحات وهي مثال لمجرات الانفجار النجمي."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Sculptor_Galaxy"
+    },
+    {
+      "id": "bodes",
+      "category": "galaxies",
+      "name": "مجرة بود",
+      "latin": "MESSIER 81",
+      "color": "#be9afa",
+      "icon": "✺",
+      "summary": "مجرة حلزونية كبيرة معروفة بالاسم M81.",
+      "facts": [
+        [
+          "التصنيف",
+          "المجرات"
+        ],
+        [
+          "المعلومة المميزة",
+          "تشكل مع M82 جزءًا من مجموعة مجرية مجاورة متفاعلة."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Messier_81"
+    },
+    {
+      "id": "centaurus-a",
+      "category": "galaxies",
+      "name": "قنطورس A",
+      "latin": "CENTAURUS A",
+      "color": "#be9afa",
+      "icon": "✺",
+      "summary": "مجرة نشطة ذات حزام غبار داكن أمام مناطق نجمية لامعة.",
+      "facts": [
+        [
+          "التصنيف",
+          "المجرات"
+        ],
+        [
+          "المعلومة المميزة",
+          "تظهر انبعاثات راديوية قوية من منطقة مركزية نشطة."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Centaurus_A"
+    },
+    {
+      "id": "orion-nebula",
+      "category": "nebulae",
+      "name": "سديم الجبار",
+      "latin": "ORION NEBULA",
+      "color": "#ec9fc3",
+      "icon": "✳",
+      "summary": "منطقة واسعة لتشكل النجوم في اتجاه كوكبة الجبار، مرئية بالعين المجردة في سماء مظلمة.",
+      "facts": [
+        [
+          "التصنيف",
+          "السدم"
+        ],
+        [
+          "المعلومة المميزة",
+          "يحمل اسم M42 ويضم نجومًا فتية وسحب غاز متوهجة."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Orion_Nebula"
+    },
+    {
+      "id": "crab-nebula",
+      "category": "nebulae",
+      "name": "سديم السرطان",
+      "latin": "CRAB NEBULA",
+      "color": "#ec9fc3",
+      "icon": "✳",
+      "summary": "بقايا مستعر أعظم ارتبط انفجاره برصد تاريخي سنة 1054.",
+      "facts": [
+        [
+          "التصنيف",
+          "السدم"
+        ],
+        [
+          "المعلومة المميزة",
+          "يضم نجمًا نابضًا في مركزه يمد الغاز بطاقة إشعاعية."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Crab_Nebula"
+    },
+    {
+      "id": "eagle-nebula",
+      "category": "nebulae",
+      "name": "سديم النسر",
+      "latin": "EAGLE NEBULA",
+      "color": "#ec9fc3",
+      "icon": "✳",
+      "summary": "منطقة غازية وغبارية تحتضن أعمدة الخلق التي اشتهرت بصور هابل وويب.",
+      "facts": [
+        [
+          "التصنيف",
+          "السدم"
+        ],
+        [
+          "المعلومة المميزة",
+          "السدم الداكنة قد تخفي مناطق ولادة نجوم."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Eagle_Nebula"
+    },
+    {
+      "id": "carina-nebula",
+      "category": "nebulae",
+      "name": "سديم القاعدة",
+      "latin": "CARINA NEBULA",
+      "color": "#ec9fc3",
+      "icon": "✳",
+      "summary": "مجمع ضخم لتشكل النجوم في كوكبة القاعدة يضم نجومًا كبيرة شديدة السطوع.",
+      "facts": [
+        [
+          "التصنيف",
+          "السدم"
+        ],
+        [
+          "المعلومة المميزة",
+          "صور ويب كشفت تفاصيل جديدة في ما يسمى المنحدرات الكونية."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Carina_Nebula"
+    },
+    {
+      "id": "lagoon-nebula",
+      "category": "nebulae",
+      "name": "سديم البحيرة",
+      "latin": "LAGOON NEBULA",
+      "color": "#ec9fc3",
+      "icon": "✳",
+      "summary": "سديم انبعاثي في كوكبة القوس يعرف باسم M8.",
+      "facts": [
+        [
+          "التصنيف",
+          "السدم"
+        ],
+        [
+          "المعلومة المميزة",
+          "يحتوي على سحب غازية مضيئة وحشود نجمية فتية."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Lagoon_Nebula"
+    },
+    {
+      "id": "ring-nebula",
+      "category": "nebulae",
+      "name": "سديم الحلقة",
+      "latin": "RING NEBULA",
+      "color": "#ec9fc3",
+      "icon": "✳",
+      "summary": "سديم كوكبي نتج عن طرح نجم قديم لطبقاته الخارجية.",
+      "facts": [
+        [
+          "التصنيف",
+          "السدم"
+        ],
+        [
+          "المعلومة المميزة",
+          "يشكل حلقة لامعة في كوكبة القيثارة ويعرف باسم M57."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Ring_Nebula"
+    },
+    {
+      "id": "helix-nebula",
+      "category": "nebulae",
+      "name": "سديم الحلزون",
+      "latin": "HELIX NEBULA",
+      "color": "#ec9fc3",
+      "icon": "✳",
+      "summary": "سديم كوكبي قريب نسبيًا يُظهر بنية حلقية معقدة من الغاز المتوسع.",
+      "facts": [
+        [
+          "التصنيف",
+          "السدم"
+        ],
+        [
+          "المعلومة المميزة",
+          "النجم المركزي الباقي هو بقايا ساخنة بعد فقدان الغلاف."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Helix_Nebula"
+    },
+    {
+      "id": "cats-eye",
+      "category": "nebulae",
+      "name": "سديم عين القط",
+      "latin": "CAT'S EYE NEBULA",
+      "color": "#ec9fc3",
+      "icon": "✳",
+      "summary": "سديم كوكبي متعدد القشور ذو بنية غازية معقدة.",
+      "facts": [
+        [
+          "التصنيف",
+          "السدم"
+        ],
+        [
+          "المعلومة المميزة",
+          "اشتهر بصوره عالية التفاصيل التي كشفت حلقات وأغلفة متراكزة."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Cat%27s_Eye_Nebula"
+    },
+    {
+      "id": "horsehead",
+      "category": "nebulae",
+      "name": "سديم رأس الحصان",
+      "latin": "HORSEHEAD NEBULA",
+      "color": "#ec9fc3",
+      "icon": "✳",
+      "summary": "سحابة غبار داكنة تقطع ضوء خلفية مضيئة في اتجاه الجبار.",
+      "facts": [
+        [
+          "التصنيف",
+          "السدم"
+        ],
+        [
+          "المعلومة المميزة",
+          "يشتهر بشكله الشبيه برأس حصان في الصور الفلكية."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Horsehead_Nebula"
+    },
+    {
+      "id": "tarantula",
+      "category": "nebulae",
+      "name": "سديم الرتيلاء",
+      "latin": "TARANTULA NEBULA",
+      "color": "#ec9fc3",
+      "icon": "✳",
+      "summary": "منطقة نشطة جدًا في تشكل النجوم داخل سحابة ماجلان الكبرى.",
+      "facts": [
+        [
+          "التصنيف",
+          "السدم"
+        ],
+        [
+          "المعلومة المميزة",
+          "تضم حشودًا من النجوم الفتية شديدة الكتلة."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Tarantula_Nebula"
+    },
+    {
+      "id": "rosette",
+      "category": "nebulae",
+      "name": "سديم الوردة",
+      "latin": "ROSETTE NEBULA",
+      "color": "#ec9fc3",
+      "icon": "✳",
+      "summary": "سديم انبعاثي كبير تحيط به مناطق غازية موزعة على هيئة وردة تقريبًا.",
+      "facts": [
+        [
+          "التصنيف",
+          "السدم"
+        ],
+        [
+          "المعلومة المميزة",
+          "يضم في مركزه حشدًا نجميًا فتيا يثير الغاز."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Rosette_Nebula"
+    },
+    {
+      "id": "trifid",
+      "category": "nebulae",
+      "name": "السديم الثلاثي",
+      "latin": "TRIFID NEBULA",
+      "color": "#ec9fc3",
+      "icon": "✳",
+      "summary": "سديم مركب يعرف باسم M20 ويجمع مناطق انبعاث وانعكاس وغبار معتم.",
+      "facts": [
+        [
+          "التصنيف",
+          "السدم"
+        ],
+        [
+          "المعلومة المميزة",
+          "تظهر فيه ممرات مظلمة تقسم الجزء اللامع إلى أجزاء."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Trifid_Nebula"
+    },
+    {
+      "id": "voyager1",
+      "category": "missions",
+      "name": "فوياجر 1",
+      "latin": "VOYAGER 1",
+      "color": "#7cd8df",
+      "icon": "✧",
+      "summary": "مسبار أطلقته ناسا عام 1977 لدراسة الكواكب الخارجية ثم واصل رحلة ما بعد الغلاف الشمسي.",
+      "facts": [
+        [
+          "التصنيف",
+          "البعثات والمراصد"
+        ],
+        [
+          "المعلومة المميزة",
+          "حمل رسالة الأسطوانة الذهبية مع توأمه فوياجر 2."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Voyager_1"
+    },
+    {
+      "id": "voyager2",
+      "category": "missions",
+      "name": "فوياجر 2",
+      "latin": "VOYAGER 2",
+      "color": "#7cd8df",
+      "icon": "✧",
+      "summary": "المسبار الوحيد الذي زار أورانوس ونبتون عن قرب ضمن جولته الكبرى.",
+      "facts": [
+        [
+          "التصنيف",
+          "البعثات والمراصد"
+        ],
+        [
+          "المعلومة المميزة",
+          "أُطلق سنة 1977 واستفاد من محاذاة الكواكب."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Voyager_2"
+    },
+    {
+      "id": "pioneer10",
+      "category": "missions",
+      "name": "بايونير 10",
+      "latin": "PIONEER 10",
+      "color": "#7cd8df",
+      "icon": "✧",
+      "summary": "مسبار أمريكي من أوائل المركبات التي عبرت حزام الكويكبات ودرست المشتري عن قرب.",
+      "facts": [
+        [
+          "التصنيف",
+          "البعثات والمراصد"
+        ],
+        [
+          "المعلومة المميزة",
+          "حمل لوحة معدنية رمزية تحمل معلومات عن مصدره."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Pioneer_10"
+    },
+    {
+      "id": "new-horizons",
+      "category": "missions",
+      "name": "نيو هورايزنز",
+      "latin": "NEW HORIZONS",
+      "color": "#7cd8df",
+      "icon": "✧",
+      "summary": "مسبار ناسا الذي حلق قرب بلوتو سنة 2015 ثم واصل إلى جرم من حزام كايبر.",
+      "facts": [
+        [
+          "التصنيف",
+          "البعثات والمراصد"
+        ],
+        [
+          "المعلومة المميزة",
+          "قدّم صورًا لتضاريس جليدية دقيقة في عالم بعيد."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/New_Horizons"
+    },
+    {
+      "id": "cassini",
+      "category": "missions",
+      "name": "كاسيني–هويغنز",
+      "latin": "CASSINI–HUYGENS",
+      "color": "#7cd8df",
+      "icon": "✧",
+      "summary": "مهمة دولية استكشفت زحل وحلقاته وأقماره من المدار، وأنزلت مسبار هويغنز على تيتان.",
+      "facts": [
+        [
+          "التصنيف",
+          "البعثات والمراصد"
+        ],
+        [
+          "المعلومة المميزة",
+          "امتدت عمليات كاسيني حول زحل من 2004 إلى 2017."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Cassini%E2%80%93Huygens"
+    },
+    {
+      "id": "juno",
+      "category": "missions",
+      "name": "جونو",
+      "latin": "JUNO (SPACECRAFT)",
+      "color": "#7cd8df",
+      "icon": "✧",
+      "summary": "مسبار يدور حول المشتري لدراسة تركيبه ومجاله المغناطيسي وبيئته العميقة.",
+      "facts": [
+        [
+          "التصنيف",
+          "البعثات والمراصد"
+        ],
+        [
+          "المعلومة المميزة",
+          "يمر في مدارات قطبية بيضاوية ويجمع قياسات عن عمق الغلاف."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Juno_(spacecraft)"
+    },
+    {
+      "id": "perseverance",
+      "category": "missions",
+      "name": "برسيفيرانس",
+      "latin": "PERSEVERANCE (ROVER)",
+      "color": "#7cd8df",
+      "icon": "✧",
+      "summary": "عربة روبوتية على المريخ هبطت في فوهة جيزيرو سنة 2021.",
+      "facts": [
+        [
+          "التصنيف",
+          "البعثات والمراصد"
+        ],
+        [
+          "المعلومة المميزة",
+          "جمعت عينات صخرية لدراسة بيئات مائية سابقة."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Perseverance_(rover)"
+    },
+    {
+      "id": "curiosity",
+      "category": "missions",
+      "name": "كيوريوسيتي",
+      "latin": "CURIOSITY (ROVER)",
+      "color": "#7cd8df",
+      "icon": "✧",
+      "summary": "عربة متجولة على المريخ وصلت إلى فوهة غيل عام 2012.",
+      "facts": [
+        [
+          "التصنيف",
+          "البعثات والمراصد"
+        ],
+        [
+          "المعلومة المميزة",
+          "فحصت الصخور والرواسب لفهم تاريخ البيئات القابلة للحياة."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Curiosity_(rover)"
+    },
+    {
+      "id": "opportunity",
+      "category": "missions",
+      "name": "أوبورتيونيتي",
+      "latin": "OPPORTUNITY (ROVER)",
+      "color": "#7cd8df",
+      "icon": "✧",
+      "summary": "عربة جوالة درست المريخ لسنوات طويلة بعد هبوطها عام 2004.",
+      "facts": [
+        [
+          "التصنيف",
+          "البعثات والمراصد"
+        ],
+        [
+          "المعلومة المميزة",
+          "كشفت دلائل جيولوجية على تفاعل الصخور مع الماء في الماضي."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Opportunity_(rover)"
+    },
+    {
+      "id": "viking1",
+      "category": "missions",
+      "name": "فايكنغ 1",
+      "latin": "VIKING 1",
+      "color": "#7cd8df",
+      "icon": "✧",
+      "summary": "مهمة أمريكية تضمنت مركبة مدارية ومركبة هبوط على المريخ في 1976.",
+      "facts": [
+        [
+          "التصنيف",
+          "البعثات والمراصد"
+        ],
+        [
+          "المعلومة المميزة",
+          "نفذت تجارب مبكرة لفحص التربة والبيئة السطحية."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Viking_1"
+    },
+    {
+      "id": "hubble",
+      "category": "missions",
+      "name": "هابل",
+      "latin": "HUBBLE SPACE TELESCOPE",
+      "color": "#7cd8df",
+      "icon": "✧",
+      "summary": "تلسكوب فضائي يدور حول الأرض منذ 1990 ويعمل في نطاقات تشمل الضوء المرئي وفوق البنفسجي.",
+      "facts": [
+        [
+          "التصنيف",
+          "البعثات والمراصد"
+        ],
+        [
+          "المعلومة المميزة",
+          "قدّم مشاهد بعيدة للمجرات والسدم وساهم في قياسات الكون."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Hubble_Space_Telescope"
+    },
+    {
+      "id": "chandra",
+      "category": "missions",
+      "name": "تشاندرا",
+      "latin": "CHANDRA X-RAY OBSERVATORY",
+      "color": "#7cd8df",
+      "icon": "✧",
+      "summary": "مرصد فضائي متخصص بالأشعة السينية عالية الطاقة.",
+      "facts": [
+        [
+          "التصنيف",
+          "البعثات والمراصد"
+        ],
+        [
+          "المعلومة المميزة",
+          "يرصد غازات ساخنة وبقايا انفجارات وبيئات حول ثقوب سوداء."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Chandra_X-ray_Observatory"
+    },
+    {
+      "id": "kepler",
+      "category": "missions",
+      "name": "كيبلر",
+      "latin": "KEPLER SPACE TELESCOPE",
+      "color": "#7cd8df",
+      "icon": "✧",
+      "summary": "مرصد فضائي صمم لاكتشاف كواكب خارجية من تغير سطوع النجوم أثناء عبورها.",
+      "facts": [
+        [
+          "التصنيف",
+          "البعثات والمراصد"
+        ],
+        [
+          "المعلومة المميزة",
+          "أحدث نقلة في إحصاء الكواكب الخارجية."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Kepler_space_telescope"
+    },
+    {
+      "id": "tess",
+      "category": "missions",
+      "name": "تِس",
+      "latin": "TRANSITING EXOPLANET SURVEY SATELLITE",
+      "color": "#7cd8df",
+      "icon": "✧",
+      "summary": "قمر رصد فضائي يبحث عن كواكب خارج المجموعة الشمسية حول نجوم قريبة نسبيًا.",
+      "facts": [
+        [
+          "التصنيف",
+          "البعثات والمراصد"
+        ],
+        [
+          "المعلومة المميزة",
+          "يقيس الانخفاضات الدورية الصغيرة في لمعان النجوم."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Transiting_Exoplanet_Survey_Satellite"
+    },
+    {
+      "id": "artemis1",
+      "category": "missions",
+      "name": "أرتميس 1",
+      "latin": "ARTEMIS 1",
+      "color": "#7cd8df",
+      "icon": "✧",
+      "summary": "رحلة اختبار غير مأهولة لمركبة أوريون حول القمر سنة 2022.",
+      "facts": [
+        [
+          "التصنيف",
+          "البعثات والمراصد"
+        ],
+        [
+          "المعلومة المميزة",
+          "اختبرت عناصر أساسية من نظام السفر نحو القمر والعودة."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Artemis_1"
+    },
+    {
+      "id": "euclid",
+      "category": "missions",
+      "name": "إقليدس",
+      "latin": "EUCLID (SPACECRAFT)",
+      "color": "#7cd8df",
+      "icon": "✧",
+      "summary": "مرصد فضائي أوروبي مخصص لدراسة البنية واسعة النطاق للكون.",
+      "facts": [
+        [
+          "التصنيف",
+          "البعثات والمراصد"
+        ],
+        [
+          "المعلومة المميزة",
+          "يقيس أشكال وتوزيع أعداد كبيرة من المجرات لفهم تطور الكون."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Euclid_(spacecraft)"
+    },
+    {
+      "id": "gaia",
+      "category": "missions",
+      "name": "غايا",
+      "latin": "GAIA (SPACECRAFT)",
+      "color": "#7cd8df",
+      "icon": "✧",
+      "summary": "مهمة تابعة لوكالة الفضاء الأوروبية رسمت مواقع وحركات أعداد هائلة من النجوم.",
+      "facts": [
+        [
+          "التصنيف",
+          "البعثات والمراصد"
+        ],
+        [
+          "المعلومة المميزة",
+          "ساعدت بياناتها في تكوين خريطة ثلاثية الأبعاد دقيقة لمجرتنا."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Gaia_(spacecraft)"
+    },
+    {
+      "id": "osiris",
+      "category": "missions",
+      "name": "أوسايرس–ريكس",
+      "latin": "OSIRIS-REX",
+      "color": "#7cd8df",
+      "icon": "✧",
+      "summary": "مسبار ناسا زار الكويكب بينو وجمع عينات أعيدت إلى الأرض عام 2023.",
+      "facts": [
+        [
+          "التصنيف",
+          "البعثات والمراصد"
+        ],
+        [
+          "المعلومة المميزة",
+          "توفر العينات مادة تُحلل في المختبرات لدراسة النظام الشمسي المبكر."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/OSIRIS-REx"
+    },
+    {
+      "id": "pleiades",
+      "category": "clusters",
+      "name": "الثريا",
+      "latin": "PLEIADES",
+      "color": "#b3c0ff",
+      "icon": "✻",
+      "summary": "حشد نجمي مفتوح يُعرف أيضًا باسم M45 ويمكن رؤيته بالعين المجردة في سماء جيدة.",
+      "facts": [
+        [
+          "التصنيف",
+          "الحشود النجمية"
+        ],
+        [
+          "المعلومة المميزة",
+          "يضم نجومًا فتية نسبيًا تشترك في أصل واحد."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Pleiades"
+    },
+    {
+      "id": "hyades",
+      "category": "clusters",
+      "name": "القلائص",
+      "latin": "HYADES (STAR CLUSTER)",
+      "color": "#b3c0ff",
+      "icon": "✻",
+      "summary": "حشد نجمي مفتوح قريب من الأرض في اتجاه كوكبة الثور.",
+      "facts": [
+        [
+          "التصنيف",
+          "الحشود النجمية"
+        ],
+        [
+          "المعلومة المميزة",
+          "يظهر نجومه في شكل V قرب الدبران الذي لا يعد عضوًا في الحشد."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Hyades_(star_cluster)"
+    },
+    {
+      "id": "omega-centauri",
+      "category": "clusters",
+      "name": "أوميغا قنطورس",
+      "latin": "OMEGA CENTAURI",
+      "color": "#b3c0ff",
+      "icon": "✻",
+      "summary": "حشد كروي ضخم يضم أعدادًا كبيرة من النجوم القديمة.",
+      "facts": [
+        [
+          "التصنيف",
+          "الحشود النجمية"
+        ],
+        [
+          "المعلومة المميزة",
+          "يُرى في سماء نصف الكرة الجنوبي ويختلف عن الحشود المفتوحة."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Omega_Centauri"
+    },
+    {
+      "id": "hercules-cluster",
+      "category": "clusters",
+      "name": "حشد الجاثي",
+      "latin": "MESSIER 13",
+      "color": "#b3c0ff",
+      "icon": "✻",
+      "summary": "حشد كروي معروف باسم M13 في كوكبة الجاثي.",
+      "facts": [
+        [
+          "التصنيف",
+          "الحشود النجمية"
+        ],
+        [
+          "المعلومة المميزة",
+          "يجمع مئات الآلاف من النجوم في حجم فلكي محدود."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Messier_13"
+    },
+    {
+      "id": "tucanae47",
+      "category": "clusters",
+      "name": "47 الطوقان",
+      "latin": "47 TUCANAE",
+      "color": "#b3c0ff",
+      "icon": "✻",
+      "summary": "حشد كروي لامع في كوكبة الطوقان في السماء الجنوبية.",
+      "facts": [
+        [
+          "التصنيف",
+          "الحشود النجمية"
+        ],
+        [
+          "المعلومة المميزة",
+          "يُعد هدفًا غنيًا لدراسة النجوم القديمة وتطورها."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/47_Tucanae"
+    },
+    {
+      "id": "double-cluster",
+      "category": "clusters",
+      "name": "الحشد المزدوج",
+      "latin": "DOUBLE CLUSTER",
+      "color": "#b3c0ff",
+      "icon": "✻",
+      "summary": "حشدان نجميان مفتوحان قريبان بصريًا في اتجاه كوكبة حامل رأس الغول.",
+      "facts": [
+        [
+          "التصنيف",
+          "الحشود النجمية"
+        ],
+        [
+          "المعلومة المميزة",
+          "يبرزان بالمناظير الصغيرة في السماء المظلمة."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Double_Cluster"
+    },
+    {
+      "id": "proxima-b",
+      "category": "exoplanets",
+      "name": "بروكسيما قنطورس b",
+      "latin": "PROXIMA CENTAURI B",
+      "color": "#99e0b1",
+      "icon": "◉",
+      "summary": "كوكب خارج المجموعة الشمسية يدور حول أقرب نجم إلى الشمس.",
+      "facts": [
+        [
+          "التصنيف",
+          "الكواكب الخارجية"
+        ],
+        [
+          "المعلومة المميزة",
+          "يقع مداره ضمن منطقة تناقش عادة فيما يتعلق بإمكان وجود ماء سائل وفق ظروف غير مؤكدة."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Proxima_Centauri_b"
+    },
+    {
+      "id": "trappist-e",
+      "category": "exoplanets",
+      "name": "ترابيست–1e",
+      "latin": "TRAPPIST-1E",
+      "color": "#99e0b1",
+      "icon": "◉",
+      "summary": "كوكب صخري ضمن منظومة كواكب متعددة حول نجم صغير بارد.",
+      "facts": [
+        [
+          "التصنيف",
+          "الكواكب الخارجية"
+        ],
+        [
+          "المعلومة المميزة",
+          "تجذب منظومته الاهتمام لدراسة الأغلفة الجوية لكواكب صغيرة."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/TRAPPIST-1e"
+    },
+    {
+      "id": "kepler452b",
+      "category": "exoplanets",
+      "name": "كيبلر–452b",
+      "latin": "KEPLER-452B",
+      "color": "#99e0b1",
+      "icon": "◉",
+      "summary": "كوكب خارجي اكتُشف بطريقة العبور حول نجم قريب من نوع الشمس.",
+      "facts": [
+        [
+          "التصنيف",
+          "الكواكب الخارجية"
+        ],
+        [
+          "المعلومة المميزة",
+          "لا تتوفر قياسات مباشرة تسمح بالجزم بطبيعة سطحه أو وجود حياة."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/Kepler-452b"
+    },
+    {
+      "id": "51pegasi-b",
+      "category": "exoplanets",
+      "name": "51 الفرس الأعظم b",
+      "latin": "51 PEGASI B",
+      "color": "#99e0b1",
+      "icon": "◉",
+      "summary": "كوكب غازي كبير قريب جدًا من نجمه اكتُشف عام 1995 في إنجاز تاريخي.",
+      "facts": [
+        [
+          "التصنيف",
+          "الكواكب الخارجية"
+        ],
+        [
+          "المعلومة المميزة",
+          "كان من أوائل الكواكب المكتشفة حول نجم شبيه بالشمس."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/51_Pegasi_b"
+    },
+    {
+      "id": "hd209458b",
+      "category": "exoplanets",
+      "name": "أوزيريس HD 209458 b",
+      "latin": "HD 209458 B",
+      "color": "#99e0b1",
+      "icon": "◉",
+      "summary": "كوكب غازي خارجي مشهور برصد عبوره أمام نجمه.",
+      "facts": [
+        [
+          "التصنيف",
+          "الكواكب الخارجية"
+        ],
+        [
+          "المعلومة المميزة",
+          "أسهمت قياساته في تطوير دراسة أغلفة الكواكب عبر طيف الضوء."
+        ]
+      ],
+      "source": "https://en.wikipedia.org/wiki/HD_209458_b"
+    }
+  ],
+  "articles": [
+    {
+      "id": "io",
+      "category": "moons",
+      "name": "آيو",
+      "headline": "الأقمار",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "قمر للمشتري تظهر على سطحه براكين نشطة بكثافة استثنائية بفعل قوى المد والجزر."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "سخونة باطنه مرتبطة بالتشوه الدوري الذي تفرضه جاذبية المشتري وبقية الأقمار."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "كيف تتحول طاقة الجاذبية إلى حرارة وبراكين. الأقمار الطبيعية تحتفظ بأدلة على نشأة أنظمة الكواكب وتأثيرات المد والجزر والاصطدامات."
+        }
+      ],
+      "fact": "سخونة باطنه مرتبطة بالتشوه الدوري الذي تفرضه جاذبية المشتري وبقية الأقمار.",
+      "sourceTitle": "Io (moon)",
+      "sourceURL": "https://en.wikipedia.org/wiki/Io_(moon)",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "callisto",
+      "category": "moons",
+      "name": "كاليستو",
+      "headline": "الأقمار",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "قمر كبير للمشتري تغطي سطحه فوهات اصطدام قديمة للغاية."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "السطح شديد القدم ولا يظهر نشاطًا جيولوجيًا حديثًا واسعًا مثل آيو."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "قراءة تاريخ الاصطدامات من سطح محفوظ طويلًا. الأقمار الطبيعية تحتفظ بأدلة على نشأة أنظمة الكواكب وتأثيرات المد والجزر والاصطدامات."
+        }
+      ],
+      "fact": "السطح شديد القدم ولا يظهر نشاطًا جيولوجيًا حديثًا واسعًا مثل آيو.",
+      "sourceTitle": "Callisto (moon)",
+      "sourceURL": "https://en.wikipedia.org/wiki/Callisto_(moon)",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "enceladus",
+      "category": "moons",
+      "name": "إنسيلادوس",
+      "headline": "الأقمار",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "قمر جليدي لزحل تنطلق من قطبه الجنوبي نفاثات من الماء والجليد."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "تعطي النفاثات أدلة على وجود محيط مائي تحت القشرة الجليدية."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "البحث عن بيئات مائية خارج الأرض. الأقمار الطبيعية تحتفظ بأدلة على نشأة أنظمة الكواكب وتأثيرات المد والجزر والاصطدامات."
+        }
+      ],
+      "fact": "تعطي النفاثات أدلة على وجود محيط مائي تحت القشرة الجليدية.",
+      "sourceTitle": "Enceladus",
+      "sourceURL": "https://en.wikipedia.org/wiki/Enceladus",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "mimas",
+      "category": "moons",
+      "name": "ميماس",
+      "headline": "الأقمار",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "قمر لزحل مشهور بفوهة هيرشل الضخمة التي تشغل مساحة كبيرة من نصفه الظاهر."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يشبه شكله القمر الجليدي المليء بالفوهات أكثر من عوالم النشاط السطحي."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "أثر الاصطدامات الكبيرة في الأجرام الصغيرة. الأقمار الطبيعية تحتفظ بأدلة على نشأة أنظمة الكواكب وتأثيرات المد والجزر والاصطدامات."
+        }
+      ],
+      "fact": "يشبه شكله القمر الجليدي المليء بالفوهات أكثر من عوالم النشاط السطحي.",
+      "sourceTitle": "Mimas",
+      "sourceURL": "https://en.wikipedia.org/wiki/Mimas",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "iapetus",
+      "category": "moons",
+      "name": "يابيتوس",
+      "headline": "الأقمار",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "قمر زحلي ذو اختلاف لافت بين نصفيه الداكن والفاتح وله سلسلة مرتفعات على خط الاستواء."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "التباين اللوني أحد موضوعات دراسة الترسبات وتطور السطح."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "كيف تغير المواد السطحية لون عالم كامل. الأقمار الطبيعية تحتفظ بأدلة على نشأة أنظمة الكواكب وتأثيرات المد والجزر والاصطدامات."
+        }
+      ],
+      "fact": "التباين اللوني أحد موضوعات دراسة الترسبات وتطور السطح.",
+      "sourceTitle": "Iapetus (moon)",
+      "sourceURL": "https://en.wikipedia.org/wiki/Iapetus_(moon)",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "dione",
+      "category": "moons",
+      "name": "ديون",
+      "headline": "الأقمار",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "قمر جليدي حول زحل يحمل تضاريس صدعية وخطوطًا لامعة على سطحه."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "تُظهر الصور مناطق متكسرة مقارنة بسطوح أقدم ذات فوهات."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "الشقوق الجليدية كدليل على تطور القشرة. الأقمار الطبيعية تحتفظ بأدلة على نشأة أنظمة الكواكب وتأثيرات المد والجزر والاصطدامات."
+        }
+      ],
+      "fact": "تُظهر الصور مناطق متكسرة مقارنة بسطوح أقدم ذات فوهات.",
+      "sourceTitle": "Dione (moon)",
+      "sourceURL": "https://en.wikipedia.org/wiki/Dione_(moon)",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "rhea",
+      "category": "moons",
+      "name": "ريا",
+      "headline": "الأقمار",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "ثاني أكبر أقمار زحل وتغطيه طبقات من الجليد وفوهات كثيرة."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يعكس الاختلاف في أعداد الفوهات أعمارًا سطحية نسبية مختلفة."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "التأريخ الجيولوجي النسبي بالأجسام المصطدمة. الأقمار الطبيعية تحتفظ بأدلة على نشأة أنظمة الكواكب وتأثيرات المد والجزر والاصطدامات."
+        }
+      ],
+      "fact": "يعكس الاختلاف في أعداد الفوهات أعمارًا سطحية نسبية مختلفة.",
+      "sourceTitle": "Rhea (moon)",
+      "sourceURL": "https://en.wikipedia.org/wiki/Rhea_(moon)",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "tethys",
+      "category": "moons",
+      "name": "تيثيس",
+      "headline": "الأقمار",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "قمر زحلي جليدي يتميز بفوهة أوديسيوس ووادي إيثاكا تشاسما."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يظهر الوادي الطويل كأحد أبرز التراكيب التكتونية على القمر."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "التصدعات الكبيرة في الأغلفة الجليدية. الأقمار الطبيعية تحتفظ بأدلة على نشأة أنظمة الكواكب وتأثيرات المد والجزر والاصطدامات."
+        }
+      ],
+      "fact": "يظهر الوادي الطويل كأحد أبرز التراكيب التكتونية على القمر.",
+      "sourceTitle": "Tethys (moon)",
+      "sourceURL": "https://en.wikipedia.org/wiki/Tethys_(moon)",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "phobos",
+      "category": "moons",
+      "name": "فوبوس",
+      "headline": "الأقمار",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "أكبر قمرَي المريخ، جسم صغير غير منتظم قريب جدًا من الكوكب."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يدور بسرعة حول المريخ، ويظهر في سمائه أكثر من مرة خلال اليوم."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "ديناميكيات الأقمار القريبة والمدارات القصيرة. الأقمار الطبيعية تحتفظ بأدلة على نشأة أنظمة الكواكب وتأثيرات المد والجزر والاصطدامات."
+        }
+      ],
+      "fact": "يدور بسرعة حول المريخ، ويظهر في سمائه أكثر من مرة خلال اليوم.",
+      "sourceTitle": "Phobos (moon)",
+      "sourceURL": "https://en.wikipedia.org/wiki/Phobos_(moon)",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "deimos",
+      "category": "moons",
+      "name": "ديموس",
+      "headline": "الأقمار",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "القمر الأصغر للمريخ، سطحه أقل وعورة ظاهريًا وتغطيه مواد دقيقة."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يبدو أكثر نعومة من فوبوس عند مقارنة الصور القريبة."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "كيف تنمو طبقات الغبار على الأجرام الصغيرة. الأقمار الطبيعية تحتفظ بأدلة على نشأة أنظمة الكواكب وتأثيرات المد والجزر والاصطدامات."
+        }
+      ],
+      "fact": "يبدو أكثر نعومة من فوبوس عند مقارنة الصور القريبة.",
+      "sourceTitle": "Deimos (moon)",
+      "sourceURL": "https://en.wikipedia.org/wiki/Deimos_(moon)",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "triton",
+      "category": "moons",
+      "name": "تريتون",
+      "headline": "الأقمار",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "أكبر أقمار نبتون، يتحرك في مدار رجعي وتوجد على سطحه مؤشرات نشاط جليدي."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يُعتقد أنه جسم التُقط من منطقة حزام كايبر."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "الدوران العكسي قرينة على تاريخ أسر ديناميكي. الأقمار الطبيعية تحتفظ بأدلة على نشأة أنظمة الكواكب وتأثيرات المد والجزر والاصطدامات."
+        }
+      ],
+      "fact": "يُعتقد أنه جسم التُقط من منطقة حزام كايبر.",
+      "sourceTitle": "Triton (moon)",
+      "sourceURL": "https://en.wikipedia.org/wiki/Triton_(moon)",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "charon",
+      "category": "moons",
+      "name": "شارون",
+      "headline": "الأقمار",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "أكبر أقمار بلوتو، كبير نسبيًا مقارنة بالكوكب القزم الذي يدور حوله."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يُظهر سطحه صدوعًا وتضاريس متنوعة رصدتها نيو هورايزنز."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "العوالم المزدوجة وتطور الجليد البعيد. الأقمار الطبيعية تحتفظ بأدلة على نشأة أنظمة الكواكب وتأثيرات المد والجزر والاصطدامات."
+        }
+      ],
+      "fact": "يُظهر سطحه صدوعًا وتضاريس متنوعة رصدتها نيو هورايزنز.",
+      "sourceTitle": "Charon (moon)",
+      "sourceURL": "https://en.wikipedia.org/wiki/Charon_(moon)",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "oberon",
+      "category": "moons",
+      "name": "أوبيرون",
+      "headline": "الأقمار",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "أحد أكبر أقمار أورانوس، يتسم بسطح كثير الفوهات."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "ارتباطه بأورانوس يجعله جزءًا من منظومة أقمار شديدة الميل بالنسبة لمسار الشمس."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "تأثير ميل محور الكوكب في أقماره. الأقمار الطبيعية تحتفظ بأدلة على نشأة أنظمة الكواكب وتأثيرات المد والجزر والاصطدامات."
+        }
+      ],
+      "fact": "ارتباطه بأورانوس يجعله جزءًا من منظومة أقمار شديدة الميل بالنسبة لمسار الشمس.",
+      "sourceTitle": "Oberon (moon)",
+      "sourceURL": "https://en.wikipedia.org/wiki/Oberon_(moon)",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "titania",
+      "category": "moons",
+      "name": "تيتانيا",
+      "headline": "الأقمار",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "أكبر أقمار أورانوس ويظهر على سطحه عدد من الوديان والتصدعات."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يمكن أن تعكس التراكيب آثار تمدد أو تغير قديم في القشرة."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "تاريخ الأقمار الجليدية في النظام الخارجي. الأقمار الطبيعية تحتفظ بأدلة على نشأة أنظمة الكواكب وتأثيرات المد والجزر والاصطدامات."
+        }
+      ],
+      "fact": "يمكن أن تعكس التراكيب آثار تمدد أو تغير قديم في القشرة.",
+      "sourceTitle": "Titania (moon)",
+      "sourceURL": "https://en.wikipedia.org/wiki/Titania_(moon)",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "ariel",
+      "category": "moons",
+      "name": "آرييل",
+      "headline": "الأقمار",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "قمر لأورانوس له مناطق لامعة وأودية سطحية متشابكة."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "تدل التضاريس على تجدد بعض أجزاء السطح خلال تاريخه."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "قوة الأدلة التي تقدمها الأودية الجليدية. الأقمار الطبيعية تحتفظ بأدلة على نشأة أنظمة الكواكب وتأثيرات المد والجزر والاصطدامات."
+        }
+      ],
+      "fact": "تدل التضاريس على تجدد بعض أجزاء السطح خلال تاريخه.",
+      "sourceTitle": "Ariel (moon)",
+      "sourceURL": "https://en.wikipedia.org/wiki/Ariel_(moon)",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "miranda",
+      "category": "moons",
+      "name": "ميراندا",
+      "headline": "الأقمار",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "قمر صغير لأورانوس تشتهر صوره بتضاريس متقطعة وغير معتادة."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "تظهر أجزاؤه وكأنها تجمع مناطق جيولوجية مختلفة جنبًا إلى جنب."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "كيف تتكون التضاريس المعقدة على الأجسام الصغيرة. الأقمار الطبيعية تحتفظ بأدلة على نشأة أنظمة الكواكب وتأثيرات المد والجزر والاصطدامات."
+        }
+      ],
+      "fact": "تظهر أجزاؤه وكأنها تجمع مناطق جيولوجية مختلفة جنبًا إلى جنب.",
+      "sourceTitle": "Miranda (moon)",
+      "sourceURL": "https://en.wikipedia.org/wiki/Miranda_(moon)",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "nereid",
+      "category": "moons",
+      "name": "نيريد",
+      "headline": "الأقمار",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "قمر لنبتون له مدار شديد الاستطالة مقارنة بكثير من الأقمار المنتظمة."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "تستدعي هندسة مداره دراسة اضطرابات قديمة في نظام نبتون."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "دراسة تاريخ النظام عبر شكل المدار. الأقمار الطبيعية تحتفظ بأدلة على نشأة أنظمة الكواكب وتأثيرات المد والجزر والاصطدامات."
+        }
+      ],
+      "fact": "تستدعي هندسة مداره دراسة اضطرابات قديمة في نظام نبتون.",
+      "sourceTitle": "Nereid (moon)",
+      "sourceURL": "https://en.wikipedia.org/wiki/Nereid_(moon)",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "amalthea",
+      "category": "moons",
+      "name": "أمالثيا",
+      "headline": "الأقمار",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "قمر داخلي صغير للمشتري ذو هيئة غير كروية ولون مائل إلى الحمرة."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "تؤثر جاذبية المشتري في الجسيمات والغبار ضمن بيئته المدارية."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "الأقمار الداخلية والعلاقة مع الحلقات والغبار. الأقمار الطبيعية تحتفظ بأدلة على نشأة أنظمة الكواكب وتأثيرات المد والجزر والاصطدامات."
+        }
+      ],
+      "fact": "تؤثر جاذبية المشتري في الجسيمات والغبار ضمن بيئته المدارية.",
+      "sourceTitle": "Amalthea (moon)",
+      "sourceURL": "https://en.wikipedia.org/wiki/Amalthea_(moon)",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "pluto",
+      "category": "dwarf",
+      "name": "بلوتو",
+      "headline": "الكواكب القزمة",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "كوكب قزم في حزام كايبر، تظهر على سطحه مناطق جليدية متنوعة وسهل سبوتنيك."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "كشفت نيو هورايزنز سنة 2015 عن تضاريس أعقد مما توقعه كثير من العلماء."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "جيولوجيا نشطة نسبيًا في عوالم شديدة البرودة. الكواكب القزمة أجسام تدور حول الشمس لكنها لم تُخلِ محيط مدارها من أجرام مشابهة."
+        }
+      ],
+      "fact": "كشفت نيو هورايزنز سنة 2015 عن تضاريس أعقد مما توقعه كثير من العلماء.",
+      "sourceTitle": "Pluto",
+      "sourceURL": "https://en.wikipedia.org/wiki/Pluto",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "ceres",
+      "category": "dwarf",
+      "name": "سيريس",
+      "headline": "الكواكب القزمة",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "أكبر جرم في حزام الكويكبات بين المريخ والمشتري ويصنف كوكبًا قزمًا."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "رصد المسبار داون رواسب فاتحة مرتبطة بأملاح في فوهة أوكاتور."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "الماء والأملاح داخل الأجرام الصخرية الصغيرة. الكواكب القزمة أجسام تدور حول الشمس لكنها لم تُخلِ محيط مدارها من أجرام مشابهة."
+        }
+      ],
+      "fact": "رصد المسبار داون رواسب فاتحة مرتبطة بأملاح في فوهة أوكاتور.",
+      "sourceTitle": "Ceres (dwarf planet)",
+      "sourceURL": "https://en.wikipedia.org/wiki/Ceres_(dwarf_planet)",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "eris",
+      "category": "dwarf",
+      "name": "إيريس",
+      "headline": "الكواكب القزمة",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "كوكب قزم بعيد في النظام الشمسي الخارجي، كان لاكتشافه أثر في نقاش تعريف الكوكب."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يملك قمرًا معروفًا باسم ديسنوميا."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "لماذا تغيرت طريقة تصنيف الأجرام الكوكبية. الكواكب القزمة أجسام تدور حول الشمس لكنها لم تُخلِ محيط مدارها من أجرام مشابهة."
+        }
+      ],
+      "fact": "يملك قمرًا معروفًا باسم ديسنوميا.",
+      "sourceTitle": "Eris (dwarf planet)",
+      "sourceURL": "https://en.wikipedia.org/wiki/Eris_(dwarf_planet)",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "haumea",
+      "category": "dwarf",
+      "name": "هاوميا",
+      "headline": "الكواكب القزمة",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "كوكب قزم سريع الدوران وشكله ممدود بشكل ملحوظ."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يمتلك حلقة رقيقة وأقمارًا معروفة."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "دوران الأجرام الصغيرة وتأثيره في شكلها. الكواكب القزمة أجسام تدور حول الشمس لكنها لم تُخلِ محيط مدارها من أجرام مشابهة."
+        }
+      ],
+      "fact": "يمتلك حلقة رقيقة وأقمارًا معروفة.",
+      "sourceTitle": "Haumea",
+      "sourceURL": "https://en.wikipedia.org/wiki/Haumea",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "makemake",
+      "category": "dwarf",
+      "name": "ماكيماكي",
+      "headline": "الكواكب القزمة",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "كوكب قزم في حزام كايبر له سطح شديد البرودة غني بمواد متجمدة."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يدور حول الشمس أبعد من نبتون وله قمر صغير مكتشف."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "تنوع أجرام حزام كايبر وسلوك جليد السطح. الكواكب القزمة أجسام تدور حول الشمس لكنها لم تُخلِ محيط مدارها من أجرام مشابهة."
+        }
+      ],
+      "fact": "يدور حول الشمس أبعد من نبتون وله قمر صغير مكتشف.",
+      "sourceTitle": "Makemake",
+      "sourceURL": "https://en.wikipedia.org/wiki/Makemake",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "sun",
+      "category": "stars",
+      "name": "الشمس",
+      "headline": "النجوم",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "نجم من النسق الأساسي ومصدر الضوء والطاقة الرئيسيين للأرض."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "تتولد الطاقة في مركزها باندماج الهيدروجين إلى هيليوم."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "النشاط الشمسي وتأثيره في بيئة الأرض. تختلف النجوم في الكتلة والحرارة والعمر، ويعكس لون الضوء ظروف أغلفتها وخصائصها."
+        }
+      ],
+      "fact": "تتولد الطاقة في مركزها باندماج الهيدروجين إلى هيليوم.",
+      "sourceTitle": "Sun",
+      "sourceURL": "https://en.wikipedia.org/wiki/Sun",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "proxima",
+      "category": "stars",
+      "name": "بروكسيما قنطورس",
+      "headline": "النجوم",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "أقرب نجم معروف للشمس، وهو قزم أحمر خافت نسبيًا."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "رُصد حوله كوكب خارج المجموعة الشمسية يسمى بروكسيما b."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "مستقبل دراسة العوالم القريبة من الشمس. تختلف النجوم في الكتلة والحرارة والعمر، ويعكس لون الضوء ظروف أغلفتها وخصائصها."
+        }
+      ],
+      "fact": "رُصد حوله كوكب خارج المجموعة الشمسية يسمى بروكسيما b.",
+      "sourceTitle": "Proxima Centauri",
+      "sourceURL": "https://en.wikipedia.org/wiki/Proxima_Centauri",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "alpha-centauri-a",
+      "category": "stars",
+      "name": "ألفا قنطورس A",
+      "headline": "النجوم",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "نجم شبيه بالشمس ضمن منظومة ألفا قنطورس القريبة."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يشكل مع ألفا قنطورس B نظامًا ثنائيًا مرئيًا."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "تنوع النجوم الشبيهة بالشمس في جوارنا. تختلف النجوم في الكتلة والحرارة والعمر، ويعكس لون الضوء ظروف أغلفتها وخصائصها."
+        }
+      ],
+      "fact": "يشكل مع ألفا قنطورس B نظامًا ثنائيًا مرئيًا.",
+      "sourceTitle": "Alpha Centauri A",
+      "sourceURL": "https://en.wikipedia.org/wiki/Alpha_Centauri_A",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "vega",
+      "category": "stars",
+      "name": "النسر الواقع",
+      "headline": "النجوم",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "نجم أزرق أبيض شديد اللمعان في كوكبة القيثارة."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يمثل أحد نجوم مثلث الصيف الشهير في سماء نصف الكرة الشمالي."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "الرصد بالعين المجردة وتحديد النجوم البارزة. تختلف النجوم في الكتلة والحرارة والعمر، ويعكس لون الضوء ظروف أغلفتها وخصائصها."
+        }
+      ],
+      "fact": "يمثل أحد نجوم مثلث الصيف الشهير في سماء نصف الكرة الشمالي.",
+      "sourceTitle": "Vega",
+      "sourceURL": "https://en.wikipedia.org/wiki/Vega",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "rigel",
+      "category": "stars",
+      "name": "رِجل الجبار",
+      "headline": "النجوم",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "نجم أزرق فائق اللمعان في كوكبة الجبار."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يشغل موضعًا بارزًا قرب إحدى زاويتَي الشكل النجمي المعروف للجبار."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "النجوم الضخمة مقارنة بالشمس. تختلف النجوم في الكتلة والحرارة والعمر، ويعكس لون الضوء ظروف أغلفتها وخصائصها."
+        }
+      ],
+      "fact": "يشغل موضعًا بارزًا قرب إحدى زاويتَي الشكل النجمي المعروف للجبار.",
+      "sourceTitle": "Rigel",
+      "sourceURL": "https://en.wikipedia.org/wiki/Rigel",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "deneb",
+      "category": "stars",
+      "name": "ذنب الدجاجة",
+      "headline": "النجوم",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "نجم شديد اللمعان في كوكبة الدجاجة ومن رؤوس مثلث الصيف."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يمكن رؤيته رغم بعده الهائل لأن لمعانه الذاتي مرتفع جدًا."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "الفرق بين اللمعان الحقيقي والسطوع الظاهري. تختلف النجوم في الكتلة والحرارة والعمر، ويعكس لون الضوء ظروف أغلفتها وخصائصها."
+        }
+      ],
+      "fact": "يمكن رؤيته رغم بعده الهائل لأن لمعانه الذاتي مرتفع جدًا.",
+      "sourceTitle": "Deneb",
+      "sourceURL": "https://en.wikipedia.org/wiki/Deneb",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "antares",
+      "category": "stars",
+      "name": "قلب العقرب",
+      "headline": "النجوم",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "نجم عملاق أحمر فائق في كوكبة العقرب وله لون مميز."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يمثل جزءًا واضحًا من شكل العقرب في السماء الصيفية."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "المراحل المتأخرة في تطور النجوم الضخمة. تختلف النجوم في الكتلة والحرارة والعمر، ويعكس لون الضوء ظروف أغلفتها وخصائصها."
+        }
+      ],
+      "fact": "يمثل جزءًا واضحًا من شكل العقرب في السماء الصيفية.",
+      "sourceTitle": "Antares",
+      "sourceURL": "https://en.wikipedia.org/wiki/Antares",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "arcturus",
+      "category": "stars",
+      "name": "السماك الرامح",
+      "headline": "النجوم",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "نجم برتقالي عملاق في كوكبة العواء يُعد من ألمع نجوم السماء."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يسهل العثور عليه بمتابعة قوس ذراع الدب الأكبر."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "ربط الخرائط النجمية بالمشاهدات الفعلية. تختلف النجوم في الكتلة والحرارة والعمر، ويعكس لون الضوء ظروف أغلفتها وخصائصها."
+        }
+      ],
+      "fact": "يسهل العثور عليه بمتابعة قوس ذراع الدب الأكبر.",
+      "sourceTitle": "Arcturus",
+      "sourceURL": "https://en.wikipedia.org/wiki/Arcturus",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "canopus",
+      "category": "stars",
+      "name": "سهيل",
+      "headline": "النجوم",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "ثاني ألمع نجوم سماء الليل من حيث السطوع الظاهري."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يظهر في السماء الجنوبية وتختلف إمكانية رؤيته باختلاف خط العرض."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "تأثير الموقع الجغرافي في النجوم المرئية. تختلف النجوم في الكتلة والحرارة والعمر، ويعكس لون الضوء ظروف أغلفتها وخصائصها."
+        }
+      ],
+      "fact": "يظهر في السماء الجنوبية وتختلف إمكانية رؤيته باختلاف خط العرض.",
+      "sourceTitle": "Canopus",
+      "sourceURL": "https://en.wikipedia.org/wiki/Canopus",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "altair",
+      "category": "stars",
+      "name": "النسر الطائر",
+      "headline": "النجوم",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "نجم لامع في كوكبة العقاب وهو أحد رؤوس مثلث الصيف."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يدور حول نفسه بسرعة كبيرة تؤثر في شكله."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "كيف يغير الدوران السريع هندسة النجم. تختلف النجوم في الكتلة والحرارة والعمر، ويعكس لون الضوء ظروف أغلفتها وخصائصها."
+        }
+      ],
+      "fact": "يدور حول نفسه بسرعة كبيرة تؤثر في شكله.",
+      "sourceTitle": "Altair",
+      "sourceURL": "https://en.wikipedia.org/wiki/Altair",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "spica",
+      "category": "stars",
+      "name": "السماك الأعزل",
+      "headline": "النجوم",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "نجم لامع في كوكبة العذراء وهو في الواقع نظام نجمي ثنائي قريب."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يستخدم للمساعدة في تحديد موضع العذراء في سماء الربيع."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "الأنظمة النجمية الثنائية والرصد الطيفي. تختلف النجوم في الكتلة والحرارة والعمر، ويعكس لون الضوء ظروف أغلفتها وخصائصها."
+        }
+      ],
+      "fact": "يستخدم للمساعدة في تحديد موضع العذراء في سماء الربيع.",
+      "sourceTitle": "Spica",
+      "sourceURL": "https://en.wikipedia.org/wiki/Spica",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "sombrero",
+      "category": "galaxies",
+      "name": "مجرة القبعة",
+      "headline": "المجرات",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "مجرة شهيرة ذات حزام غبار داكن ونواة لامعة تبدو من الحافة بشكل مميز."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "توجد في اتجاه كوكبة العذراء وتحمل الاسم M104."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "أثر زاوية النظر في شكل المجرات. تُظهر المجرات كيف تتجمع النجوم والغازات والغبار عبر أزمنة كونية طويلة."
+        }
+      ],
+      "fact": "توجد في اتجاه كوكبة العذراء وتحمل الاسم M104.",
+      "sourceTitle": "Sombrero Galaxy",
+      "sourceURL": "https://en.wikipedia.org/wiki/Sombrero_Galaxy",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "whirlpool",
+      "category": "galaxies",
+      "name": "مجرة الدوامة",
+      "headline": "المجرات",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "مجرة حلزونية معروفة بذراعَيها الواضحتين وتفاعلها مع مجرة مجاورة."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "تقع في اتجاه كوكبة السلوقيين وتعرف باسم M51."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "كيف يغيّر التفاعل شكل الأذرع الحلزونية. تُظهر المجرات كيف تتجمع النجوم والغازات والغبار عبر أزمنة كونية طويلة."
+        }
+      ],
+      "fact": "تقع في اتجاه كوكبة السلوقيين وتعرف باسم M51.",
+      "sourceTitle": "Whirlpool Galaxy",
+      "sourceURL": "https://en.wikipedia.org/wiki/Whirlpool_Galaxy",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "pinwheel",
+      "category": "galaxies",
+      "name": "مجرة الدولاب",
+      "headline": "المجرات",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "مجرة حلزونية كبيرة تظهر مواجهة تقريبًا للأرض مما يبرز أذرعها."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "تصنف باسم M101 في اتجاه كوكبة الدب الأكبر."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "دراسة مناطق تشكل النجوم داخل الأذرع. تُظهر المجرات كيف تتجمع النجوم والغازات والغبار عبر أزمنة كونية طويلة."
+        }
+      ],
+      "fact": "تصنف باسم M101 في اتجاه كوكبة الدب الأكبر.",
+      "sourceTitle": "Pinwheel Galaxy",
+      "sourceURL": "https://en.wikipedia.org/wiki/Pinwheel_Galaxy",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "virgo-a",
+      "category": "galaxies",
+      "name": "مجرة M87",
+      "headline": "المجرات",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "مجرة إهليلجية عملاقة في عنقود العذراء."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "صورت شبكة تلسكوب أفق الحدث ظل الثقب الأسود المركزي عام 2019."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "النفاثات النشطة والثقوب السوداء الهائلة. تُظهر المجرات كيف تتجمع النجوم والغازات والغبار عبر أزمنة كونية طويلة."
+        }
+      ],
+      "fact": "صورت شبكة تلسكوب أفق الحدث ظل الثقب الأسود المركزي عام 2019.",
+      "sourceTitle": "Messier 87",
+      "sourceURL": "https://en.wikipedia.org/wiki/Messier_87",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "ngc1300",
+      "category": "galaxies",
+      "name": "مجرة NGC 1300",
+      "headline": "المجرات",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "مجرة حلزونية قضيبية جميلة تمتلك بنية مركزية واضحة."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "تظهر فيها أذرع تنطلق من طرفَي قضيب نجمي داخلي."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "القضبان المجرية وحركة المادة باتجاه المركز. تُظهر المجرات كيف تتجمع النجوم والغازات والغبار عبر أزمنة كونية طويلة."
+        }
+      ],
+      "fact": "تظهر فيها أذرع تنطلق من طرفَي قضيب نجمي داخلي.",
+      "sourceTitle": "NGC 1300",
+      "sourceURL": "https://en.wikipedia.org/wiki/NGC_1300",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "lmc",
+      "category": "galaxies",
+      "name": "سحابة ماجلان الكبرى",
+      "headline": "المجرات",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "مجرة قزمة قريبة من درب التبانة تبدو كسحابة ضوئية في السماء الجنوبية."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "تحتوي على سديم الرتيلاء النشط بتكوّن النجوم."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "المجرات التابعة وعلاقة التفاعل بمجرة أكبر. تُظهر المجرات كيف تتجمع النجوم والغازات والغبار عبر أزمنة كونية طويلة."
+        }
+      ],
+      "fact": "تحتوي على سديم الرتيلاء النشط بتكوّن النجوم.",
+      "sourceTitle": "Large Magellanic Cloud",
+      "sourceURL": "https://en.wikipedia.org/wiki/Large_Magellanic_Cloud",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "smc",
+      "category": "galaxies",
+      "name": "سحابة ماجلان الصغرى",
+      "headline": "المجرات",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "مجرة قزمة قريبة من درب التبانة وتشكل زوجًا مرئيًا مع السحابة الكبرى."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "تنتمي إلى بيئة المجموعة المحلية وتتأثر بتفاعلات الجاذبية."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "العلاقات بين المجرات القزمة. تُظهر المجرات كيف تتجمع النجوم والغازات والغبار عبر أزمنة كونية طويلة."
+        }
+      ],
+      "fact": "تنتمي إلى بيئة المجموعة المحلية وتتأثر بتفاعلات الجاذبية.",
+      "sourceTitle": "Small Magellanic Cloud",
+      "sourceURL": "https://en.wikipedia.org/wiki/Small_Magellanic_Cloud",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "sculptor",
+      "category": "galaxies",
+      "name": "مجرة النحات",
+      "headline": "المجرات",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "مجرة حلزونية تُعرف باسم NGC 253 ويظهر فيها نشاط لتشكل النجوم."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "تقع في اتجاه كوكبة النحات وهي مثال لمجرات الانفجار النجمي."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "ماذا يحدث عندما يرتفع معدل تشكل النجوم. تُظهر المجرات كيف تتجمع النجوم والغازات والغبار عبر أزمنة كونية طويلة."
+        }
+      ],
+      "fact": "تقع في اتجاه كوكبة النحات وهي مثال لمجرات الانفجار النجمي.",
+      "sourceTitle": "Sculptor Galaxy",
+      "sourceURL": "https://en.wikipedia.org/wiki/Sculptor_Galaxy",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "bodes",
+      "category": "galaxies",
+      "name": "مجرة بود",
+      "headline": "المجرات",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "مجرة حلزونية كبيرة معروفة بالاسم M81."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "تشكل مع M82 جزءًا من مجموعة مجرية مجاورة متفاعلة."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "التفاعلات بين المجرات وتأثيرها في الغاز. تُظهر المجرات كيف تتجمع النجوم والغازات والغبار عبر أزمنة كونية طويلة."
+        }
+      ],
+      "fact": "تشكل مع M82 جزءًا من مجموعة مجرية مجاورة متفاعلة.",
+      "sourceTitle": "Messier 81",
+      "sourceURL": "https://en.wikipedia.org/wiki/Messier_81",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "centaurus-a",
+      "category": "galaxies",
+      "name": "قنطورس A",
+      "headline": "المجرات",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "مجرة نشطة ذات حزام غبار داكن أمام مناطق نجمية لامعة."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "تظهر انبعاثات راديوية قوية من منطقة مركزية نشطة."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "النفاثات والإشعاع الراديوي حول المجرات. تُظهر المجرات كيف تتجمع النجوم والغازات والغبار عبر أزمنة كونية طويلة."
+        }
+      ],
+      "fact": "تظهر انبعاثات راديوية قوية من منطقة مركزية نشطة.",
+      "sourceTitle": "Centaurus A",
+      "sourceURL": "https://en.wikipedia.org/wiki/Centaurus_A",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "orion-nebula",
+      "category": "nebulae",
+      "name": "سديم الجبار",
+      "headline": "السدم",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "منطقة واسعة لتشكل النجوم في اتجاه كوكبة الجبار، مرئية بالعين المجردة في سماء مظلمة."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يحمل اسم M42 ويضم نجومًا فتية وسحب غاز متوهجة."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "كيف تولد النجوم من السحب الباردة. تحتوي السدم على غازات وغبار؛ قد تكون مهدًا للنجوم أو بقايا مرحلة نهائية من تطورها."
+        }
+      ],
+      "fact": "يحمل اسم M42 ويضم نجومًا فتية وسحب غاز متوهجة.",
+      "sourceTitle": "Orion Nebula",
+      "sourceURL": "https://en.wikipedia.org/wiki/Orion_Nebula",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "crab-nebula",
+      "category": "nebulae",
+      "name": "سديم السرطان",
+      "headline": "السدم",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "بقايا مستعر أعظم ارتبط انفجاره برصد تاريخي سنة 1054."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يضم نجمًا نابضًا في مركزه يمد الغاز بطاقة إشعاعية."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "تطور النجم الضخم بعد انفجاره. تحتوي السدم على غازات وغبار؛ قد تكون مهدًا للنجوم أو بقايا مرحلة نهائية من تطورها."
+        }
+      ],
+      "fact": "يضم نجمًا نابضًا في مركزه يمد الغاز بطاقة إشعاعية.",
+      "sourceTitle": "Crab Nebula",
+      "sourceURL": "https://en.wikipedia.org/wiki/Crab_Nebula",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "eagle-nebula",
+      "category": "nebulae",
+      "name": "سديم النسر",
+      "headline": "السدم",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "منطقة غازية وغبارية تحتضن أعمدة الخلق التي اشتهرت بصور هابل وويب."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "السدم الداكنة قد تخفي مناطق ولادة نجوم."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "دور الغبار في حجب الضوء المرئي. تحتوي السدم على غازات وغبار؛ قد تكون مهدًا للنجوم أو بقايا مرحلة نهائية من تطورها."
+        }
+      ],
+      "fact": "السدم الداكنة قد تخفي مناطق ولادة نجوم.",
+      "sourceTitle": "Eagle Nebula",
+      "sourceURL": "https://en.wikipedia.org/wiki/Eagle_Nebula",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "carina-nebula",
+      "category": "nebulae",
+      "name": "سديم القاعدة",
+      "headline": "السدم",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "مجمع ضخم لتشكل النجوم في كوكبة القاعدة يضم نجومًا كبيرة شديدة السطوع."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "صور ويب كشفت تفاصيل جديدة في ما يسمى المنحدرات الكونية."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "النشاط الإشعاعي والرياح في سحب الغاز. تحتوي السدم على غازات وغبار؛ قد تكون مهدًا للنجوم أو بقايا مرحلة نهائية من تطورها."
+        }
+      ],
+      "fact": "صور ويب كشفت تفاصيل جديدة في ما يسمى المنحدرات الكونية.",
+      "sourceTitle": "Carina Nebula",
+      "sourceURL": "https://en.wikipedia.org/wiki/Carina_Nebula",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "lagoon-nebula",
+      "category": "nebulae",
+      "name": "سديم البحيرة",
+      "headline": "السدم",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "سديم انبعاثي في كوكبة القوس يعرف باسم M8."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يحتوي على سحب غازية مضيئة وحشود نجمية فتية."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "تأثير النجوم الشابة في الغاز المحيط. تحتوي السدم على غازات وغبار؛ قد تكون مهدًا للنجوم أو بقايا مرحلة نهائية من تطورها."
+        }
+      ],
+      "fact": "يحتوي على سحب غازية مضيئة وحشود نجمية فتية.",
+      "sourceTitle": "Lagoon Nebula",
+      "sourceURL": "https://en.wikipedia.org/wiki/Lagoon_Nebula",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "ring-nebula",
+      "category": "nebulae",
+      "name": "سديم الحلقة",
+      "headline": "السدم",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "سديم كوكبي نتج عن طرح نجم قديم لطبقاته الخارجية."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يشكل حلقة لامعة في كوكبة القيثارة ويعرف باسم M57."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "المراحل الأخيرة في حياة نجوم شبيهة بالشمس. تحتوي السدم على غازات وغبار؛ قد تكون مهدًا للنجوم أو بقايا مرحلة نهائية من تطورها."
+        }
+      ],
+      "fact": "يشكل حلقة لامعة في كوكبة القيثارة ويعرف باسم M57.",
+      "sourceTitle": "Ring Nebula",
+      "sourceURL": "https://en.wikipedia.org/wiki/Ring_Nebula",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "helix-nebula",
+      "category": "nebulae",
+      "name": "سديم الحلزون",
+      "headline": "السدم",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "سديم كوكبي قريب نسبيًا يُظهر بنية حلقية معقدة من الغاز المتوسع."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "النجم المركزي الباقي هو بقايا ساخنة بعد فقدان الغلاف."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "كيف تعود المادة النجمية إلى الفضاء. تحتوي السدم على غازات وغبار؛ قد تكون مهدًا للنجوم أو بقايا مرحلة نهائية من تطورها."
+        }
+      ],
+      "fact": "النجم المركزي الباقي هو بقايا ساخنة بعد فقدان الغلاف.",
+      "sourceTitle": "Helix Nebula",
+      "sourceURL": "https://en.wikipedia.org/wiki/Helix_Nebula",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "cats-eye",
+      "category": "nebulae",
+      "name": "سديم عين القط",
+      "headline": "السدم",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "سديم كوكبي متعدد القشور ذو بنية غازية معقدة."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "اشتهر بصوره عالية التفاصيل التي كشفت حلقات وأغلفة متراكزة."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "البنية المعقدة للرياح النجمية المتعاقبة. تحتوي السدم على غازات وغبار؛ قد تكون مهدًا للنجوم أو بقايا مرحلة نهائية من تطورها."
+        }
+      ],
+      "fact": "اشتهر بصوره عالية التفاصيل التي كشفت حلقات وأغلفة متراكزة.",
+      "sourceTitle": "Cat's Eye Nebula",
+      "sourceURL": "https://en.wikipedia.org/wiki/Cat%27s_Eye_Nebula",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "horsehead",
+      "category": "nebulae",
+      "name": "سديم رأس الحصان",
+      "headline": "السدم",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "سحابة غبار داكنة تقطع ضوء خلفية مضيئة في اتجاه الجبار."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يشتهر بشكله الشبيه برأس حصان في الصور الفلكية."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "كيف تتشكل الظلال في الصور الفلكية. تحتوي السدم على غازات وغبار؛ قد تكون مهدًا للنجوم أو بقايا مرحلة نهائية من تطورها."
+        }
+      ],
+      "fact": "يشتهر بشكله الشبيه برأس حصان في الصور الفلكية.",
+      "sourceTitle": "Horsehead Nebula",
+      "sourceURL": "https://en.wikipedia.org/wiki/Horsehead_Nebula",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "tarantula",
+      "category": "nebulae",
+      "name": "سديم الرتيلاء",
+      "headline": "السدم",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "منطقة نشطة جدًا في تشكل النجوم داخل سحابة ماجلان الكبرى."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "تضم حشودًا من النجوم الفتية شديدة الكتلة."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "النجوم العملاقة وتأثيرها في الغاز المحيط. تحتوي السدم على غازات وغبار؛ قد تكون مهدًا للنجوم أو بقايا مرحلة نهائية من تطورها."
+        }
+      ],
+      "fact": "تضم حشودًا من النجوم الفتية شديدة الكتلة.",
+      "sourceTitle": "Tarantula Nebula",
+      "sourceURL": "https://en.wikipedia.org/wiki/Tarantula_Nebula",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "rosette",
+      "category": "nebulae",
+      "name": "سديم الوردة",
+      "headline": "السدم",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "سديم انبعاثي كبير تحيط به مناطق غازية موزعة على هيئة وردة تقريبًا."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يضم في مركزه حشدًا نجميًا فتيا يثير الغاز."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "العلاقة بين الحشود الفتية والسدم المحيطة. تحتوي السدم على غازات وغبار؛ قد تكون مهدًا للنجوم أو بقايا مرحلة نهائية من تطورها."
+        }
+      ],
+      "fact": "يضم في مركزه حشدًا نجميًا فتيا يثير الغاز.",
+      "sourceTitle": "Rosette Nebula",
+      "sourceURL": "https://en.wikipedia.org/wiki/Rosette_Nebula",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "trifid",
+      "category": "nebulae",
+      "name": "السديم الثلاثي",
+      "headline": "السدم",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "سديم مركب يعرف باسم M20 ويجمع مناطق انبعاث وانعكاس وغبار معتم."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "تظهر فيه ممرات مظلمة تقسم الجزء اللامع إلى أجزاء."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "تمييز الانبعاث والانعكاس والحجب في الصور. تحتوي السدم على غازات وغبار؛ قد تكون مهدًا للنجوم أو بقايا مرحلة نهائية من تطورها."
+        }
+      ],
+      "fact": "تظهر فيه ممرات مظلمة تقسم الجزء اللامع إلى أجزاء.",
+      "sourceTitle": "Trifid Nebula",
+      "sourceURL": "https://en.wikipedia.org/wiki/Trifid_Nebula",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "voyager1",
+      "category": "missions",
+      "name": "فوياجر 1",
+      "headline": "البعثات والمراصد",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "مسبار أطلقته ناسا عام 1977 لدراسة الكواكب الخارجية ثم واصل رحلة ما بعد الغلاف الشمسي."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "حمل رسالة الأسطوانة الذهبية مع توأمه فوياجر 2."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "تاريخ أطول الرحلات الاستكشافية الآلية. تمدنا المهمات الفضائية بقياسات وصور لا يمكن الحصول عليها كلها من الأرض."
+        }
+      ],
+      "fact": "حمل رسالة الأسطوانة الذهبية مع توأمه فوياجر 2.",
+      "sourceTitle": "Voyager 1",
+      "sourceURL": "https://en.wikipedia.org/wiki/Voyager_1",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "voyager2",
+      "category": "missions",
+      "name": "فوياجر 2",
+      "headline": "البعثات والمراصد",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "المسبار الوحيد الذي زار أورانوس ونبتون عن قرب ضمن جولته الكبرى."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "أُطلق سنة 1977 واستفاد من محاذاة الكواكب."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "الجاذبية المساعدة لزيارة عوالم متعددة. تمدنا المهمات الفضائية بقياسات وصور لا يمكن الحصول عليها كلها من الأرض."
+        }
+      ],
+      "fact": "أُطلق سنة 1977 واستفاد من محاذاة الكواكب.",
+      "sourceTitle": "Voyager 2",
+      "sourceURL": "https://en.wikipedia.org/wiki/Voyager_2",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "pioneer10",
+      "category": "missions",
+      "name": "بايونير 10",
+      "headline": "البعثات والمراصد",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "مسبار أمريكي من أوائل المركبات التي عبرت حزام الكويكبات ودرست المشتري عن قرب."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "حمل لوحة معدنية رمزية تحمل معلومات عن مصدره."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "المهمات الرائدة إلى النظام الشمسي الخارجي. تمدنا المهمات الفضائية بقياسات وصور لا يمكن الحصول عليها كلها من الأرض."
+        }
+      ],
+      "fact": "حمل لوحة معدنية رمزية تحمل معلومات عن مصدره.",
+      "sourceTitle": "Pioneer 10",
+      "sourceURL": "https://en.wikipedia.org/wiki/Pioneer_10",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "new-horizons",
+      "category": "missions",
+      "name": "نيو هورايزنز",
+      "headline": "البعثات والمراصد",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "مسبار ناسا الذي حلق قرب بلوتو سنة 2015 ثم واصل إلى جرم من حزام كايبر."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "قدّم صورًا لتضاريس جليدية دقيقة في عالم بعيد."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "أهمية رحلات المرور السريع والاستكشاف البعيد. تمدنا المهمات الفضائية بقياسات وصور لا يمكن الحصول عليها كلها من الأرض."
+        }
+      ],
+      "fact": "قدّم صورًا لتضاريس جليدية دقيقة في عالم بعيد.",
+      "sourceTitle": "New Horizons",
+      "sourceURL": "https://en.wikipedia.org/wiki/New_Horizons",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "cassini",
+      "category": "missions",
+      "name": "كاسيني–هويغنز",
+      "headline": "البعثات والمراصد",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "مهمة دولية استكشفت زحل وحلقاته وأقماره من المدار، وأنزلت مسبار هويغنز على تيتان."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "امتدت عمليات كاسيني حول زحل من 2004 إلى 2017."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "الاستكشاف المداري الطويل والمتعدد الأدوات. تمدنا المهمات الفضائية بقياسات وصور لا يمكن الحصول عليها كلها من الأرض."
+        }
+      ],
+      "fact": "امتدت عمليات كاسيني حول زحل من 2004 إلى 2017.",
+      "sourceTitle": "Cassini–Huygens",
+      "sourceURL": "https://en.wikipedia.org/wiki/Cassini%E2%80%93Huygens",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "juno",
+      "category": "missions",
+      "name": "جونو",
+      "headline": "البعثات والمراصد",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "مسبار يدور حول المشتري لدراسة تركيبه ومجاله المغناطيسي وبيئته العميقة."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يمر في مدارات قطبية بيضاوية ويجمع قياسات عن عمق الغلاف."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "كيف يُستدل على البنية الداخلية من الخارج. تمدنا المهمات الفضائية بقياسات وصور لا يمكن الحصول عليها كلها من الأرض."
+        }
+      ],
+      "fact": "يمر في مدارات قطبية بيضاوية ويجمع قياسات عن عمق الغلاف.",
+      "sourceTitle": "Juno (spacecraft)",
+      "sourceURL": "https://en.wikipedia.org/wiki/Juno_(spacecraft)",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "perseverance",
+      "category": "missions",
+      "name": "برسيفيرانس",
+      "headline": "البعثات والمراصد",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "عربة روبوتية على المريخ هبطت في فوهة جيزيرو سنة 2021."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "جمعت عينات صخرية لدراسة بيئات مائية سابقة."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "آثار الحياة القديمة الممكنة وأهمية العينات. تمدنا المهمات الفضائية بقياسات وصور لا يمكن الحصول عليها كلها من الأرض."
+        }
+      ],
+      "fact": "جمعت عينات صخرية لدراسة بيئات مائية سابقة.",
+      "sourceTitle": "Perseverance (rover)",
+      "sourceURL": "https://en.wikipedia.org/wiki/Perseverance_(rover)",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "curiosity",
+      "category": "missions",
+      "name": "كيوريوسيتي",
+      "headline": "البعثات والمراصد",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "عربة متجولة على المريخ وصلت إلى فوهة غيل عام 2012."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "فحصت الصخور والرواسب لفهم تاريخ البيئات القابلة للحياة."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "كيف تسجل الصخور تاريخ الكوكب. تمدنا المهمات الفضائية بقياسات وصور لا يمكن الحصول عليها كلها من الأرض."
+        }
+      ],
+      "fact": "فحصت الصخور والرواسب لفهم تاريخ البيئات القابلة للحياة.",
+      "sourceTitle": "Curiosity (rover)",
+      "sourceURL": "https://en.wikipedia.org/wiki/Curiosity_(rover)",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "opportunity",
+      "category": "missions",
+      "name": "أوبورتيونيتي",
+      "headline": "البعثات والمراصد",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "عربة جوالة درست المريخ لسنوات طويلة بعد هبوطها عام 2004."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "كشفت دلائل جيولوجية على تفاعل الصخور مع الماء في الماضي."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "أثر المركبات الجوالة في تغيير فهمنا للمريخ. تمدنا المهمات الفضائية بقياسات وصور لا يمكن الحصول عليها كلها من الأرض."
+        }
+      ],
+      "fact": "كشفت دلائل جيولوجية على تفاعل الصخور مع الماء في الماضي.",
+      "sourceTitle": "Opportunity (rover)",
+      "sourceURL": "https://en.wikipedia.org/wiki/Opportunity_(rover)",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "viking1",
+      "category": "missions",
+      "name": "فايكنغ 1",
+      "headline": "البعثات والمراصد",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "مهمة أمريكية تضمنت مركبة مدارية ومركبة هبوط على المريخ في 1976."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "نفذت تجارب مبكرة لفحص التربة والبيئة السطحية."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "كيف بدأت الدراسات المباشرة لسطح المريخ. تمدنا المهمات الفضائية بقياسات وصور لا يمكن الحصول عليها كلها من الأرض."
+        }
+      ],
+      "fact": "نفذت تجارب مبكرة لفحص التربة والبيئة السطحية.",
+      "sourceTitle": "Viking 1",
+      "sourceURL": "https://en.wikipedia.org/wiki/Viking_1",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "hubble",
+      "category": "missions",
+      "name": "هابل",
+      "headline": "البعثات والمراصد",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "تلسكوب فضائي يدور حول الأرض منذ 1990 ويعمل في نطاقات تشمل الضوء المرئي وفوق البنفسجي."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "قدّم مشاهد بعيدة للمجرات والسدم وساهم في قياسات الكون."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "قيمة الرصد خارج الغلاف الجوي للأرض. تمدنا المهمات الفضائية بقياسات وصور لا يمكن الحصول عليها كلها من الأرض."
+        }
+      ],
+      "fact": "قدّم مشاهد بعيدة للمجرات والسدم وساهم في قياسات الكون.",
+      "sourceTitle": "Hubble Space Telescope",
+      "sourceURL": "https://en.wikipedia.org/wiki/Hubble_Space_Telescope",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "chandra",
+      "category": "missions",
+      "name": "تشاندرا",
+      "headline": "البعثات والمراصد",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "مرصد فضائي متخصص بالأشعة السينية عالية الطاقة."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يرصد غازات ساخنة وبقايا انفجارات وبيئات حول ثقوب سوداء."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "رؤية الكون خارج نطاق الضوء المرئي. تمدنا المهمات الفضائية بقياسات وصور لا يمكن الحصول عليها كلها من الأرض."
+        }
+      ],
+      "fact": "يرصد غازات ساخنة وبقايا انفجارات وبيئات حول ثقوب سوداء.",
+      "sourceTitle": "Chandra X-ray Observatory",
+      "sourceURL": "https://en.wikipedia.org/wiki/Chandra_X-ray_Observatory",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "kepler",
+      "category": "missions",
+      "name": "كيبلر",
+      "headline": "البعثات والمراصد",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "مرصد فضائي صمم لاكتشاف كواكب خارجية من تغير سطوع النجوم أثناء عبورها."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "أحدث نقلة في إحصاء الكواكب الخارجية."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "طريقة العبور لاكتشاف عوالم غير مرئية مباشرة. تمدنا المهمات الفضائية بقياسات وصور لا يمكن الحصول عليها كلها من الأرض."
+        }
+      ],
+      "fact": "أحدث نقلة في إحصاء الكواكب الخارجية.",
+      "sourceTitle": "Kepler space telescope",
+      "sourceURL": "https://en.wikipedia.org/wiki/Kepler_space_telescope",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "tess",
+      "category": "missions",
+      "name": "تِس",
+      "headline": "البعثات والمراصد",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "قمر رصد فضائي يبحث عن كواكب خارج المجموعة الشمسية حول نجوم قريبة نسبيًا."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يقيس الانخفاضات الدورية الصغيرة في لمعان النجوم."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "اختيار أهداف مناسبة لدراسات تكميلية. تمدنا المهمات الفضائية بقياسات وصور لا يمكن الحصول عليها كلها من الأرض."
+        }
+      ],
+      "fact": "يقيس الانخفاضات الدورية الصغيرة في لمعان النجوم.",
+      "sourceTitle": "Transiting Exoplanet Survey Satellite",
+      "sourceURL": "https://en.wikipedia.org/wiki/Transiting_Exoplanet_Survey_Satellite",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "artemis1",
+      "category": "missions",
+      "name": "أرتميس 1",
+      "headline": "البعثات والمراصد",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "رحلة اختبار غير مأهولة لمركبة أوريون حول القمر سنة 2022."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "اختبرت عناصر أساسية من نظام السفر نحو القمر والعودة."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "الخطوات التجريبية التي تسبق الرحلات المأهولة. تمدنا المهمات الفضائية بقياسات وصور لا يمكن الحصول عليها كلها من الأرض."
+        }
+      ],
+      "fact": "اختبرت عناصر أساسية من نظام السفر نحو القمر والعودة.",
+      "sourceTitle": "Artemis 1",
+      "sourceURL": "https://en.wikipedia.org/wiki/Artemis_1",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "euclid",
+      "category": "missions",
+      "name": "إقليدس",
+      "headline": "البعثات والمراصد",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "مرصد فضائي أوروبي مخصص لدراسة البنية واسعة النطاق للكون."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يقيس أشكال وتوزيع أعداد كبيرة من المجرات لفهم تطور الكون."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "قياس تأثير المادة المظلمة والطاقة المظلمة. تمدنا المهمات الفضائية بقياسات وصور لا يمكن الحصول عليها كلها من الأرض."
+        }
+      ],
+      "fact": "يقيس أشكال وتوزيع أعداد كبيرة من المجرات لفهم تطور الكون.",
+      "sourceTitle": "Euclid (spacecraft)",
+      "sourceURL": "https://en.wikipedia.org/wiki/Euclid_(spacecraft)",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "gaia",
+      "category": "missions",
+      "name": "غايا",
+      "headline": "البعثات والمراصد",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "مهمة تابعة لوكالة الفضاء الأوروبية رسمت مواقع وحركات أعداد هائلة من النجوم."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "ساعدت بياناتها في تكوين خريطة ثلاثية الأبعاد دقيقة لمجرتنا."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "فهم درب التبانة من القياسات الفلكية الدقيقة. تمدنا المهمات الفضائية بقياسات وصور لا يمكن الحصول عليها كلها من الأرض."
+        }
+      ],
+      "fact": "ساعدت بياناتها في تكوين خريطة ثلاثية الأبعاد دقيقة لمجرتنا.",
+      "sourceTitle": "Gaia (spacecraft)",
+      "sourceURL": "https://en.wikipedia.org/wiki/Gaia_(spacecraft)",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "osiris",
+      "category": "missions",
+      "name": "أوسايرس–ريكس",
+      "headline": "البعثات والمراصد",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "مسبار ناسا زار الكويكب بينو وجمع عينات أعيدت إلى الأرض عام 2023."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "توفر العينات مادة تُحلل في المختبرات لدراسة النظام الشمسي المبكر."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "التعرف على المواد البدائية للكويكبات. تمدنا المهمات الفضائية بقياسات وصور لا يمكن الحصول عليها كلها من الأرض."
+        }
+      ],
+      "fact": "توفر العينات مادة تُحلل في المختبرات لدراسة النظام الشمسي المبكر.",
+      "sourceTitle": "OSIRIS-REx",
+      "sourceURL": "https://en.wikipedia.org/wiki/OSIRIS-REx",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "pleiades",
+      "category": "clusters",
+      "name": "الثريا",
+      "headline": "الحشود النجمية",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "حشد نجمي مفتوح يُعرف أيضًا باسم M45 ويمكن رؤيته بالعين المجردة في سماء جيدة."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يضم نجومًا فتية نسبيًا تشترك في أصل واحد."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "النجوم التي ولدت معًا في سحابة واحدة. تتيح الحشود دراسة نجوم تشترك تقريبًا في أصل وتكوين واحد وتختلف في خصائصها الفردية."
+        }
+      ],
+      "fact": "يضم نجومًا فتية نسبيًا تشترك في أصل واحد.",
+      "sourceTitle": "Pleiades",
+      "sourceURL": "https://en.wikipedia.org/wiki/Pleiades",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "hyades",
+      "category": "clusters",
+      "name": "القلائص",
+      "headline": "الحشود النجمية",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "حشد نجمي مفتوح قريب من الأرض في اتجاه كوكبة الثور."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يظهر نجومه في شكل V قرب الدبران الذي لا يعد عضوًا في الحشد."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "تمييز التجمع الظاهري من العضوية الفيزيائية. تتيح الحشود دراسة نجوم تشترك تقريبًا في أصل وتكوين واحد وتختلف في خصائصها الفردية."
+        }
+      ],
+      "fact": "يظهر نجومه في شكل V قرب الدبران الذي لا يعد عضوًا في الحشد.",
+      "sourceTitle": "Hyades (star cluster)",
+      "sourceURL": "https://en.wikipedia.org/wiki/Hyades_(star_cluster)",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "omega-centauri",
+      "category": "clusters",
+      "name": "أوميغا قنطورس",
+      "headline": "الحشود النجمية",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "حشد كروي ضخم يضم أعدادًا كبيرة من النجوم القديمة."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يُرى في سماء نصف الكرة الجنوبي ويختلف عن الحشود المفتوحة."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "الحشود الكروية وتاريخ المجرات المبكر. تتيح الحشود دراسة نجوم تشترك تقريبًا في أصل وتكوين واحد وتختلف في خصائصها الفردية."
+        }
+      ],
+      "fact": "يُرى في سماء نصف الكرة الجنوبي ويختلف عن الحشود المفتوحة.",
+      "sourceTitle": "Omega Centauri",
+      "sourceURL": "https://en.wikipedia.org/wiki/Omega_Centauri",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "hercules-cluster",
+      "category": "clusters",
+      "name": "حشد الجاثي",
+      "headline": "الحشود النجمية",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "حشد كروي معروف باسم M13 في كوكبة الجاثي."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يجمع مئات الآلاف من النجوم في حجم فلكي محدود."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "كيف تتماسك الحشود الكثيفة بجاذبيتها. تتيح الحشود دراسة نجوم تشترك تقريبًا في أصل وتكوين واحد وتختلف في خصائصها الفردية."
+        }
+      ],
+      "fact": "يجمع مئات الآلاف من النجوم في حجم فلكي محدود.",
+      "sourceTitle": "Messier 13",
+      "sourceURL": "https://en.wikipedia.org/wiki/Messier_13",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "tucanae47",
+      "category": "clusters",
+      "name": "47 الطوقان",
+      "headline": "الحشود النجمية",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "حشد كروي لامع في كوكبة الطوقان في السماء الجنوبية."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يُعد هدفًا غنيًا لدراسة النجوم القديمة وتطورها."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "قياس أعمار النجوم بمخططات اللون واللمعان. تتيح الحشود دراسة نجوم تشترك تقريبًا في أصل وتكوين واحد وتختلف في خصائصها الفردية."
+        }
+      ],
+      "fact": "يُعد هدفًا غنيًا لدراسة النجوم القديمة وتطورها.",
+      "sourceTitle": "47 Tucanae",
+      "sourceURL": "https://en.wikipedia.org/wiki/47_Tucanae",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "double-cluster",
+      "category": "clusters",
+      "name": "الحشد المزدوج",
+      "headline": "الحشود النجمية",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "حشدان نجميان مفتوحان قريبان بصريًا في اتجاه كوكبة حامل رأس الغول."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يبرزان بالمناظير الصغيرة في السماء المظلمة."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "كيف تظهر التجمعات النجمية معًا في مجال رؤية واحد. تتيح الحشود دراسة نجوم تشترك تقريبًا في أصل وتكوين واحد وتختلف في خصائصها الفردية."
+        }
+      ],
+      "fact": "يبرزان بالمناظير الصغيرة في السماء المظلمة.",
+      "sourceTitle": "Double Cluster",
+      "sourceURL": "https://en.wikipedia.org/wiki/Double_Cluster",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "proxima-b",
+      "category": "exoplanets",
+      "name": "بروكسيما قنطورس b",
+      "headline": "الكواكب الخارجية",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "كوكب خارج المجموعة الشمسية يدور حول أقرب نجم إلى الشمس."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "يقع مداره ضمن منطقة تناقش عادة فيما يتعلق بإمكان وجود ماء سائل وفق ظروف غير مؤكدة."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "التفريق بين المنطقة الصالحة نظريًا وظروف السطح الحقيقية. تُكتشف معظم الكواكب الخارجية بطرق غير مباشرة، وتبقى خصائص أسطحها غير مؤكدة في كثير من الحالات."
+        }
+      ],
+      "fact": "يقع مداره ضمن منطقة تناقش عادة فيما يتعلق بإمكان وجود ماء سائل وفق ظروف غير مؤكدة.",
+      "sourceTitle": "Proxima Centauri b",
+      "sourceURL": "https://en.wikipedia.org/wiki/Proxima_Centauri_b",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "trappist-e",
+      "category": "exoplanets",
+      "name": "ترابيست–1e",
+      "headline": "الكواكب الخارجية",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "كوكب صخري ضمن منظومة كواكب متعددة حول نجم صغير بارد."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "تجذب منظومته الاهتمام لدراسة الأغلفة الجوية لكواكب صغيرة."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "دراسة كواكب متقاربة الأحجام في نظام واحد. تُكتشف معظم الكواكب الخارجية بطرق غير مباشرة، وتبقى خصائص أسطحها غير مؤكدة في كثير من الحالات."
+        }
+      ],
+      "fact": "تجذب منظومته الاهتمام لدراسة الأغلفة الجوية لكواكب صغيرة.",
+      "sourceTitle": "TRAPPIST-1e",
+      "sourceURL": "https://en.wikipedia.org/wiki/TRAPPIST-1e",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "kepler452b",
+      "category": "exoplanets",
+      "name": "كيبلر–452b",
+      "headline": "الكواكب الخارجية",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "كوكب خارجي اكتُشف بطريقة العبور حول نجم قريب من نوع الشمس."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "لا تتوفر قياسات مباشرة تسمح بالجزم بطبيعة سطحه أو وجود حياة."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "لماذا لا يساوي الشبه المداري وجود حياة. تُكتشف معظم الكواكب الخارجية بطرق غير مباشرة، وتبقى خصائص أسطحها غير مؤكدة في كثير من الحالات."
+        }
+      ],
+      "fact": "لا تتوفر قياسات مباشرة تسمح بالجزم بطبيعة سطحه أو وجود حياة.",
+      "sourceTitle": "Kepler-452b",
+      "sourceURL": "https://en.wikipedia.org/wiki/Kepler-452b",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "51pegasi-b",
+      "category": "exoplanets",
+      "name": "51 الفرس الأعظم b",
+      "headline": "الكواكب الخارجية",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "كوكب غازي كبير قريب جدًا من نجمه اكتُشف عام 1995 في إنجاز تاريخي."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "كان من أوائل الكواكب المكتشفة حول نجم شبيه بالشمس."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "البداية الحديثة لعلم الكواكب خارج المجموعة. تُكتشف معظم الكواكب الخارجية بطرق غير مباشرة، وتبقى خصائص أسطحها غير مؤكدة في كثير من الحالات."
+        }
+      ],
+      "fact": "كان من أوائل الكواكب المكتشفة حول نجم شبيه بالشمس.",
+      "sourceTitle": "51 Pegasi b",
+      "sourceURL": "https://en.wikipedia.org/wiki/51_Pegasi_b",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    },
+    {
+      "id": "hd209458b",
+      "category": "exoplanets",
+      "name": "أوزيريس HD 209458 b",
+      "headline": "الكواكب الخارجية",
+      "sections": [
+        {
+          "heading": "التعريف والخصائص",
+          "body": "كوكب غازي خارجي مشهور برصد عبوره أمام نجمه."
+        },
+        {
+          "heading": "الظواهر والبنية",
+          "body": "أسهمت قياساته في تطوير دراسة أغلفة الكواكب عبر طيف الضوء."
+        },
+        {
+          "heading": "الأهمية العلمية",
+          "body": "كيف تكشف الأطياف مكونات أجواء بعيدة. تُكتشف معظم الكواكب الخارجية بطرق غير مباشرة، وتبقى خصائص أسطحها غير مؤكدة في كثير من الحالات."
+        }
+      ],
+      "fact": "أسهمت قياساته في تطوير دراسة أغلفة الكواكب عبر طيف الضوء.",
+      "sourceTitle": "HD 209458 b",
+      "sourceURL": "https://en.wikipedia.org/wiki/HD_209458_b",
+      "editorial": "ملخص علمي عربي محرر ومبني على معلومات عامة قابلة للتحقق؛ المرجع المدرج لتتبع المصطلحات والمعلومات."
+    }
+  ],
+  "baseCount": 21
+}

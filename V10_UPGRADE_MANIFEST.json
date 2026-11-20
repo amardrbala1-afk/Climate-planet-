@@ -1,0 +1,72 @@
+{
+  "version": "10.0.0",
+  "upgradeBase": "V9",
+  "GFSFilesUnaffected": true,
+  "note": "Apply over existing GitHub checkout, do not delete other files.",
+  "files": [
+    {
+      "path": "package.json",
+      "sha256": "acb9c2e2333643a120463b6d51ae627ff33313fc8c003b184be5a88256cff577"
+    },
+    {
+      "path": "scripts/build.mjs",
+      "sha256": "a8955e55312a9999819fcbea35bfb8bce234dddc0a7657773e37ae0e69cad959"
+    },
+    {
+      "path": "site/index.html",
+      "sha256": "ee23c710bea852493e1bacfb63ce3bb01bae88bc1e8d1cfadf7796e7a2009386"
+    },
+    {
+      "path": "site/assets/space.js",
+      "sha256": "7b730373964562d1c57e4a01a442ea92f3de68726f1b66a7c39a4e2b3c1c97f6"
+    },
+    {
+      "path": "site/assets/v3.js",
+      "sha256": "965a76e1335ef1f968e7802b3624283a7f4a0f33187f8ba7b0e9a47eb62ff362"
+    },
+    {
+      "path": "site/assets/v10.css",
+      "sha256": "85ea56326942d4028fe93577f24a0e7daaf0a1cbdd6241c27b0664da2c7b83d6"
+    },
+    {
+      "path": "site/assets/v10-archive.js",
+      "sha256": "f4c4c572e16d7533277042f78917d6b3579397e43c777b73cf13236a589be7d9"
+    },
+    {
+      "path": "site/assets/v10-space.js",
+      "sha256": "a8fd88c5075831c9fe1c76b2778cbb38ad08e7f1c731cdd6079869f6570d08f1"
+    },
+    {
+      "path": "data/cosmos-v10.json",
+      "sha256": "c829b4e69af1ab29d15fdaab8ae14c74019ab3651d794391089f1774c4ff4e85"
+    },
+    {
+      "path": "data/era5-historical.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "tools/era5_historical.py",
+      "sha256": "9007d204a807648e5fe3afd34488c093549a012648f99f56e183f0c8423517bb"
+    },
+    {
+      "path": "tools/requirements-era5.txt",
+      "sha256": "7f54a80e51245cab603e4320290ab96265cef036c8c45f38e64e5c5a97cef861"
+    },
+    {
+      "path": "README-V10-AR.md",
+      "sha256": "51792b5417a994983097d938b49787887de1bfd3e2be529968a36fcf6a047296"
+    },
+    {
+      "path": "CHANGELOG-V10.md",
+      "sha256": "3be5e7e16ef259dd0c30abb1b466ffcd302f72519b9b2268276e751ec36de28f"
+    },
+    {
+      "path": "tests/test_v10.py",
+      "sha256": "fb4a0b93d26b70cf4a10b4b33f2bf4d4b95f709ae56dcc1c5e5ba069bb559a4e"
+    },
+    {
+      "path": "tests/browser-v10.py",
+      "sha256": "098b3047d37230b8f9010b9d22fc07cd206424f8becf6adabaac449f7269e77c"
+    }
+  ]
+}

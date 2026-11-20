@@ -15,8 +15,13 @@ for(const name of(await readdir(path.join(root,'content/posts'))).filter(x=>x.en
 if(process.env.SITE_URL||process.env.CF_PAGES_URL||DEFAULT_SITE_URL){const domain=(process.env.SITE_URL||process.env.CF_PAGES_URL||DEFAULT_SITE_URL).replace(/\/$/,'');const indexPath=path.join(dist,'index.html');let home=await readFile(indexPath,'utf8');home=home.replace('content="/images/brand/climate-planet-share.png"',`content="${domain}/images/brand/climate-planet-share.png"`);home=home.replace('<meta property="og:type" content="website">',`<meta property="og:url" content="${domain}/"><meta property="og:type" content="website">`);await writeFile(indexPath,home)}
 posts.sort((a,b)=>String(b.date||'').localeCompare(String(a.date||'')));await writeFile(path.join(dist,'data/posts.json'),JSON.stringify(posts));
 for(const [section,file]of[['archive','archive.json'],['maps','maps.json']]){const items=[];const folder=path.join(root,'content',section);for(const name of(await readdir(folder)).filter(x=>x.endsWith('.json'))){try{items.push(JSON.parse(await readFile(path.join(folder,name),'utf8')))}catch(e){console.warn('Skipped malformed entry',name)}}await writeFile(path.join(dist,'data',file),JSON.stringify(items));}
-await cp(path.join(root,'data','cities.json'),path.join(dist,'data','cities.json'));await cp(path.join(root,'data','cosmos-v3.json'),path.join(dist,'data','cosmos-v3.json')); 
+await cp(path.join(root,'data','cities.json'),path.join(dist,'data','cities.json'));await cp(path.join(root,'data','cosmos-v3.json'),path.join(dist,'data','cosmos-v3.json'));await cp(path.join(root,'data','cosmos-v10.json'),path.join(dist,'data','cosmos-v10.json')); 
 await cp(path.join(root,'data','jerusalem-snow.json'),path.join(dist,'data','jerusalem-snow.json'));
+// Publish only verified, real ERA5 images listed in the optional historical manifest.
+const eraItems=JSON.parse(await readFile(path.join(root,'data/era5-historical.json'),'utf8'));
+if(!Array.isArray(eraItems))throw Error('ERA5 manifest must be an array');
+for(const row of eraItems){if(!/^\d{4}-\d\d-\d\d$/.test(row.date)||!['z500','t850'].includes(row.layer)||!String(row.image).startsWith('/images/era5/')||!row.source)throw Error('Invalid historical map metadata');await readFile(path.join(dist,row.image.slice(1)));}
+await writeFile(path.join(dist,'data/era5-historical.json'),JSON.stringify(eraItems));
 // Curated, reproducible GRIB/NetCDF overlays; reject missing or misattributed products.
 const mapProducts=JSON.parse(await readFile(path.join(root,'data/map-products/catalog.json'),'utf8'));
 if(!Array.isArray(mapProducts))throw Error('Map catalog must be an array');
@@ -42,4 +47,4 @@ for(const file of (await readdir(path.join(root,'content/jerusalem'))).filter(n=
 jerusalem.records=[...byDate.values()].sort((a,b)=>b.date.localeCompare(a.date));
 await writeFile(jerusalemFile,JSON.stringify(jerusalem));
 const domain=(process.env.SITE_URL||process.env.CF_PAGES_URL||DEFAULT_SITE_URL).replace(/\/$/,'');if(domain){const urls=[{loc:domain+'/',last:'2026-11-20'},...posts.map(p=>({loc:domain+'/articles/'+p.slug+'/',last:p.date}))];await writeFile(path.join(dist,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls.map(o=>`<url><loc>${esc(o.loc)}</loc><lastmod>${esc(o.last)}</lastmod></url>`).join('')}</urlset>`);await writeFile(path.join(dist,'robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${domain}/sitemap.xml\n`)}
-console.log(`Built V9: ${posts.length} articles + Jerusalem archive, ${dist}`);
+console.log(`Built V10: ${posts.length} articles + Jerusalem archive, ${dist}`);
