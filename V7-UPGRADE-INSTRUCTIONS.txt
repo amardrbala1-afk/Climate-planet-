@@ -1,0 +1,1 @@
+Climate Planet V7: extract this ZIP, then merge its contents into your existing V6 GitHub repository preserving paths and personal articles. Do not upload the ZIP as a single file. See README-V7-AR.md.

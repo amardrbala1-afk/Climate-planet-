@@ -3,7 +3,7 @@
  */
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??'').replace(/[&<>"']/g,x=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[x]));
-const backgrounds={europe:{url:'/images/maps/europe-base.webp',w:3704,h:2706,name:'أوروبا وشمال إفريقيا',fields:[['z500','ارتفاعات 500 hPa'],['t850','حرارة 850 hPa']]},levant:{url:'/images/maps/levant-base.webp',w:4756,h:2555,name:'بلاد الشام',fields:[['t2m','حرارة 2 متر'],['rain','تراكم الأمطار']]}};
+const backgrounds={europe:{url:'/images/maps/europe-base.webp',w:4500,h:5625,name:'أوروبا وشمال إفريقيا',fields:[['z500','ارتفاعات 500 hPa'],['t850','حرارة 850 hPa']]},levant:{url:'/images/maps/levant-base.webp',w:3240,h:4050,name:'بلاد الشام',fields:[['t2m','حرارة 2 متر'],['rain','تراكم الأمطار']]}};
 const legends={z500:{units:'ارتفاعات 500 hPa (ديكامتر)',items:[['#3b173e','أقل من 520'],['#7044ba','520–528'],['#3263c5','528–536'],['#64b9e5','536–552'],['#cbd5e0','552–560 (بدون تلوين)'],['#d45754','560 فأكثر']]},t850:{units:'درجة الحرارة عند 850 hPa',items:[['#813cbb','0° فأقل'],['#183b91','0–2°'],['#2581ce','2–6°'],['#56bae8','6–12°'],['#9edfe4','12–16°'],['#bdcbd3','16–20° (بدون تلوين)'],['#e47e4a','20° فأكثر']]},t2m:{units:'درجة حرارة الهواء عند 2 متر',items:[['#8731bc','0° فأقل'],['#1d4bb8','0–2°'],['#31a2d7','2–4°'],['#79c7ed','4–6°'],['#aecb67','6–10°'],['#bac8d0','أكثر من 10° (بدون تلوين)']]},rain:{units:'تراكم الأمطار (ملم)',items:[['#c6d1d9','أقل من 1'],['#e8d641','1–10'],['#f19636','10–30'],['#d84043','30–100'],['#9f2446','100–120'],['#8f34bc','120 فأكثر']]}};
 let products=[],selectedProduct=null,scale=1,offsetX=0,offsetY=0,drag=null;
 const validPath=s=>/^\/images\/maps\/forecast\/[a-z0-9_.\/-]+\.png$/i.test(s||'')&&!String(s).includes('..');

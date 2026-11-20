@@ -1,0 +1,17 @@
+{
+  "region": "europe",
+  "sourceFile": "europe.png",
+  "worldFile": "europe.pgw",
+  "crs": "EPSG:3857",
+  "crsStatus": "inferred by coordinate extent and geographic image inspection; world file does not encode CRS",
+  "imageWidth": 4500,
+  "imageHeight": 5625,
+  "boundsLonLat": {
+    "west": -10.598744951096835,
+    "north": 63.10977619396618,
+    "east": 47.55105580323895,
+    "south": 9.260142019254456
+  },
+  "pixelSizeMeters": 1438.810004379412,
+  "pixelOrigin": "center of pixel (0,0)"
+}

@@ -14,9 +14,10 @@ p.add_argument('--region',choices=['europe','levant'],required=True);p.add_argum
 a=p.parse_args()
 if not (len(a.date)==8 and a.date.isdigit()):p.error('Date format YYYYMMDD UTC')
 if not 0<=a.forecast_hour<=384:p.error('Forecast hour must be 0...384')
-# Hard crop for manageable downloads. Map pixel projection and geographic bounds
-# still need independent calibration; do not treat this bounding box as a map georeference.
-bounds={'europe':(-22,60,76,10),'levant':(23,55,46,16)}[a.region]
+# NOAA filter clip from the verified map footprint, not a visual guess.
+# Bounds calculated from owner-provided georeferenced maps (EPSG:3857).
+# Add a small margin so bilinear interpolation covers the entire illustration.
+bounds={'europe':(-12,49,64,8),'levant':(23,54,49,16)}[a.region]
 params={'file':f'gfs.t{a.cycle}z.pgrb2.0p25.f{a.forecast_hour:03d}','subregion':'','leftlon':bounds[0],'rightlon':bounds[1],'toplat':bounds[2],'bottomlat':bounds[3],'dir':f'/gfs.{a.date}/{a.cycle}/atmos'}
 if a.field=='z500':params|={'var_HGT':'on','lev_500_mb':'on'}
 elif a.field=='t850':params|={'var_TMP':'on','lev_850_mb':'on'}
@@ -30,6 +31,7 @@ with urllib.request.urlopen(req,timeout=90) as resp:
  data=resp.read(35*1024*1024)
  if resp.status!=200 or len(data)<500 or data[:4]!=b'GRIB':raise ValueError('NOAA did not return a GRIB2 dataset. Check forecast cycle and file availability.')
  if len(data)>=35*1024*1024:raise ValueError('GRIB subset unexpectedly large; narrow the domain')
+ if not data.endswith(b'7777'):raise ValueError('Incomplete GRIB2 stream: missing message terminator')
 out=Path(a.output);out.parent.mkdir(parents=True,exist_ok=True);out.write_bytes(data)
 meta={'source':'NOAA NOMADS / GFS 0.25°','runDate':a.date,'cycle':a.cycle,'forecastHour':a.forecast_hour,'field':a.field,'region':a.region,'sha256':hashlib.sha256(data).hexdigest(),'downloadUrl':url,'note':'APCP accumulation interval must be validated from GRIB time-range metadata, not assumed'}
 out.with_suffix(out.suffix+'.source.json').write_text(json.dumps(meta,ensure_ascii=False,indent=2),encoding='utf8')

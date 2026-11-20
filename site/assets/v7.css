@@ -1,0 +1,18 @@
+/* Climate Planet V7: calibrated forecast atlas + accessible comparisons */
+.v7-timeline,.v7-compare-controls{display:flex;flex-wrap:wrap;align-items:center;gap:12px;padding:12px 14px;border:1px solid rgba(99,211,222,.23);border-radius:13px;background:linear-gradient(115deg,rgba(12,45,66,.88),rgba(8,23,39,.85));margin:0 0 12px;color:#cee7ef}
+.v7-timeline button,.v7-compare-controls button,.v7-compare-controls select{border:1px solid #478c9c;background:#103a50;border-radius:9px;color:#e9feff;padding:10px 14px;font:700 12px Cairo,sans-serif;cursor:pointer;min-height:40px}
+.v7-timeline button:disabled,.v7-compare-controls button:disabled{opacity:.42;cursor:not-allowed}
+.v7-timeline label{display:flex;gap:8px;align-items:center;justify-content:space-between;flex:1 1 210px;font-size:12px;font-weight:700}
+.v7-timeline label span{font-size:11px;color:#6fe3db}
+.v7-timeline #v7TimeSlider{flex:2 1 230px;min-width:110px;accent-color:#43d6dc}
+.v7-compare-controls>label:first-child{font-size:12px;font-weight:700}
+.v7-compare-position{display:flex;align-items:center;gap:12px;font-size:12px}
+.v7-compare-position input{width:125px;accent-color:#43d6dc}
+#v7CompareStatus{color:#a6ccd9;font-size:11px;flex:1 1 175px}
+#v7MapCompareOverlay{filter:none;z-index:2}
+.v5-map-viewport{height:clamp(430px,68vh,750px)}
+.v5-map-transform img{image-rendering:auto;filter:contrast(1.015) saturate(1.04)}
+#v5MapOverlay{z-index:1}
+.v7-map-credit{margin:9px 0 0;color:#809fae;font-size:11px;line-height:1.8}
+@media(max-width:750px){.v7-timeline,.v7-compare-controls{gap:8px;padding:10px}.v7-timeline button,.v7-compare-controls button{padding:8px 9px}.v7-timeline #v7TimeSlider{order:5;flex:1 0 100%}.v5-map-viewport{height:clamp(380px,65vh,580px)}}
+@media(prefers-reduced-motion:reduce){.v7-timeline *,.v7-compare-controls *{transition:none!important}}

@@ -42,4 +42,4 @@ for(const file of (await readdir(path.join(root,'content/jerusalem'))).filter(n=
 jerusalem.records=[...byDate.values()].sort((a,b)=>b.date.localeCompare(a.date));
 await writeFile(jerusalemFile,JSON.stringify(jerusalem));
 const domain=(process.env.SITE_URL||process.env.CF_PAGES_URL||DEFAULT_SITE_URL).replace(/\/$/,'');if(domain){const urls=[{loc:domain+'/',last:'2026-11-20'},...posts.map(p=>({loc:domain+'/articles/'+p.slug+'/',last:p.date}))];await writeFile(path.join(dist,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls.map(o=>`<url><loc>${esc(o.loc)}</loc><lastmod>${esc(o.last)}</lastmod></url>`).join('')}</urlset>`);await writeFile(path.join(dist,'robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${domain}/sitemap.xml\n`)}
-console.log(`Built V6: ${posts.length} articles + Jerusalem archive, ${dist}`);
+console.log(`Built V7: ${posts.length} articles + Jerusalem archive, ${dist}`);

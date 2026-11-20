@@ -1,0 +1,17 @@
+{
+  "region": "levant",
+  "sourceFile": "levant.png",
+  "worldFile": "levant.pgw",
+  "crs": "EPSG:3857",
+  "crsStatus": "inferred by coordinate extent and geographic image inspection; world file does not encode CRS",
+  "imageWidth": 3240,
+  "imageHeight": 4050,
+  "boundsLonLat": {
+    "west": 23.997236200048782,
+    "north": 47.71616556993635,
+    "east": 53.069623373015226,
+    "south": 17.799641211013668
+  },
+  "pixelSizeMeters": 999.173614152369,
+  "pixelOrigin": "center of pixel (0,0)"
+}

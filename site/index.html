@@ -9,7 +9,7 @@
 <title>كوكب المناخ | الطقس والخرائط والفضاء</title>
 <link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&amp;family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="/assets/v5.css" rel="stylesheet"/><link href="/assets/v6.css" rel="stylesheet"/></head>
+<link href="/assets/v5.css" rel="stylesheet"/><link href="/assets/v7.css" rel="stylesheet"/><link href="/assets/v6.css" rel="stylesheet"/></head>
 <body>
 <div aria-hidden="true" class="ambient ambient-a"></div><div aria-hidden="true" class="ambient ambient-b"></div>
 <div class="top-strip"><div class="shell strip-inner"><span><span class="status-dot"></span> منصة علمية عربية مستقلة</span><span id="localClock">كوكب المناخ · بلاد الشام</span></div></div>
@@ -34,19 +34,32 @@
 </section>
 <section aria-labelledby="operationsTitle" class="page" data-page="operations" id="operations">
 <div class="page-head"><div><span class="overline">CLIMATE PLANET / WEATHER OPERATIONS</span><h1 id="operationsTitle">مركز <em>العمليات الجوية</em></h1><p>خرائط النماذج العددية وتوقعات المدن وتوقيتات تحديث البيانات.</p></div><span class="head-chip"><span class="status-dot"></span> بيانات رقمية عند الطلب</span></div><div aria-label="الأقسام الجوية" class="v5-ops-tabs" id="v5OpsTabs" role="tablist"><button aria-selected="true" class="is-on" data-v5-ops="maps" role="tab" type="button">الخرائط العددية</button><button aria-selected="false" data-v5-ops="cities" role="tab" type="button">توقعات المدن</button><button aria-selected="false" data-v5-ops="gallery" role="tab" type="button">مكتبة الخرائط</button></div><section aria-label="الخرائط الجوية العددية" class="v5-map-center" data-v5-panel="maps">
-<div class="v5-map-summary"><h2>خرائط النماذج العددية</h2><span id="v5MapStamp">—</span></div>
+<div class="v5-map-summary"><h2>أطلس الخرائط الجوية العددية</h2><span id="v5MapStamp">—</span></div>
 <div class="v5-map-controls">
 <label>المنطقة<select id="v5Region"><option value="europe">أوروبا وشمال إفريقيا</option><option value="levant">بلاد الشام</option></select></label>
 <label>الطبقة<select id="v5Field"><option value="z500">ارتفاعات 500 hPa</option><option value="t850">حرارة 850 hPa</option></select></label>
-<label>النموذج<select id="v5Model"><option value="ECMWF">ECMWF</option><option value="GFS">GFS</option><option value="ICON">ICON</option></select></label>
+<label>النموذج<select id="v5Model"><option value="GFS">GFS</option><option value="ECMWF">ECMWF</option><option value="ICON">ICON</option></select></label>
 <label>ساعة التوقع<select id="v5ForecastHour"><option value="">أحدث خريطة متاحة</option></select></label>
 </div>
+<div class="v7-timeline" aria-label="التحكم بزمن التوقع">
+  <button type="button" id="v7Play" disabled aria-label="تشغيل الحركة الزمنية">▶ تشغيل الساعات</button>
+  <label for="v7TimeSlider">تسلسل التوقعات <span id="v7TimeText">بانتظار الخرائط المنشورة</span></label>
+  <input type="range" min="0" max="0" step="1" value="0" id="v7TimeSlider" disabled aria-label="ساعة التوقع" />
+  <button type="button" id="v7Stop" disabled aria-label="إيقاف الحركة">■ إيقاف</button>
+</div>
+<div class="v7-compare-controls">
+  <label for="v7CompareMode">مقارنة الخرائط</label>
+  <select id="v7CompareMode"><option value="previous">مقارنة بالتحديث السابق</option><option value="other-model">مقارنة بنموذج آخر</option></select>
+  <button id="v7CompareToggle" type="button" disabled>⇄ تفعيل المقارنة</button>
+  <label class="v7-compare-position" for="v7CompareSplit">حدّ المقارنة <input type="range" id="v7CompareSplit" min="0" max="100" value="50" disabled></label>
+  <span id="v7CompareStatus" aria-live="polite">لا تتوفر خريطة ثانية للمقارنة</span>
+</div>
 <div class="v5-map-wrapper"><div aria-label="الخريطة الجوية يمكن تكبيرها أو تحريكها" class="v5-map-viewport" id="v5MapViewport" tabindex="0">
-<div class="v5-map-transform" id="v5MapTransform"><img alt="الخريطة التضاريسية لأوروبا وشمال إفريقيا" draggable="false" id="v5MapBase" src="/images/maps/europe-base.webp"/><img alt="طبقة توقعات النموذج العددي" draggable="false" hidden="" id="v5MapOverlay"/></div>
-<div class="v5-map-notice" id="v5MapNotice">اختر النموذج وساعة التوقع لعرض الخريطة المتاحة.</div>
+<div class="v5-map-transform" id="v5MapTransform"><img alt="الخريطة التضاريسية لأوروبا وشمال إفريقيا" draggable="false" id="v5MapBase" src="/images/maps/europe-base.webp"/><img alt="طبقة توقعات النموذج العددي" draggable="false" hidden="" id="v5MapOverlay"/><img alt="خريطة مقارنة من تحديث أو نموذج آخر" draggable="false" hidden="" id="v7MapCompareOverlay"/></div>
+<div class="v5-map-notice" id="v5MapNotice">تظهر هنا أحدث الخرائط المتاحة بعد معالجتها والتحقق من بيانات مصدرها.</div>
 </div><div class="v5-map-zooms"><button aria-label="تقريب الخريطة" id="v5ZoomIn" type="button">＋</button><button aria-label="إبعاد الخريطة" id="v5ZoomOut" type="button">－</button><button id="v5ZoomReset" type="button">ملاءمة</button></div></div>
 <div class="v5-map-below"><div class="v5-map-gradient" id="v5MapLegend"></div><label class="v5-opacity">شفافية الطبقة <input id="v5MapOpacity" max="100" min="15" type="range" value="90"/></label><button class="btn secondary" disabled="" id="v5MapDownload" type="button">تنزيل الخريطة</button></div>
-<div aria-live="polite" class="v5-map-source" id="v5MapSource">لا توجد خريطة منشورة لهذا الاختيار.</div></section>
+<div aria-live="polite" class="v5-map-source" id="v5MapSource">تظهر خريطة النموذج بمجرد نشر بياناتها المعتمدة.</div><p class="v7-map-credit">مصدر البيانات: NOAA GFS أو نموذج مفتوح موثّق · الخلفيات الجغرافية: خرائط كوكب المناخ المرفوعة مع ملفات الإسناد الجغرافي.</p></section>
 <div class="ops-panel" data-v5-panel="cities" hidden=""><div class="ops-topbar"><div class="ops-modes" id="opsLayers"><button class="is-on" data-layer="temperature" type="button">🌡 الحرارة</button><button data-layer="precipitation" type="button">💧 كمية الهطول</button><button data-layer="wind" type="button">〰 سرعة الرياح</button></div><button class="ops-refresh" id="opsReload" type="button">↻ تحديث البيانات</button></div>
 <div aria-label="نوع خلفية الخريطة" class="v4-map-choose" id="v4MapStyles"><span>خلفية الخريطة:</span><button class="is-on" data-mapstyle="terrain" type="button">⛰️ تضاريس</button><button data-mapstyle="street" type="button">▤ جغرافية</button><small>التضاريس من OpenTopoMap-R · التوقعات نقاط مدن فقط</small></div><div class="ops-map-wrap"><div class="ops-map" id="opsMap"><div class="ops-load">تهيئة الخريطة وبيانات التوقعات…</div></div><div class="ops-legend"><span class="ops-legend-title">تفسير الأرقام</span><div id="opsLegend">الحرارة المتوقعة بالدرجة المئوية</div><small>النقاط تمثل مدنًا محددة فقط، وليست سطحًا متصلًا لكل المنطقة.</small></div><div aria-live="polite" class="ops-load-state" id="opsStatus">لم يتم طلب البيانات بعد</div></div>
 <div class="ops-timeline"><div><label for="opsDay">اليوم المتوقع</label><strong id="opsDayLabel">—</strong></div><div class="ops-slider-row"><input id="opsDay" max="6" min="0" step="1" type="range" value="0"/><button id="opsPlay" type="button">▶ تشغيل</button></div><div class="ops-days" id="opsDays"></div></div>
@@ -108,4 +121,4 @@
 </section></main>
 <footer class="footer"><div class="shell footer-layout"><div class="footer-brand"><img alt="" height="52" src="/images/brand/climate-planet-mark.webp" width="52"/><div><b>كوكب المناخ</b><span>نقرأ السماء، ونوثق التاريخ</span></div></div><div class="footer-links"><a href="#home">الرئيسية</a><a href="#operations">مركز العمليات</a><a href="#weather">الطقس</a><a href="#journal">المقالات والخرائط</a><a href="#space">الفضاء</a><a href="#archive">الأرشيف</a><a href="#games">الألعاب العلمية</a></div><div class="footer-bottom"><span>© <span id="copyrightYear">2026</span> Climate Planet</span><a href="https://www.facebook.com/profile.php?id=100063981761936" rel="noopener" target="_blank">صفحتنا على فيسبوك ↗</a></div></div></footer>
 <script src="/assets/app.js" type="module"></script><script src="/assets/space.js" type="module"></script><script src="/assets/v3.js" type="module"></script><script src="/assets/operations.js" type="module"></script><script src="/assets/models.js" type="module"></script><script src="/assets/city-scenes-v6.js" type="module"></script>
-<script src="/assets/v5.js" type="module"></script><script src="/assets/games-v6.js" type="module"></script><script src="/assets/daily-card-v6.js" type="module"></script></body></html>
+<script src="/assets/v5.js" type="module"></script><script src="/assets/games-v6.js" type="module"></script><script src="/assets/v7-maps.js" type="module"></script><script src="/assets/daily-card-v6.js" type="module"></script></body></html>

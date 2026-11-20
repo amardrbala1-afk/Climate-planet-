@@ -107,19 +107,23 @@ def main():
     except ValueError:p.error('Date must be YYYYMMDD')
     if not 0<=args.forecast_hour<=384:p.error('Forecast hour 0...384')
     if args.field=='rain' and (args.accum_hours is None or args.forecast_hour<args.accum_hours):p.error('Rain requires --accum-hours, with a compatible step')
-    calibration=args.calibration or ROOT/'tools/calibration'/f'{args.region}.json'
-    if not calibration.is_file():raise SystemExit(f'CALIBRATION REQUIRED: {calibration} is absent; nothing published.')
-    from render_map import calibration_fit,BASE
-    w,h,_=BASE[args.region];calibration_fit(calibration,w,h,15)
+    # The user supplied the matching PNG + .pgw, enabling a direct affine
+    # projection; calibration control points are no longer an obstacle.
+    worldfile=ROOT/'tools/georef'/f'{args.region}.pgw'
+    if not worldfile.is_file():raise SystemExit(f'WORLD FILE REQUIRED: {worldfile} is absent; nothing published.')
+    from render_map import BASE
+    from worldfile import WorldFile
+    w,h,_=BASE[args.region]
+    WorldFile.read(worldfile).verify(args.region,w,h)
     with tempfile.TemporaryDirectory(prefix='climate-forecast-') as tmp:
         file=Path(tmp)/'gfs.grib2';grid=Path(tmp)/'field.csv'
         fetch=[sys.executable,str(ROOT/'tools/fetch_gfs.py'),'--date',args.date,'--cycle',args.cycle,'--forecast-hour',str(args.forecast_hour),'--field',args.field,'--region',args.region,'--output',str(file)]
         if args.dry_run:
-            print('VALIDATED CALIBRATION; download URL:');subprocess.run(fetch+['--dry-run'],check=True);return
+            print('WORLD FILE EXTENT VERIFIED; NOAA request URL:');subprocess.run(fetch+['--dry-run'],check=True);return
         subprocess.run(fetch,check=True)
         arr,unit=select_field(file,spec,args.date,args.cycle,args.forecast_hour,args.field,args.accum_hours)
         n=write_csv(arr,grid);print('Verified real model grid points:',n)
-        cmd=[sys.executable,str(ROOT/'tools/render_map.py'),'--csv',str(grid),'--region',args.region,'--field',args.field,'--model','GFS','--run',f'{args.date[:4]}-{args.date[4:6]}-{args.date[6:8]}T{args.cycle}','--forecast-hour',str(args.forecast_hour),'--unit',unit,'--calibration',str(calibration),'--source','NOAA NOMADS GFS 0.25°']
+        cmd=[sys.executable,str(ROOT/'tools/render_map.py'),'--csv',str(grid),'--region',args.region,'--field',args.field,'--model','GFS','--run',f'{args.date[:4]}-{args.date[4:6]}-{args.date[6:8]}T{args.cycle}','--forecast-hour',str(args.forecast_hour),'--unit',unit,'--worldfile',str(worldfile),'--source','NOAA NOMADS GFS 0.25°']
         if args.field=='rain':cmd+=['--accum-hours',str(args.accum_hours)]
         subprocess.run(cmd,check=True)
 

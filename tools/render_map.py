@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Climate Planet V5 — produce a real, provenance-tagged weather overlay from data CSV.
+"""Climate Planet V7 — produce a provenance-tagged, georeferenced overlay from data CSV.
 
-This does not download or infer model forecasts. It fails closed if calibration is
-missing/inaccurate, the requested field lacks a certified unit, or input coverage
+This does not download or infer model forecasts. It fails closed if the PNG
+world-file footprint is incorrect, the field unit is unknown, or model coverage
 is too sparse. All published maps are reproducible from the supplied CSV and GCPs.
 
 Example (after completing calibration, using real, gridded GFS data):
@@ -19,9 +19,10 @@ from scipy.ndimage import binary_closing
 from shapely.geometry import shape, box
 from shapely.ops import unary_union
 from shapely import contains_xy
+from worldfile import WorldFile
 
 ROOT=Path(__file__).resolve().parents[1]
-BASE={'europe':(3704,2706,{'z500','t850'}),'levant':(4756,2555,{'t2m','rain'})}
+BASE={'europe':(4500,5625,{'z500','t850'}),'levant':(3240,4050,{'t2m','rain'})}
 COLORS={'z500':[(lambda x:x<520,(53,27,89,228)),(lambda x:((x >= 520) & (x < 528)),(109,59,182,215)),(lambda x:((x >= 528) & (x < 536)),(41,90,190,204)),(lambda x:((x >= 536) & (x < 552)),(76,172,224,207)),(lambda x:((x >= 552) & (x < 560)),(0,0,0,0)),(lambda x:x>=560,(206,69,77,220))],
         't850':[(lambda x:x<=0,(113,47,163,220)),(lambda x:((x > 0) & (x <= 2)),(25,57,149,221)),(lambda x:((x > 2) & (x <= 6)),(32,111,207,215)),(lambda x:((x > 6) & (x <= 12)),(75,176,220,211)),(lambda x:((x > 12) & (x <= 16)),(155,216,232,171)),(lambda x:((x > 16) & (x < 20)),(0,0,0,0)),(lambda x:x>=20,(215,113,58,216))],
         't2m':[(lambda x:x<=0,(139,46,187,225)),(lambda x:((x > 0) & (x <= 2)),(17,61,177,220)),(lambda x:((x > 2) & (x <= 4)),(38,145,216,212)),(lambda x:((x > 4) & (x <= 6)),(117,202,237,192)),(lambda x:((x > 6) & (x <= 10)),(170,208,99,169)),(lambda x:x>10,(0,0,0,0))],
@@ -85,7 +86,9 @@ def land_geometry():
 
 def main():
     ap=argparse.ArgumentParser(description=__doc__,formatter_class=argparse.RawDescriptionHelpFormatter)
-    for flag in ['csv','calibration','region','field','model','run','unit','source']:ap.add_argument('--'+flag,required=True)
+    for flag in ['csv','region','field','model','run','unit','source']:ap.add_argument('--'+flag,required=True)
+    ap.add_argument('--calibration',help='Legacy GCP JSON; only for older maps')
+    ap.add_argument('--worldfile',help='Owner-supplied PNG world file (.pgw), assumed EPSG:3857; default tools/georef/REGION.pgw')
     ap.add_argument('--forecast-hour',required=True,type=int);ap.add_argument('--accum-hours',type=int);ap.add_argument('--pixels',type=int,default=1800);ap.add_argument('--max-calibration-error-km',type=float,default=15)
     args=ap.parse_args();a=args
     if a.region not in BASE:ap.error('region must be europe or levant')
@@ -98,7 +101,15 @@ def main():
     try:run=dt.datetime.strptime(a.run,'%Y-%m-%dT%H').replace(tzinfo=dt.timezone.utc)
     except ValueError:ap.error('--run must be YYYY-MM-DDTHH, UTC')
     if not 750<=a.pixels<=3000:ap.error('pixels must be in 750–3000')
-    coef,design,rmse,maxerr=calibration_fit(a.calibration,nativeW,nativeH,a.max_calibration_error_km)
+    worldfile=Path(a.worldfile) if a.worldfile else ROOT/'tools/georef'/f'{a.region}.pgw'
+    if worldfile.is_file():
+        wf=WorldFile.read(worldfile);extent=wf.verify(a.region,nativeW,nativeH)
+        rmse=maxerr=None
+        georef='PGW (EPSG:3857 assumed and extent checked)'
+    elif a.calibration:
+        coef,design,rmse,maxerr=calibration_fit(a.calibration,nativeW,nativeH,a.max_calibration_error_km)
+        georef='GCP / fitted lat-lon'
+    else:raise ValueError('No verified source map world file found. Refusing to publish')
     pts,vs=read_csv(a.csv);vs=value_units(vs,a.field,a.unit)
     if a.field=='rain' and np.nanmin(vs)<-.001:ap.error('negative precipitation data; ensure correct interval')
     interp=read_interp(pts,vs)
@@ -108,12 +119,16 @@ def main():
     ww=math.ceil(width/block);hh=math.ceil(height/block)
     xx=((np.arange(ww)+.5)*block/width).clip(0,1);yy=((np.arange(hh)+.5)*block/height).clip(0,1)
     xx,yy=np.meshgrid(xx,yy)
-    gl=design(xx.ravel(),yy.ravel())@coef;lat=gl[:,0].reshape(hh,ww);lon=gl[:,1].reshape(hh,ww)
+    if worldfile.is_file():
+        # .pgw coefficients refer to *centres* of pixels; no guessed lat-lon scaling.
+        lon,lat=wf.image_to_lonlat(xx*nativeW-.5,yy*nativeH-.5)
+    else:
+        gl=design(xx.ravel(),yy.ravel())@coef;lat=gl[:,0].reshape(hh,ww);lon=gl[:,1].reshape(hh,ww)
     vals=interp(lon,lat)
     alpha=np.isfinite(vals)
     # A malformed or wrong-area grid must never be published as a blank or deceptive forecast.
     cover=float(np.mean(alpha))
-    if cover<.18:raise ValueError(f'Only {cover:.0%} of the raster is covered by data; verify coordinates, model domain and calibration')
+    if cover<.60:raise ValueError(f'Only {cover:.0%} of the raster is covered by data; verify coordinates, model domain and calibration')
     if a.field=='rain':
         vals=np.repeat(np.repeat(vals,block,axis=0),block,axis=1)[:height,:width]
         lat=np.repeat(np.repeat(lat,block,axis=0),block,axis=1)[:height,:width]
@@ -121,6 +136,14 @@ def main():
     arr=np.zeros((*vals.shape,4),dtype=np.uint8)
     for predicate,color in COLORS[a.field]:
         m=predicate(vals)&np.isfinite(vals);arr[m]=color
+    if a.field=='z500':
+        # Light 4-dam height contours, computed from the actual field values.
+        # Preserve data coverage mask; these strokes are visualization only.
+        steps=np.floor(vals/4)
+        mask=np.zeros(vals.shape,dtype=bool)
+        mask[:,1:] |= (steps[:,1:]!=steps[:,:-1]) & np.isfinite(vals[:,1:]) & np.isfinite(vals[:,:-1])
+        mask[1:,:] |= (steps[1:,:]!=steps[:-1,:]) & np.isfinite(vals[1:,:]) & np.isfinite(vals[:-1,:])
+        arr[mask]=(197,230,242,125)
     if a.field in ('rain','t850','t2m'):
         # Original user-supplied map bases encode their seas in a distinct, dark
         # cyan palette. An image-derived coastline mask is noticeably more exact
@@ -151,11 +174,11 @@ def main():
     catalog=ROOT/'data/map-products/catalog.json';data=json.loads(catalog.read_text());data=[x for x in data if x.get('id')!=sid]
     valid=run+dt.timedelta(hours=a.forecast_hour)
     labels={'z500':'ارتفاعات 500 hPa','t850':'حرارة 850 hPa','t2m':'حرارة 2m','rain':'تراكم الأمطار'}
-    item={'id':sid,'region':a.region,'field':a.field,'label':labels[a.field],'model':a.model,'run':run.strftime('%Y-%m-%d %H:%M'),'forecastHour':a.forecast_hour,'valid':valid.strftime('%Y-%m-%d %H:%M'),'source':a.source,'image':'/images/maps/forecast/'+sid+'.png','calibrationRMSEKm':round(rmse,2),'coverage':round(cover,3),'unit':a.unit}
+    item={'id':sid,'region':a.region,'field':a.field,'label':labels[a.field],'model':a.model,'run':run.strftime('%Y-%m-%d %H:%M'),'forecastHour':a.forecast_hour,'valid':valid.strftime('%Y-%m-%d %H:%M'),'source':a.source,'image':'/images/maps/forecast/'+sid+'.png','calibrationRMSEKm':round(rmse,2) if rmse is not None else None,'georeference':georef,'coverage':round(cover,3),'unit':a.unit}
     if a.accum_hours:item['accumHours']=a.accum_hours
     data.append(item);data.sort(key=lambda x:(x['run'],x['forecastHour']),reverse=True)
     catalog.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
-    print(json.dumps({'file':str(path),'map':sid,'coverage':round(cover,3),'calibrationRMSEkm':round(rmse,2),'maxAnchorErrorKm':round(maxerr,2),'imageSize':[width,height]},ensure_ascii=False))
+    print(json.dumps({'file':str(path),'map':sid,'coverage':round(cover,3),'calibrationRMSEkm':round(rmse,2) if rmse is not None else None,'maxAnchorErrorKm':round(maxerr,2) if maxerr is not None else None,'georeference':georef,'imageSize':[width,height]},ensure_ascii=False))
 
 if __name__=='__main__':
     try:main()
