@@ -24,6 +24,8 @@ jobs:
     timeout-minutes: 35
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -53,5 +55,22 @@ jobs:
             echo 'No verified forecast products to publish'
           else
             git commit -m 'Publish georeferenced GFS charts (NOAA source verified)'
-            git push
+            # Reconcile commits that reached main while GFS was processing.
+            # Never force-push: conflicting changes must be reviewed.
+            for attempt in 1 2 3; do
+              echo "Publish attempt ${attempt}/3"
+              git fetch origin main
+              if ! git rebase origin/main; then
+                git rebase --abort || true
+                echo '::error::A newer commit conflicts with forecast products. Review the changed files; no force push was attempted.'
+                exit 1
+              fi
+              if git push origin HEAD:main; then
+                echo 'Forecast products published successfully'
+                exit 0
+              fi
+              sleep 3
+            done
+            echo '::error::Could not publish after three safe attempts.'
+            exit 1
           fi
