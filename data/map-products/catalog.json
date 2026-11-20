@@ -46,5 +46,22 @@
     "georeference": "PGW (EPSG:3857 assumed and extent checked)",
     "coverage": 1.0,
     "unit": "K"
+  },
+  {
+    "id": "gfs-levant-rain-2026112000-f006",
+    "region": "levant",
+    "field": "rain",
+    "label": "تراكم الأمطار",
+    "model": "GFS",
+    "run": "2026-11-20 00:00",
+    "forecastHour": 6,
+    "valid": "2026-11-20 06:00",
+    "source": "NOAA NOMADS GFS 0.25°",
+    "image": "/images/maps/forecast/gfs-levant-rain-2026112000-f006.png",
+    "calibrationRMSEKm": null,
+    "georeference": "PGW (EPSG:3857 assumed and extent checked)",
+    "coverage": 1.0,
+    "unit": "mm",
+    "accumHours": 6
   }
 ]
