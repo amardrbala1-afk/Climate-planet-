@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Climate Planet V7 strict NOAA GFS publisher.
+"""Climate Planet V7: coordinate four NOAA GFS map publications.
 
-Verify each *actual* rendered product and its catalog record. Fail the workflow
-if any of the four expected maps is absent. This diagnoses missing rain without
-changing meteorological values or inventing products.
+This file is the job coordinator; tools/publish_gfs.py renders individual maps.
+Verify real PNG outputs and catalog metadata, and fail if any product is absent.
+No synthetic meteorological values are introduced.
 """
 import argparse
 import json
@@ -12,7 +12,7 @@ import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-ROOT = Path(file).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[1]
 TASKS = [
     ('europe', 'z500', 24, None),
     ('europe', 't850', 24, None),
@@ -51,7 +51,7 @@ def verify_product(root: Path, region: str, field: str, hour: int, date: str, cy
 
 
 def main():
-    p = argparse.ArgumentParser(description=doc)
+    p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--date')
     p.add_argument('--cycle', choices=('00', '06', '12', '18'))
     p.add_argument('--dry-run', action='store_true')
@@ -61,7 +61,7 @@ def main():
     cycle = args.cycle or f'{reference.hour // 6 * 6:02d}'
     date = args.date or reference.strftime('%Y%m%d')
     if args.allow_partial:
-        print('NOTE: --allow-partial is disabled in strict V7 validation.', flush=True)
+        print('NOTE: strict V7 validation requires all four maps; --allow-partial ignored.', flush=True)
     errors = []
     for region, field, hour, accum in TASKS:
         cmd = [sys.executable, str(ROOT/'tools/publish_gfs.py'), '--date', date,
@@ -80,7 +80,7 @@ def main():
                 print(completed.stderr, file=sys.stderr, flush=True)
             if completed.returncode != 0:
                 raise ValueError(f'RENDERER FAILED with exit {completed.returncode} for {label}')
- if not args.dry_run:
+            if not args.dry_run:
                 verify_product(ROOT, region, field, hour, date, cycle, accum)
         except (subprocess.TimeoutExpired, ValueError, OSError) as exc:
             errors.append((region, field, str(exc)))
@@ -92,10 +92,13 @@ def main():
                 verify_product(ROOT, region, field, hour, date, cycle, accum)
         else:
             print('No pruning: retaining existing verified maps until all fields pass.', flush=True)
-    print(f'ACTUAL MAPS VERIFIED: {len(TASKS)-len(errors)}/{len(TASKS)}; errors={errors}', flush=True)
+    if args.dry_run:
+        print(f'DRY RUN: {len(TASKS)-len(errors)}/{len(TASKS)} source requests validated; no live maps were produced.', flush=True)
+    else:
+        print(f'ACTUAL MAPS VERIFIED: {len(TASKS)-len(errors)}/{len(TASKS)}; errors={errors}', flush=True)
     if errors:
         raise SystemExit(2)
 
 
-if name == 'main':
+if __name__ == '__main__':
     main()

@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Download, verify, grid and render a single NOAA GFS forecast chart.
+"""Climate Planet V7: verify and publish one georeferenced NOAA GFS map.
 
-Publication is fail-closed: requires independent calibration anchors and verified
-GRIB provenance including meteorological parameter, level, run and step range.
-No synthetic field values are ever generated.
+Use with tools/schedule_gfs.py (the job coordinator). Publication is fail-closed:
+NOAA GRIB variable, run, accumulation, worldfile, PNG and catalog are verified.
+No synthetic meteorological data are generated or published.
 """
 import argparse, csv, datetime as dt, json, subprocess, sys, tempfile
 from pathlib import Path
