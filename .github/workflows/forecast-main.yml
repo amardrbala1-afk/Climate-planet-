@@ -1,0 +1,57 @@
+name: V7 · NOAA GFS georeferenced maps
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'UTC date YYYYMMDD (leave blank to use the latest run candidate)'
+        type: string
+        required: false
+      cycle:
+        description: 'Cycle, leave blank to select automatically'
+        type: choice
+        options: ['', '00', '06', '12', '18']
+        required: false
+  schedule:
+    - cron: '35 05,17 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: climate-planet-forecast-publisher
+  cancel-in-progress: false
+jobs:
+  gfs-maps:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install scientific libraries
+        run: pip install -r tools/requirements-map-automation.txt
+      - name: Create real source-attributed forecast maps
+        env:
+          CP_DATE: ${{ inputs.date }}
+          CP_CYCLE: ${{ inputs.cycle }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          opts=()
+          if [ -n "${CP_DATE:-}" ]; then opts+=(--date "$CP_DATE"); fi
+          if [ -n "${CP_CYCLE:-}" ]; then opts+=(--cycle "$CP_CYCLE"); fi
+          python tools/schedule_gfs.py "${opts[@]}" --allow-partial
+      - name: Validate generated web bundle
+        run: |
+          npm run build:offline
+          python tests/test_v7_georef.py
+      - name: Commit only source-verified products
+        run: |
+          git config user.name 'climate-planet-forecast-bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/map-products/catalog.json site/images/maps/forecast
+          if git diff --cached --quiet; then
+            echo 'No verified forecast products to publish'
+          else
+            git commit -m 'Publish georeferenced GFS charts (NOAA source verified)'
+            git push
+          fi
