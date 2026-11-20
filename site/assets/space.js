@@ -28,7 +28,7 @@ const objects=[
  {id:'tiangong',category:'stations',name:'محطة تيانغونغ',latin:'TIANGONG',color:'#9ebbd1',icon:'🛰️',summary:'محطة فضائية صينية معيارية في مدار أرضي منخفض تُستخدم لإجراء تجارب وأبحاث علمية.',facts:[['النوع','محطة فضائية'],['المدار','أرضي منخفض'],['الدولة المشغلة','الصين']],source:wiki('Tiangong_space_station')},
  {id:'webb',category:'stations',name:'تلسكوب جيمس ويب',latin:'JWST',color:'#e9c67c',icon:'🔭',summary:'مرصد فضائي يعمل أساسًا في نطاق الأشعة تحت الحمراء لدراسة المجرات المبكرة والنجوم والكواكب الخارجية.',facts:[['النوع','مرصد فضائي'],['الموقع','قرب نقطة L2 شمس–أرض'],['المجال','الأشعة تحت الحمراء']],source:wiki('James_Webb_Space_Telescope')}
 ];
-const planetObjects=objects.filter(o=>o.category==='planets');let category='planets',selected='earth',cosmosDetails=new Map(),searchTerm='';const select=(item)=>{if(!item)return;selected=item.id;$('spaceObjectName').textContent=item.name;$('spaceObjectLatin').textContent=item.latin;$('spaceObjectDesc').textContent=item.summary;$('spaceFacts').innerHTML=item.facts.map(([label,value])=>`<div><span>${esc(label)}</span><b>${esc(value)}</b></div>`).join('');renderArticle(item);document.querySelectorAll('.celestial-card').forEach(b=>b.classList.toggle('is-selected',b.dataset.object===item.id))};
+let focusOnPlanet=()=>{};const planetObjects=objects.filter(o=>o.category==='planets');let category='planets',selected='earth',cosmosDetails=new Map(),searchTerm='';const select=(item)=>{if(!item)return;selected=item.id;$('spaceObjectName').textContent=item.name;$('spaceObjectLatin').textContent=item.latin;$('spaceObjectDesc').textContent=item.summary;$('spaceFacts').innerHTML=item.facts.map(([label,value])=>`<div><span>${esc(label)}</span><b>${esc(value)}</b></div>`).join('');renderArticle(item);document.querySelectorAll('.celestial-card').forEach(b=>b.classList.toggle('is-selected',b.dataset.object===item.id));focusOnPlanet(item.category==='planets'?item.id:null)};
 function renderCards(){const rows=objects.filter(x=>x.category===category&&(!searchTerm||(x.name+' '+x.latin+' '+x.summary).toLowerCase().includes(searchTerm)));$('cosmosCards').innerHTML=rows.map(o=>`<button type="button" class="celestial-card ${o.id===selected?'is-selected':''}" data-object="${esc(o.id)}"><span class="celestial-orb" style="color:${o.color}">${o.icon}</span><span><b>${esc(o.name)}</b><small>${esc(o.latin)}</small></span></button>`).join('');$('cosmosCards').querySelectorAll('[data-object]').forEach(b=>b.addEventListener('click',()=>select(objects.find(o=>o.id===b.dataset.object))))}
 
 const renderArticle=item=>{
@@ -44,12 +44,80 @@ $('spaceRandom')?.addEventListener('click',()=>{const random=objects[Math.floor(
 
 $('cosmosFilters').addEventListener('click',e=>{const b=e.target.closest('[data-cosmos]');if(!b)return;category=b.dataset.cosmos;document.querySelectorAll('#cosmosFilters button').forEach(x=>x.classList.toggle('is-on',x===b));renderCards()});renderCards();select(objects.find(x=>x.id==='earth'));
 let started=false;
-const createFallback = ()=>{$('spaceCanvas').innerHTML='<div class="space-fallback"><p>وضع العرض المبسط: تعذر تحميل WebGL أو مكتبة Three.js. اختر جرمًا من الأزرار أدناه.</p><div>'+planetObjects.map(p=>`<button data-fallback="${p.id}" type="button" style="border-color:${p.color}">${p.icon} ${p.name}</button>`).join('')+'</div></div>';$('spaceCanvas').querySelectorAll('[data-fallback]').forEach(b=>b.addEventListener('click',()=>select(objects.find(o=>o.id===b.dataset.fallback))))};
-async function startThree(){if(started)return;started=true;try{const THREE=await import('https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.js');const holder=$('spaceCanvas');const scene=new THREE.Scene();scene.background=new THREE.Color(0x030813);const camera=new THREE.PerspectiveCamera(48,1,.1,160);const renderer=new THREE.WebGLRenderer({alpha:false,antialias:window.devicePixelRatio<2,powerPreference:'default'});renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,1.75));renderer.outputColorSpace=THREE.SRGBColorSpace;holder.replaceChildren(renderer.domElement);
-scene.add(new THREE.AmbientLight(0x90aace,1.25));const sunLight=new THREE.PointLight(0xffecc3,175,65,1.6);scene.add(sunLight);const sun=new THREE.Mesh(new THREE.SphereGeometry(1.5,32,24),new THREE.MeshBasicMaterial({color:0xffd27a}));scene.add(sun);const glow=new THREE.Sprite(new THREE.SpriteMaterial({color:0xffa14b,transparent:true,opacity:.26,depthWrite:false}));glow.scale.set(6,6,1);sun.add(glow);
-// Stable pseudo-random stars avoid noticeable reshuffling each navigation.
-let seed=193;const rand=()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296};const starPositions=[];for(let i=0;i<2200;i++){const theta=rand()*2*Math.PI,phi=Math.acos(2*rand()-1),radius=55+rand()*32;starPositions.push(radius*Math.sin(phi)*Math.cos(theta),radius*Math.cos(phi),radius*Math.sin(phi)*Math.sin(theta))}const starGeo=new THREE.BufferGeometry();starGeo.setAttribute('position',new THREE.Float32BufferAttribute(starPositions,3));scene.add(new THREE.Points(starGeo,new THREE.PointsMaterial({color:0xaed7ff,size:.21,sizeAttenuation:true})));
-const loader=new THREE.TextureLoader();loader.setCrossOrigin('anonymous');const planets=[];for(const planet of planetObjects){const ring=new THREE.Mesh(new THREE.RingGeometry(planet.radius-.009,planet.radius+.009,150),new THREE.MeshBasicMaterial({color:0x5a809e,side:THREE.DoubleSide,transparent:true,opacity:.26}));ring.rotation.x=-Math.PI/2;scene.add(ring);const mesh=new THREE.Mesh(new THREE.SphereGeometry(planet.size,32,24),new THREE.MeshStandardMaterial({color:planet.color,roughness:1,metalness:0}));mesh.userData.objectId=planet.id;scene.add(mesh);planets.push({obj:planet,mesh,phase:planet.radius*.8});if(planet.id==='saturn'){const rings=new THREE.Mesh(new THREE.RingGeometry(1.38,2.05,90),new THREE.MeshBasicMaterial({color:0xdac5a5,side:THREE.DoubleSide,transparent:true,opacity:.62,depthWrite:false}));rings.rotation.x=-1.12;rings.rotation.y=.12;mesh.add(rings)}const textureURL='https://www.solarsystemscope.com/textures/download/'+planet.texture;loader.load(textureURL,texture=>{texture.colorSpace=THREE.SRGBColorSpace;mesh.material.map=texture;mesh.material.color.set(0xffffff);mesh.material.needsUpdate=true},undefined,()=>{/* fallback solid sphere */})}
-let yaw=.14,pitch=.63,distance=48,active=true,drag=false,px=0,py=0,movement=0;const fit=()=>{const w=holder.clientWidth,h=holder.clientHeight;if(w<10||h<10)return;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix()};fit();const ro=new ResizeObserver(fit);ro.observe(holder);const canvas=renderer.domElement;canvas.style.touchAction='pan-y';canvas.addEventListener('pointerdown',e=>{drag=true;px=e.clientX;py=e.clientY;movement=0;canvas.setPointerCapture(e.pointerId)});canvas.addEventListener('pointermove',e=>{if(!drag)return;const dx=e.clientX-px,dy=e.clientY-py;movement+=Math.abs(dx)+Math.abs(dy);yaw+=dx*.007;pitch=Math.max(.18,Math.min(1.45,pitch+dy*.006));px=e.clientX;py=e.clientY});canvas.addEventListener('pointerup',e=>{drag=false;if(movement>8)return;const rect=canvas.getBoundingClientRect();const mouse=new THREE.Vector2((e.clientX-rect.left)/rect.width*2-1,-(e.clientY-rect.top)/rect.height*2+1);const ray=new THREE.Raycaster();ray.setFromCamera(mouse,camera);const hits=ray.intersectObjects(planets.map(x=>x.mesh));if(hits.length)select(objects.find(x=>x.id===hits[0].object.userData.objectId))});canvas.addEventListener('wheel',e=>{e.preventDefault();distance=Math.max(24,Math.min(68,distance+Math.sign(e.deltaY)*2))},{passive:false});
-const speed=$('orbitSpeed');let last=performance.now();function animate(now){requestAnimationFrame(animate);if(document.hidden||!active)return;const dt=Math.min((now-last)/1000,.05);last=now;const multiplier=Number(speed.value)||2;const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;for(const p of planets){p.phase+=(reduced?0:dt*p.obj.speed*.16*multiplier);p.mesh.position.set(Math.cos(p.phase)*p.obj.radius,0,Math.sin(p.phase)*p.obj.radius);if(!reduced)p.mesh.rotation.y+=dt*.28*multiplier}camera.position.set(Math.sin(yaw)*Math.cos(pitch)*distance,Math.sin(pitch)*distance,Math.cos(yaw)*Math.cos(pitch)*distance);camera.lookAt(0,0,0);renderer.render(scene,camera)}requestAnimationFrame(animate);document.addEventListener('planet-page',e=>{active=e.detail.page==='space';if(active)fit()});}catch(err){console.warn('Space 3D fallback',err);createFallback()}}
-document.addEventListener('planet-page',e=>{if(e.detail.page==='space')startThree()});if(location.hash==='#space')startThree();
+const createFallback=()=>{
+ const holder=$('spaceCanvas');holder.innerHTML='<div class="space-fallback"><p>تعذر تحميل مشهد WebGL. تبقى الموسوعة والملفات العلمية متاحة، ويمكن اختيار كوكب من القائمة.</p><div>'+planetObjects.map(p=>`<button data-fallback="${p.id}" type="button" style="border-color:${p.color}">${p.icon} ${p.name}</button>`).join('')+'</div></div>';
+ holder.querySelectorAll('[data-fallback]').forEach(b=>b.addEventListener('click',()=>select(objects.find(o=>o.id===b.dataset.fallback))));
+};
+async function startThree(){
+ if(started)return;started=true;
+ try{
+  const THREE=await import('https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.js');
+  const holder=$('spaceCanvas'),scene=new THREE.Scene();scene.background=new THREE.Color(0x020817);
+  const camera=new THREE.PerspectiveCamera(49,1,.08,240);
+  const renderer=new THREE.WebGLRenderer({antialias:window.devicePixelRatio<2,powerPreference:'default'});
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,1.65));renderer.outputColorSpace=THREE.SRGBColorSpace;
+  const labels=document.createElement('div');labels.className='v4-planet-labels';holder.replaceChildren(renderer.domElement,labels);
+  scene.add(new THREE.AmbientLight(0x91a9d8,1.36));const solarLight=new THREE.PointLight(0xffedd0,210,100,1.35);scene.add(solarLight);
+  // SpriteMaterial without a texture renders a rectangular billboard. Use a circular, alpha-faded glow instead.
+  const glowCanvas=document.createElement('canvas');glowCanvas.width=256;glowCanvas.height=256;const ctx=glowCanvas.getContext('2d');
+  const gradient=ctx.createRadialGradient(128,128,6,128,128,128);
+  gradient.addColorStop(0,'rgba(255,223,134,.90)');gradient.addColorStop(.22,'rgba(255,170,71,.42)');gradient.addColorStop(.60,'rgba(255,130,43,.12)');gradient.addColorStop(1,'rgba(255,130,43,0)');
+  ctx.fillStyle=gradient;ctx.fillRect(0,0,256,256);
+  const sun=new THREE.Mesh(new THREE.SphereGeometry(1.38,48,32),new THREE.MeshBasicMaterial({color:0xffd27b}));scene.add(sun);
+  const sunGlow=new THREE.Sprite(new THREE.SpriteMaterial({map:new THREE.CanvasTexture(glowCanvas),transparent:true,depthWrite:false,blending:THREE.AdditiveBlending}));
+  sunGlow.scale.set(7.3,7.3,1);sun.add(sunGlow);
+  let seed=193;const rand=()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296};const starPositions=[];
+  for(let i=0;i<2300;i++){const theta=rand()*Math.PI*2,phi=Math.acos(2*rand()-1),r=63+rand()*50;starPositions.push(r*Math.sin(phi)*Math.cos(theta),r*Math.cos(phi),r*Math.sin(phi)*Math.sin(theta));}
+  const starGeo=new THREE.BufferGeometry();starGeo.setAttribute('position',new THREE.Float32BufferAttribute(starPositions,3));scene.add(new THREE.Points(starGeo,new THREE.PointsMaterial({color:0xc6e2ff,size:.24,sizeAttenuation:true})));
+  const loader=new THREE.TextureLoader();loader.setCrossOrigin('anonymous');const planets=[];const meshes=[];
+  for(const planet of planetObjects){
+   const orbit=new THREE.Mesh(new THREE.RingGeometry(planet.radius-.009,planet.radius+.009,160),new THREE.MeshBasicMaterial({color:0x527994,side:THREE.DoubleSide,transparent:true,opacity:.25}));orbit.rotation.x=-Math.PI/2;scene.add(orbit);
+   const mesh=new THREE.Mesh(new THREE.SphereGeometry(planet.size,42,30),new THREE.MeshStandardMaterial({color:planet.color,roughness:.97,metalness:0}));mesh.userData.objectId=planet.id;scene.add(mesh);meshes.push(mesh);
+   const label=document.createElement('button');label.type='button';label.className='v4-planet-label';label.textContent=planet.name;label.setAttribute('aria-label','التركيز على '+planet.name);label.addEventListener('click',()=>select(planet));labels.append(label);
+   planets.push({obj:planet,mesh,label,phase:planet.radius*.8});
+   if(planet.id==='saturn'){
+    const rings=new THREE.Mesh(new THREE.RingGeometry(1.38,2.1,110),new THREE.MeshBasicMaterial({color:0xf1d5a9,side:THREE.DoubleSide,transparent:true,opacity:.72,depthWrite:false}));rings.rotation.x=-1.13;rings.rotation.y=.12;mesh.add(rings);
+   }
+   loader.load('https://www.solarsystemscope.com/textures/download/'+planet.texture,tex=>{tex.colorSpace=THREE.SRGBColorSpace;mesh.material.map=tex;mesh.material.color.set(0xffffff);mesh.material.needsUpdate=true},undefined,()=>{});
+  }
+  let yaw=.2,pitch=.69,distance=48,focusId=null,active=true,dragDistance=0;
+  const target=new THREE.Vector3(),wantedTarget=new THREE.Vector3(),pointers=new Map();let pinchLength=0;
+  const range=()=>focusId?[Math.max(2.1,(planets.find(p=>p.obj.id===focusId)?.obj.size||.65)*2.4),22]:[14,78];
+  const clampZoom=x=>{const [mn,mx]=range();distance=Math.max(mn,Math.min(mx,x))};
+  focusOnPlanet=id=>{
+   if(id&&!planets.some(p=>p.obj.id===id))return;
+   focusId=id;distance=id?Math.max(3.3,(planets.find(p=>p.obj.id===id)?.obj.size||1)*5.8):48;
+   labels.querySelectorAll('.v4-planet-label').forEach((label,index)=>label.classList.toggle('is-selected',planets[index].obj.id===id));
+  };
+  $('spaceZoomIn')?.addEventListener('click',()=>clampZoom(distance*.78));$('spaceZoomOut')?.addEventListener('click',()=>clampZoom(distance*1.3));
+  $('spaceReset')?.addEventListener('click',()=>focusOnPlanet(null));
+  function fit(){const width=holder.clientWidth,height=holder.clientHeight;if(width<10||height<10)return;renderer.setSize(width,height,false);camera.aspect=width/height;camera.updateProjectionMatrix()}
+  fit();const ro=new ResizeObserver(fit);ro.observe(holder);
+  const canvas=renderer.domElement;canvas.style.touchAction='none';
+  canvas.addEventListener('pointerdown',e=>{pointers.set(e.pointerId,[e.clientX,e.clientY]);dragDistance=0;canvas.setPointerCapture(e.pointerId);if(pointers.size===2){const a=[...pointers.values()];pinchLength=Math.hypot(a[0][0]-a[1][0],a[0][1]-a[1][1]);}});
+  canvas.addEventListener('pointermove',e=>{
+   if(!pointers.has(e.pointerId))return;const old=pointers.get(e.pointerId);pointers.set(e.pointerId,[e.clientX,e.clientY]);const dx=e.clientX-old[0],dy=e.clientY-old[1];dragDistance+=Math.abs(dx)+Math.abs(dy);
+   if(pointers.size>=2){const a=[...pointers.values()],len=Math.hypot(a[0][0]-a[1][0],a[0][1]-a[1][1]);if(pinchLength>0&&len>0)clampZoom(distance*pinchLength/len);pinchLength=len;return;}
+   yaw+=dx*.007;pitch=Math.max(-1.30,Math.min(1.30,pitch+dy*.006));
+  });
+  function onRelease(e){if(!pointers.has(e.pointerId))return;const wasMulti=pointers.size>1;pointers.delete(e.pointerId);pinchLength=0;
+   if(wasMulti||dragDistance>8||e.type!=='pointerup')return;
+   const rect=canvas.getBoundingClientRect(),point=new THREE.Vector2((e.clientX-rect.left)/rect.width*2-1,-(e.clientY-rect.top)/rect.height*2+1),ray=new THREE.Raycaster();ray.setFromCamera(point,camera);const hits=ray.intersectObjects(meshes);
+   if(hits.length)select(objects.find(x=>x.id===hits[0].object.userData.objectId));
+  }
+  canvas.addEventListener('pointerup',onRelease);canvas.addEventListener('pointercancel',onRelease);
+  canvas.addEventListener('wheel',e=>{e.preventDefault();clampZoom(distance*(e.deltaY>0?1.12:.89))},{passive:false});
+  const speed=$('orbitSpeed');let last=performance.now();const world=new THREE.Vector3();
+  function animate(now){requestAnimationFrame(animate);if(!active||document.hidden){last=now;return}const dt=Math.min((now-last)/1000,.05);last=now;
+   const multi=Number(speed?.value)||2,reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+   for(const p of planets){if(!reduced)p.phase+=dt*p.obj.speed*.16*multi;p.mesh.position.set(Math.cos(p.phase)*p.obj.radius,0,Math.sin(p.phase)*p.obj.radius);if(!reduced)p.mesh.rotation.y+=dt*.25*multi;}
+   const focused=planets.find(x=>x.obj.id===focusId);wantedTarget.copy(focused?.mesh.position||new THREE.Vector3());target.lerp(wantedTarget,.1);
+   camera.position.set(target.x+Math.sin(yaw)*Math.cos(pitch)*distance,target.y+Math.sin(pitch)*distance,target.z+Math.cos(yaw)*Math.cos(pitch)*distance);camera.lookAt(target);camera.updateMatrixWorld();
+   for(const p of planets){world.copy(p.mesh.position);world.y+=p.obj.size+(.26*distance/30);world.project(camera);const show=world.z>-1&&world.z<1&&Math.abs(world.x)<1.12&&Math.abs(world.y)<1.12;p.label.hidden=!show;if(show){p.label.style.left=(world.x*.5+.5)*100+'%';p.label.style.top=(-world.y*.5+.5)*100+'%';}}
+   renderer.render(scene,camera);
+  }
+  requestAnimationFrame(animate);
+  document.addEventListener('planet-page',event=>{active=event.detail.page==='space';if(active)fit()});
+ }catch(error){console.warn('Space viewer fallback',error);createFallback()}
+}
+document.addEventListener('planet-page',event=>{if(event.detail.page==='space')startThree()});if(location.hash==='#space')startThree();
