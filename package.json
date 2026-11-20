@@ -1,0 +1,1 @@
+{"name":"planet-of-climate","private":true,"version":"1.0.0","description":"كوكب المناخ - موقع عربي للأرصاد والفضاء والأرشيف","type":"module","scripts":{"build":"node scripts/sync-cities.mjs && node scripts/build.mjs","build:offline":"node scripts/build.mjs","cities":"node scripts/sync-cities.mjs","preview":"npx serve dist"},"engines":{"node":">=18"}}

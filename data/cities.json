@@ -1,0 +1,902 @@
+[
+  {
+    "id": "seed-1",
+    "ar": "دمشق",
+    "name": "Damascus",
+    "country": "SY",
+    "lat": 33.5138,
+    "lon": 36.2765,
+    "source": "seed"
+  },
+  {
+    "id": "seed-2",
+    "ar": "حلب",
+    "name": "Aleppo",
+    "country": "SY",
+    "lat": 36.2021,
+    "lon": 37.1343,
+    "source": "seed"
+  },
+  {
+    "id": "seed-3",
+    "ar": "حمص",
+    "name": "Homs",
+    "country": "SY",
+    "lat": 34.7324,
+    "lon": 36.7137,
+    "source": "seed"
+  },
+  {
+    "id": "seed-4",
+    "ar": "حماة",
+    "name": "Hama",
+    "country": "SY",
+    "lat": 35.1318,
+    "lon": 36.7578,
+    "source": "seed"
+  },
+  {
+    "id": "seed-5",
+    "ar": "اللاذقية",
+    "name": "Latakia",
+    "country": "SY",
+    "lat": 35.5317,
+    "lon": 35.7901,
+    "source": "seed"
+  },
+  {
+    "id": "seed-6",
+    "ar": "طرطوس",
+    "name": "Tartus",
+    "country": "SY",
+    "lat": 34.8959,
+    "lon": 35.8867,
+    "source": "seed"
+  },
+  {
+    "id": "seed-7",
+    "ar": "إدلب",
+    "name": "Idlib",
+    "country": "SY",
+    "lat": 35.9306,
+    "lon": 36.6339,
+    "source": "seed"
+  },
+  {
+    "id": "seed-8",
+    "ar": "دير الزور",
+    "name": "Deir ez-Zor",
+    "country": "SY",
+    "lat": 35.3359,
+    "lon": 40.1408,
+    "source": "seed"
+  },
+  {
+    "id": "seed-9",
+    "ar": "الرقة",
+    "name": "Ar Raqqah",
+    "country": "SY",
+    "lat": 35.9496,
+    "lon": 39.0079,
+    "source": "seed"
+  },
+  {
+    "id": "seed-10",
+    "ar": "الحسكة",
+    "name": "Al Hasakah",
+    "country": "SY",
+    "lat": 36.5024,
+    "lon": 40.7477,
+    "source": "seed"
+  },
+  {
+    "id": "seed-11",
+    "ar": "القامشلي",
+    "name": "Qamishli",
+    "country": "SY",
+    "lat": 37.052,
+    "lon": 41.222,
+    "source": "seed"
+  },
+  {
+    "id": "seed-12",
+    "ar": "درعا",
+    "name": "Daraa",
+    "country": "SY",
+    "lat": 32.6189,
+    "lon": 36.1021,
+    "source": "seed"
+  },
+  {
+    "id": "seed-13",
+    "ar": "السويداء",
+    "name": "As Suwayda",
+    "country": "SY",
+    "lat": 32.7089,
+    "lon": 36.5695,
+    "source": "seed"
+  },
+  {
+    "id": "seed-14",
+    "ar": "القنيطرة",
+    "name": "Quneitra",
+    "country": "SY",
+    "lat": 33.1259,
+    "lon": 35.8246,
+    "source": "seed"
+  },
+  {
+    "id": "seed-15",
+    "ar": "جبلة",
+    "name": "Jableh",
+    "country": "SY",
+    "lat": 35.3631,
+    "lon": 35.9257,
+    "source": "seed"
+  },
+  {
+    "id": "seed-16",
+    "ar": "بانياس",
+    "name": "Baniyas",
+    "country": "SY",
+    "lat": 35.1819,
+    "lon": 35.9487,
+    "source": "seed"
+  },
+  {
+    "id": "seed-17",
+    "ar": "صافيتا",
+    "name": "Safita",
+    "country": "SY",
+    "lat": 34.8209,
+    "lon": 36.1172,
+    "source": "seed"
+  },
+  {
+    "id": "seed-18",
+    "ar": "مصياف",
+    "name": "Masyaf",
+    "country": "SY",
+    "lat": 35.0646,
+    "lon": 36.3415,
+    "source": "seed"
+  },
+  {
+    "id": "seed-19",
+    "ar": "السلمية",
+    "name": "Salamiyah",
+    "country": "SY",
+    "lat": 35.0113,
+    "lon": 37.053,
+    "source": "seed"
+  },
+  {
+    "id": "seed-20",
+    "ar": "تدمر",
+    "name": "Palmyra",
+    "country": "SY",
+    "lat": 34.5597,
+    "lon": 38.2678,
+    "source": "seed"
+  },
+  {
+    "id": "seed-21",
+    "ar": "منبج",
+    "name": "Manbij",
+    "country": "SY",
+    "lat": 36.5281,
+    "lon": 37.9549,
+    "source": "seed"
+  },
+  {
+    "id": "seed-22",
+    "ar": "الباب",
+    "name": "Al Bab",
+    "country": "SY",
+    "lat": 36.3705,
+    "lon": 37.5157,
+    "source": "seed"
+  },
+  {
+    "id": "seed-23",
+    "ar": "أعزاز",
+    "name": "Azaz",
+    "country": "SY",
+    "lat": 36.5866,
+    "lon": 37.0457,
+    "source": "seed"
+  },
+  {
+    "id": "seed-24",
+    "ar": "عفرين",
+    "name": "Afrin",
+    "country": "SY",
+    "lat": 36.5119,
+    "lon": 36.8698,
+    "source": "seed"
+  },
+  {
+    "id": "seed-25",
+    "ar": "جرابلس",
+    "name": "Jarabulus",
+    "country": "SY",
+    "lat": 36.8164,
+    "lon": 38.0111,
+    "source": "seed"
+  },
+  {
+    "id": "seed-26",
+    "ar": "سراقب",
+    "name": "Saraqib",
+    "country": "SY",
+    "lat": 35.8645,
+    "lon": 36.8059,
+    "source": "seed"
+  },
+  {
+    "id": "seed-27",
+    "ar": "معرة النعمان",
+    "name": "Maarrat al-Numan",
+    "country": "SY",
+    "lat": 35.6478,
+    "lon": 36.676,
+    "source": "seed"
+  },
+  {
+    "id": "seed-28",
+    "ar": "جسر الشغور",
+    "name": "Jisr ash-Shughur",
+    "country": "SY",
+    "lat": 35.8143,
+    "lon": 36.3205,
+    "source": "seed"
+  },
+  {
+    "id": "seed-29",
+    "ar": "دوما",
+    "name": "Douma",
+    "country": "SY",
+    "lat": 33.5718,
+    "lon": 36.4027,
+    "source": "seed"
+  },
+  {
+    "id": "seed-30",
+    "ar": "داريا",
+    "name": "Darayya",
+    "country": "SY",
+    "lat": 33.456,
+    "lon": 36.2315,
+    "source": "seed"
+  },
+  {
+    "id": "seed-31",
+    "ar": "النبك",
+    "name": "An Nabk",
+    "country": "SY",
+    "lat": 34.024,
+    "lon": 36.7268,
+    "source": "seed"
+  },
+  {
+    "id": "seed-32",
+    "ar": "يبرود",
+    "name": "Yabroud",
+    "country": "SY",
+    "lat": 33.967,
+    "lon": 36.6577,
+    "source": "seed"
+  },
+  {
+    "id": "seed-33",
+    "ar": "الزبداني",
+    "name": "Az Zabadani",
+    "country": "SY",
+    "lat": 33.7249,
+    "lon": 36.1005,
+    "source": "seed"
+  },
+  {
+    "id": "seed-34",
+    "ar": "المالكية",
+    "name": "Al Malikiyah",
+    "country": "SY",
+    "lat": 37.1771,
+    "lon": 42.1409,
+    "source": "seed"
+  },
+  {
+    "id": "seed-35",
+    "ar": "رأس العين",
+    "name": "Ras al-Ayn",
+    "country": "SY",
+    "lat": 36.8506,
+    "lon": 40.0707,
+    "source": "seed"
+  },
+  {
+    "id": "seed-36",
+    "ar": "البوكمال",
+    "name": "Al Bukamal",
+    "country": "SY",
+    "lat": 34.4523,
+    "lon": 40.9186,
+    "source": "seed"
+  },
+  {
+    "id": "seed-37",
+    "ar": "الميادين",
+    "name": "Al Mayadin",
+    "country": "SY",
+    "lat": 35.0199,
+    "lon": 40.4535,
+    "source": "seed"
+  },
+  {
+    "id": "seed-38",
+    "ar": "عمّان",
+    "name": "Amman",
+    "country": "JO",
+    "lat": 31.9539,
+    "lon": 35.9106,
+    "source": "seed"
+  },
+  {
+    "id": "seed-39",
+    "ar": "إربد",
+    "name": "Irbid",
+    "country": "JO",
+    "lat": 32.5556,
+    "lon": 35.85,
+    "source": "seed"
+  },
+  {
+    "id": "seed-40",
+    "ar": "الزرقاء",
+    "name": "Zarqa",
+    "country": "JO",
+    "lat": 32.0728,
+    "lon": 36.0879,
+    "source": "seed"
+  },
+  {
+    "id": "seed-41",
+    "ar": "الرصيفة",
+    "name": "Russeifa",
+    "country": "JO",
+    "lat": 32.017,
+    "lon": 36.046,
+    "source": "seed"
+  },
+  {
+    "id": "seed-42",
+    "ar": "السلط",
+    "name": "As Salt",
+    "country": "JO",
+    "lat": 32.0392,
+    "lon": 35.7272,
+    "source": "seed"
+  },
+  {
+    "id": "seed-43",
+    "ar": "مادبا",
+    "name": "Madaba",
+    "country": "JO",
+    "lat": 31.7197,
+    "lon": 35.7939,
+    "source": "seed"
+  },
+  {
+    "id": "seed-44",
+    "ar": "جرش",
+    "name": "Jerash",
+    "country": "JO",
+    "lat": 32.2769,
+    "lon": 35.8993,
+    "source": "seed"
+  },
+  {
+    "id": "seed-45",
+    "ar": "عجلون",
+    "name": "Ajloun",
+    "country": "JO",
+    "lat": 32.3333,
+    "lon": 35.752,
+    "source": "seed"
+  },
+  {
+    "id": "seed-46",
+    "ar": "المفرق",
+    "name": "Mafraq",
+    "country": "JO",
+    "lat": 32.3429,
+    "lon": 36.208,
+    "source": "seed"
+  },
+  {
+    "id": "seed-47",
+    "ar": "الكرك",
+    "name": "Karak",
+    "country": "JO",
+    "lat": 31.1854,
+    "lon": 35.7047,
+    "source": "seed"
+  },
+  {
+    "id": "seed-48",
+    "ar": "الطفيلة",
+    "name": "Tafilah",
+    "country": "JO",
+    "lat": 30.8375,
+    "lon": 35.6044,
+    "source": "seed"
+  },
+  {
+    "id": "seed-49",
+    "ar": "معان",
+    "name": "Maan",
+    "country": "JO",
+    "lat": 30.1949,
+    "lon": 35.7342,
+    "source": "seed"
+  },
+  {
+    "id": "seed-50",
+    "ar": "العقبة",
+    "name": "Aqaba",
+    "country": "JO",
+    "lat": 29.5321,
+    "lon": 35.0063,
+    "source": "seed"
+  },
+  {
+    "id": "seed-51",
+    "ar": "الرمثا",
+    "name": "Ar Ramtha",
+    "country": "JO",
+    "lat": 32.5587,
+    "lon": 36.0082,
+    "source": "seed"
+  },
+  {
+    "id": "seed-52",
+    "ar": "الحصن",
+    "name": "Al Husn",
+    "country": "JO",
+    "lat": 32.4831,
+    "lon": 35.8724,
+    "source": "seed"
+  },
+  {
+    "id": "seed-53",
+    "ar": "بني كنانة",
+    "name": "Bani Kinanah",
+    "country": "JO",
+    "lat": 32.5889,
+    "lon": 35.8801,
+    "source": "seed"
+  },
+  {
+    "id": "seed-54",
+    "ar": "الشونة الشمالية",
+    "name": "Ash Shunah ash Shamaliyah",
+    "country": "JO",
+    "lat": 32.6136,
+    "lon": 35.6139,
+    "source": "seed"
+  },
+  {
+    "id": "seed-55",
+    "ar": "الأزرق",
+    "name": "Azraq",
+    "country": "JO",
+    "lat": 31.8329,
+    "lon": 36.8275,
+    "source": "seed"
+  },
+  {
+    "id": "seed-56",
+    "ar": "وادي موسى",
+    "name": "Wadi Musa",
+    "country": "JO",
+    "lat": 30.3222,
+    "lon": 35.4803,
+    "source": "seed"
+  },
+  {
+    "id": "seed-57",
+    "ar": "الشوبك",
+    "name": "Shobak",
+    "country": "JO",
+    "lat": 30.5269,
+    "lon": 35.5625,
+    "source": "seed"
+  },
+  {
+    "id": "seed-58",
+    "ar": "الرويشد",
+    "name": "Ruwaished",
+    "country": "JO",
+    "lat": 32.5014,
+    "lon": 38.2018,
+    "source": "seed"
+  },
+  {
+    "id": "seed-59",
+    "ar": "عمان الغربية",
+    "name": "West Amman",
+    "country": "JO",
+    "lat": 31.9843,
+    "lon": 35.856,
+    "source": "seed"
+  },
+  {
+    "id": "seed-60",
+    "ar": "بيروت",
+    "name": "Beirut",
+    "country": "LB",
+    "lat": 33.8938,
+    "lon": 35.5018,
+    "source": "seed"
+  },
+  {
+    "id": "seed-61",
+    "ar": "طرابلس",
+    "name": "Tripoli",
+    "country": "LB",
+    "lat": 34.4367,
+    "lon": 35.8497,
+    "source": "seed"
+  },
+  {
+    "id": "seed-62",
+    "ar": "صيدا",
+    "name": "Sidon",
+    "country": "LB",
+    "lat": 33.5571,
+    "lon": 35.3729,
+    "source": "seed"
+  },
+  {
+    "id": "seed-63",
+    "ar": "صور",
+    "name": "Tyre",
+    "country": "LB",
+    "lat": 33.2705,
+    "lon": 35.2038,
+    "source": "seed"
+  },
+  {
+    "id": "seed-64",
+    "ar": "زحلة",
+    "name": "Zahle",
+    "country": "LB",
+    "lat": 33.8463,
+    "lon": 35.902,
+    "source": "seed"
+  },
+  {
+    "id": "seed-65",
+    "ar": "جبيل",
+    "name": "Byblos",
+    "country": "LB",
+    "lat": 34.1236,
+    "lon": 35.6516,
+    "source": "seed"
+  },
+  {
+    "id": "seed-66",
+    "ar": "جونية",
+    "name": "Jounieh",
+    "country": "LB",
+    "lat": 33.9808,
+    "lon": 35.6178,
+    "source": "seed"
+  },
+  {
+    "id": "seed-67",
+    "ar": "بعلبك",
+    "name": "Baalbek",
+    "country": "LB",
+    "lat": 34.0058,
+    "lon": 36.2181,
+    "source": "seed"
+  },
+  {
+    "id": "seed-68",
+    "ar": "النبطية",
+    "name": "Nabatieh",
+    "country": "LB",
+    "lat": 33.3772,
+    "lon": 35.4838,
+    "source": "seed"
+  },
+  {
+    "id": "seed-69",
+    "ar": "عاليه",
+    "name": "Aley",
+    "country": "LB",
+    "lat": 33.8063,
+    "lon": 35.5972,
+    "source": "seed"
+  },
+  {
+    "id": "seed-70",
+    "ar": "الشوف",
+    "name": "Chouf",
+    "country": "LB",
+    "lat": 33.701,
+    "lon": 35.583,
+    "source": "seed"
+  },
+  {
+    "id": "seed-71",
+    "ar": "بشري",
+    "name": "Bsharri",
+    "country": "LB",
+    "lat": 34.2507,
+    "lon": 36.0105,
+    "source": "seed"
+  },
+  {
+    "id": "seed-72",
+    "ar": "البترون",
+    "name": "Batroun",
+    "country": "LB",
+    "lat": 34.2553,
+    "lon": 35.6589,
+    "source": "seed"
+  },
+  {
+    "id": "seed-73",
+    "ar": "الهرمل",
+    "name": "Hermel",
+    "country": "LB",
+    "lat": 34.3943,
+    "lon": 36.386,
+    "source": "seed"
+  },
+  {
+    "id": "seed-74",
+    "ar": "راشيا",
+    "name": "Rashaya",
+    "country": "LB",
+    "lat": 33.496,
+    "lon": 35.8457,
+    "source": "seed"
+  },
+  {
+    "id": "seed-75",
+    "ar": "بيت الدين",
+    "name": "Beiteddine",
+    "country": "LB",
+    "lat": 33.6941,
+    "lon": 35.581,
+    "source": "seed"
+  },
+  {
+    "id": "seed-76",
+    "ar": "مرجعيون",
+    "name": "Marjayoun",
+    "country": "LB",
+    "lat": 33.3598,
+    "lon": 35.5911,
+    "source": "seed"
+  },
+  {
+    "id": "seed-77",
+    "ar": "القدس",
+    "name": "Jerusalem",
+    "country": "PS",
+    "lat": 31.7683,
+    "lon": 35.2137,
+    "source": "seed"
+  },
+  {
+    "id": "seed-78",
+    "ar": "غزة",
+    "name": "Gaza",
+    "country": "PS",
+    "lat": 31.5017,
+    "lon": 34.4668,
+    "source": "seed"
+  },
+  {
+    "id": "seed-79",
+    "ar": "الخليل",
+    "name": "Hebron",
+    "country": "PS",
+    "lat": 31.5326,
+    "lon": 35.0998,
+    "source": "seed"
+  },
+  {
+    "id": "seed-80",
+    "ar": "نابلس",
+    "name": "Nablus",
+    "country": "PS",
+    "lat": 32.2211,
+    "lon": 35.2544,
+    "source": "seed"
+  },
+  {
+    "id": "seed-81",
+    "ar": "رام الله",
+    "name": "Ramallah",
+    "country": "PS",
+    "lat": 31.9038,
+    "lon": 35.2034,
+    "source": "seed"
+  },
+  {
+    "id": "seed-82",
+    "ar": "بيت لحم",
+    "name": "Bethlehem",
+    "country": "PS",
+    "lat": 31.7054,
+    "lon": 35.2024,
+    "source": "seed"
+  },
+  {
+    "id": "seed-83",
+    "ar": "جنين",
+    "name": "Jenin",
+    "country": "PS",
+    "lat": 32.4594,
+    "lon": 35.3009,
+    "source": "seed"
+  },
+  {
+    "id": "seed-84",
+    "ar": "طولكرم",
+    "name": "Tulkarm",
+    "country": "PS",
+    "lat": 32.3103,
+    "lon": 35.0286,
+    "source": "seed"
+  },
+  {
+    "id": "seed-85",
+    "ar": "قلقيلية",
+    "name": "Qalqilya",
+    "country": "PS",
+    "lat": 32.1896,
+    "lon": 34.9706,
+    "source": "seed"
+  },
+  {
+    "id": "seed-86",
+    "ar": "أريحا",
+    "name": "Jericho",
+    "country": "PS",
+    "lat": 31.856,
+    "lon": 35.463,
+    "source": "seed"
+  },
+  {
+    "id": "seed-87",
+    "ar": "رفح",
+    "name": "Rafah",
+    "country": "PS",
+    "lat": 31.2969,
+    "lon": 34.2435,
+    "source": "seed"
+  },
+  {
+    "id": "seed-88",
+    "ar": "خان يونس",
+    "name": "Khan Yunis",
+    "country": "PS",
+    "lat": 31.3462,
+    "lon": 34.3063,
+    "source": "seed"
+  },
+  {
+    "id": "seed-89",
+    "ar": "دير البلح",
+    "name": "Deir al-Balah",
+    "country": "PS",
+    "lat": 31.4165,
+    "lon": 34.3511,
+    "source": "seed"
+  },
+  {
+    "id": "seed-90",
+    "ar": "بيت حانون",
+    "name": "Beit Hanoun",
+    "country": "PS",
+    "lat": 31.536,
+    "lon": 34.535,
+    "source": "seed"
+  },
+  {
+    "id": "seed-91",
+    "ar": "بيت لاهيا",
+    "name": "Beit Lahiya",
+    "country": "PS",
+    "lat": 31.5464,
+    "lon": 34.4951,
+    "source": "seed"
+  },
+  {
+    "id": "seed-92",
+    "ar": "سلفيت",
+    "name": "Salfit",
+    "country": "PS",
+    "lat": 32.0837,
+    "lon": 35.1812,
+    "source": "seed"
+  },
+  {
+    "id": "seed-93",
+    "ar": "طوباس",
+    "name": "Tubas",
+    "country": "PS",
+    "lat": 32.3209,
+    "lon": 35.3697,
+    "source": "seed"
+  },
+  {
+    "id": "seed-94",
+    "ar": "البيرة",
+    "name": "Al Bireh",
+    "country": "PS",
+    "lat": 31.91,
+    "lon": 35.2167,
+    "source": "seed"
+  },
+  {
+    "id": "seed-95",
+    "ar": "يافا",
+    "name": "Jaffa",
+    "country": "PS",
+    "lat": 32.0534,
+    "lon": 34.7522,
+    "source": "seed"
+  },
+  {
+    "id": "seed-96",
+    "ar": "حيفا",
+    "name": "Haifa",
+    "country": "PS",
+    "lat": 32.794,
+    "lon": 34.9896,
+    "source": "seed"
+  },
+  {
+    "id": "seed-97",
+    "ar": "عكا",
+    "name": "Acre",
+    "country": "PS",
+    "lat": 32.927,
+    "lon": 35.0818,
+    "source": "seed"
+  },
+  {
+    "id": "seed-98",
+    "ar": "الناصرة",
+    "name": "Nazareth",
+    "country": "PS",
+    "lat": 32.6996,
+    "lon": 35.3035,
+    "source": "seed"
+  },
+  {
+    "id": "seed-99",
+    "ar": "صفد",
+    "name": "Safed",
+    "country": "PS",
+    "lat": 32.9646,
+    "lon": 35.496,
+    "source": "seed"
+  },
+  {
+    "id": "seed-100",
+    "ar": "طبريا",
+    "name": "Tiberias",
+    "country": "PS",
+    "lat": 32.7922,
+    "lon": 35.5312,
+    "source": "seed"
+  }
+]
