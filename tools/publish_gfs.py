@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python3
 """Download, verify, grid and render a single NOAA GFS forecast chart.
 
 Publication is fail-closed: requires independent calibration anchors and verified
@@ -218,5 +218,26 @@ def main():
         cmd=[sys.executable,str(ROOT/'tools/render_map.py'),'--csv',str(grid),'--region',args.region,'--field',args.field,'--model','GFS','--run',f'{args.date[:4]}-{args.date[4:6]}-{args.date[6:8]}T{args.cycle}','--forecast-hour',str(args.forecast_hour),'--unit',unit,'--worldfile',str(worldfile),'--source','NOAA NOMADS GFS 0.25°']
         if args.field=='rain':cmd+=['--accum-hours',str(args.accum_hours)]
         subprocess.run(cmd,check=True)
+        # A subprocess exit code alone is not proof that a new map was created.
+        # Reject silent/no-op rendering and retain pre-existing verified products.
+        sid=f'gfs-{args.region}-{args.field}-{args.date}{args.cycle}-f{args.forecast_hour:03d}'
+        image=ROOT/'site/images/maps/forecast'/f'{sid}.png'
+        catalog=ROOT/'data/map-products/catalog.json'
+        if not image.is_file() or image.stat().st_size < 200:
+            raise RuntimeError(f'PUBLISH ERROR: missing rendered PNG: {image}')
+        with image.open('rb') as stream:
+            if stream.read(8) != b'\x89PNG\r\n\x1a\n':
+                raise RuntimeError(f'PUBLISH ERROR: invalid PNG signature: {image}')
+        if not catalog.is_file():
+            raise RuntimeError(f'PUBLISH ERROR: missing map catalog: {catalog}')
+        entries=json.loads(catalog.read_text(encoding='utf8'))
+        matching=[x for x in entries if x.get('id')==sid and x.get('field')==args.field and x.get('model')=='GFS']
+        if len(matching)!=1:
+            raise RuntimeError(f'PUBLISH ERROR: catalog has {len(matching)} entries for {sid}, expected 1')
+        print(f'PUBLISH_GFS_OK: {sid} ({image.stat().st_size} bytes)',flush=True)
 
-if __name__=='__main__':main
+# This guard MUST be at column zero, outside main(), so the publisher actually runs.
+if __name__ == '__main__':
+    print('PUBLISH_GFS_ENTRY: executing tools/publish_gfs.py',flush=True)
+    main()
+
