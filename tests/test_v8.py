@@ -53,7 +53,7 @@ class V8(unittest.TestCase):
         for id in ('v8AccumHours','v8AnimateExport','v8PosterSize','v8ExportVideo','v8CityCompareSelect','v8LeadersGrid'):
             self.assertIsNotNone(soup.find(id=id),id)
         self.assertEqual([b.get('data-v5-game') for b in soup.select('[data-v5-game]')],['space','forecast'])
-        self.assertEqual(len(soup.select('input[name="v8style"]')),3)
+        self.assertEqual(len(soup.select('input[name="v8style"]')),4)  # V9 introduces a fourth poster style
         self.assertEqual(len(soup.select('#v8AccumHours option')),5)
     def test_workflow_dispatch_and_schedule(self):
         text=(ROOT/'.github/workflows/forecast-main.yml').read_text()
