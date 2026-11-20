@@ -1,0 +1,80 @@
+/* CLIMATE PLANET V8 — public-facing visual upgrade */
+:root{--v8-surface:#0b2234;--v8-mint:#63ece1;--v8-stroke:rgba(116,223,233,.22)}
+.v8-map-toolbar{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:16px 19px;background:linear-gradient(118deg,rgba(8,40,60,.96),rgba(12,69,77,.75));border:1px solid var(--v8-stroke);border-radius:20px;margin:16px 0 10px}
+.v8-map-toolbar label{font-size:12px;color:#cfebf1;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.v8-map-toolbar select{background:#0c273a;color:#e9fffd;border:1px solid rgba(133,221,232,.28);padding:10px;border-radius:11px;min-height:42px;font:inherit}
+.v8-map-toolbar button{min-height:42px;border:1px solid rgba(139,221,234,.36);color:#d6fcff;border-radius:11px;background:#103349;padding:9px 15px;cursor:pointer;font-weight:700}
+.v8-map-toolbar button[aria-pressed="true"]{background:#1e817f;color:white;border-color:#71eee6}
+.v8-map-toolbar button:disabled{opacity:.48;cursor:not-allowed}
+.v8-map-progress{display:flex;align-items:center;gap:10px;flex:1;min-width:180px;color:#d4f5f4;font-size:13px}
+.v8-map-live-dot{background:#49dfcb;border-radius:50%;height:9px;width:9px;box-shadow:0 0 13px #26eac9}
+.v8-map-point{color:#d5e7e9;background:rgba(9,30,45,.77);padding:13px 16px;border:1px solid rgba(125,215,224,.17);border-radius:14px;margin:14px 0;font-size:13px;line-height:1.85}
+.v8-city-dashboard{background:linear-gradient(125deg,rgba(8,45,68,.9),rgba(15,84,89,.74));border:1px solid rgba(97,234,217,.29);border-radius:23px;padding:20px;margin-bottom:20px;box-shadow:0 18px 46px rgba(0,0,0,.14)}
+.v8-city-overview{display:grid;gap:6px}
+.v8-city-overview span{color:#5ce8d7;font:700 12px Cairo, sans-serif}
+.v8-city-overview b{font:800 clamp(19px,2vw,25px) Cairo,sans-serif;color:#fff}
+.v8-city-overview small{color:#b5d2dc;font-size:12px}
+.v8-city-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:20px 0}
+.v8-city-strip>div{padding:13px 9px;background:rgba(0,15,32,.43);border:1px solid rgba(146,227,226,.17);border-radius:16px;display:grid;gap:5px;text-align:center}
+.v8-city-strip small{color:#c0dfe5;font-size:12px}.v8-city-strip strong{color:#fff;font:800 clamp(18px,3vw,25px) Cairo,sans-serif}
+.v8-city-highlights{display:flex;gap:12px;justify-content:space-between;align-items:center;color:#cce6e7;font-size:13px;flex-wrap:wrap}
+.v8-city-highlights button,.v8-leaders-grid button,#v8LeadersRefresh{border:1px solid #62d6d5;background:#0d4152;color:#e5ffff;padding:9px 16px;border-radius:12px;font:700 13px Cairo,sans-serif;cursor:pointer}
+.v8-city-compare{background:#071d30;border:1px solid rgba(127,222,234,.28);border-radius:14px;padding:17px;margin-top:16px;line-height:2}
+.v8-city-compare select{width:100%;padding:10px;border-radius:9px;color:#fff;background:#163d51;border:1px solid #467389;max-width:460px}
+.v8-city-compare>div{color:#c9edef;margin-top:10px}
+.weather-hero{overflow:hidden;position:relative}
+.v4-selected-landmark{transition:background-image .3s ease;animation:v8SceneFloat 13s ease-in-out infinite alternate}
+@keyframes v8SceneFloat{0%{transform:scale(1)}100%{transform:scale(1.052) translateY(-4px)}}
+.v8-astronomy-mini{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}
+.v8-astronomy-mini div{border:1px solid rgba(137,205,226,.2);border-radius:14px;padding:14px;background:#102b3e;display:grid;gap:4px}
+.v8-astronomy-mini span{color:#b7d5db;font-size:12px}.v8-astronomy-mini strong{font:800 20px Cairo,sans-serif;color:#e9fffb}
+.v8-astronomy-mini p{grid-column:1/-1;color:#9ab6c5;font-size:12px;margin:0}
+.v8-poster-studio{padding:24px;background:linear-gradient(135deg,#0b1f35,#133b4d 68%,#0e3746);border:1px solid rgba(124,236,229,.28);border-radius:26px;margin:24px 0;box-shadow:0 24px 75px rgba(0,0,0,.28)}
+.v8-poster-head{display:flex;align-items:start;justify-content:space-between;gap:16px;margin-bottom:22px}
+.v8-poster-head h3{color:white;font:800 clamp(21px,2.5vw,30px) Cairo,sans-serif;margin:8px 0}
+.v8-poster-head p{color:#b5d2db;font-size:14px;line-height:1.8}.v8-brand-dot{display:inline-block;padding:9px 12px;border:1px solid #5bd9d9;border-radius:9px;color:#7dfff0;font-weight:800;white-space:nowrap}
+.v8-poster-layout{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(230px,.85fr);gap:21px;align-items:start}
+.v8-card-preview{--accent:#5dece1;--skytop:#0c2545;--skybottom:#157e9a;aspect-ratio:1.25/1;min-height:280px;position:relative;overflow:hidden;border-radius:22px;background:linear-gradient(var(--skytop),var(--skybottom));border:1px solid rgba(130,237,236,.48);box-shadow:0 26px 44px rgba(0,0,0,.28)}
+.v8-card-preview.diorama{--skytop:#063b49;--skybottom:#226775;--accent:#f8c990}
+.v8-card-preview.pro{--skytop:#071a2f;--skybottom:#172f49;--accent:#7ebcf2}
+.v8-card-sky,.v8-card-shading,.v8-card-preview .v6-card-scene,.v8-card-content{position:absolute;inset:0}
+.v8-card-preview .v6-card-scene{background-size:cover;background-position:center 40%;opacity:.87;inset:8% 0 0;transform:scale(1.05)}
+.v8-card-preview.cinematic .v6-card-scene{opacity:.88}
+.v8-card-preview.diorama .v6-card-scene{background-size:contain;background-repeat:no-repeat;background-position:center bottom;opacity:1;inset:8% 0 0}
+.v8-card-preview.pro .v6-card-scene{opacity:.24;filter:saturate(.7)}
+.v8-card-shading{background:linear-gradient(90deg,rgba(2,15,27,.2),rgba(4,15,30,.4)),linear-gradient(0deg,rgba(0,10,27,.85),transparent 68%)}
+.v8-card-content{padding:22px;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-end;z-index:5;text-align:right}
+.v8-card-eyebrow{font-size:clamp(10px,1.25vw,15px);color:#95fff0;letter-spacing:.025em}
+.v8-card-content h4{color:#fff;font:900 clamp(24px,4vw,54px)/1.5 Cairo,sans-serif;text-shadow:0 2px 15px #06131f;margin:4px 0}
+.v8-card-content strong{font:900 clamp(30px,5vw,74px) Cairo,sans-serif;color:white;line-height:1.45;text-shadow:0 5px 24px #0a1223}
+.v8-card-content small{color:#f0ffff;font-size:clamp(10px,1.4vw,14px);line-height:1.75}
+.v8-card-corner{color:#a7dddf;font-size:10px;margin-top:6px}
+.v8-weather-sun{display:block;position:absolute;top:9%;right:10%;height:65px;width:65px;border-radius:50%;background:radial-gradient(circle,#fffbd4,#ffd077);box-shadow:0 0 60px 22px rgba(255,208,117,.21);animation:v8SunPulse 5s ease-in-out infinite alternate}
+.v8-weather-cloud{position:absolute;top:18%;right:32%;width:90px;height:32px;border-radius:50px;background:rgba(235,250,255,.7);box-shadow:20px -15px 0 4px rgba(235,250,255,.7),-18px -4px 0 rgba(235,250,255,.63);animation:v8Cloud 8s linear infinite alternate}
+.v8-cloud-2{top:35%;right:65%;opacity:.5;animation-duration:12s}
+.v8-weather-drops{display:none;position:absolute;inset:0;background:repeating-linear-gradient(108deg,transparent,transparent 26px,rgba(171,229,255,.25) 27px,transparent 28px);background-size:170px 150px;animation:v8Rain 1s linear infinite}
+.v8-card-preview[data-weather="rain"] .v8-weather-drops{display:block}
+.v8-card-preview[data-weather="snow"] .v8-weather-drops{display:block;filter:blur(1px);opacity:.7;animation-duration:5s}
+.v8-card-preview[data-motion="off"] *{animation:none!important}
+@keyframes v8Rain{to{background-position:-70px 150px}}@keyframes v8Cloud{to{transform:translateX(34px)}}@keyframes v8SunPulse{to{box-shadow:0 0 80px 34px rgba(255,198,111,.35)}}
+.v8-poster-controls{display:grid;gap:13px}
+.v8-poster-controls label{color:#e2f5f7;font:700 13px Cairo,sans-serif;display:grid;gap:7px}
+.v8-poster-controls select{width:100%;min-height:43px;background:#0c2a41;border:1px solid #47798b;color:#fff;border-radius:11px;padding:7px 12px;font:700 13px Cairo,sans-serif}
+.v8-styles{border:0;padding:0;margin:0}.v8-styles legend{color:#e2f5f7;font-size:13px;font-weight:700;padding-bottom:9px}
+.v8-style-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.v8-style-options label{cursor:pointer;display:block}.v8-style-options input{position:absolute;opacity:0;pointer-events:none}
+.v8-style-options span{padding:11px 5px;display:block;text-align:center;background:#09263a;border:1px solid #487a8f;border-radius:11px;color:#cee9e9;font:700 12px Cairo,sans-serif}
+.v8-style-options input:checked+span{background:#0f706e;color:#fff;border-color:#83f1dd;box-shadow:0 0 0 2px rgba(103,238,227,.18)}
+.v8-motion-toggle{display:flex!important;flex-direction:row;align-items:center;gap:9px}
+.v8-poster-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.v8-poster-actions button{background:linear-gradient(100deg,#10aca5,#50a8e5);border:0;border-radius:12px;min-height:48px;font:800 13px Cairo,sans-serif;cursor:pointer;color:#05253b}
+.v8-poster-actions button+button{background:#0c364b;color:#e4ffff;border:1px solid #4b98a4}
+.v8-poster-actions button:disabled{opacity:.5;cursor:not-allowed}
+.v8-data-credit{color:#9dbbc7;font-size:11px;line-height:1.8}
+.v8-daily-leaders{padding:22px;margin:32px 0;background:linear-gradient(127deg,#0b2338,#103e4c);border:1px solid rgba(106,213,221,.25);border-radius:24px}
+.v8-leaders-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.v8-leader{background:#071e32;padding:14px;border:1px solid rgba(112,201,217,.22);border-radius:17px;display:grid;gap:5px;align-items:center}
+.v8-leader small{color:#b7d5e0;font-size:11px}.v8-leader b{font-size:14px;color:#fff}.v8-leader strong{font-size:26px;color:#7ff4ec}
+@media(max-width:960px){.v8-poster-layout{grid-template-columns:1fr}.v8-leaders-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:580px){.v8-poster-studio{padding:15px}.v8-city-strip{gap:6px}.v8-city-strip>div{padding:9px 3px}.v8-city-strip strong{font-size:16px}.v8-map-toolbar{padding:13px}.v8-style-options span{font-size:11px}.v8-card-content{padding:14px}.v8-card-preview{min-height:210px}.v8-weather-sun{width:42px;height:42px}.v8-poster-actions{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.v4-selected-landmark,.v8-weather-sun,.v8-weather-cloud,.v8-weather-drops{animation:none!important}}

@@ -1,8 +1,8 @@
 {
   "name": "planet-of-climate",
   "private": true,
-  "version": "7.0.0",
-  "description": "Climate Planet V7 — source-georeferenced numerical maps, verified GFS workflow, interactive atlas and two science games",
+  "version": "8.0.0",
+  "description": "Climate Planet V8 — source-georeferenced numerical maps, verified GFS workflow, interactive atlas and two science games",
   "type": "module",
   "scripts": {
     "build": "node scripts/sync-cities.mjs && node scripts/build.mjs",
@@ -11,7 +11,7 @@
     "preview": "npx serve dist",
     "archive:seed": "node scripts/create-jerusalem.mjs",
     "maps:help": "python tools/render_map.py --help",
-    "test": "python tests/test_v6_static.py && python tests/test_gfs_safety.py && python tests/test_v7_georef.py",
+    "test": "python tests/test_v6_static.py && python tests/test_gfs_safety.py && python tests/test_v7_georef.py && python tests/test_v8.py",
     "maps:dry-run": "python tools/schedule_gfs.py --dry-run"
   },
   "engines": {

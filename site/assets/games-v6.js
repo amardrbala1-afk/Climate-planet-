@@ -43,7 +43,7 @@ function tickSpace(now){if(!space.active||space.paused)return;if(!document.query
  if(Math.random()<dt*1.18&&space.gems.length<7){space.gems.push({x:canvas.width+30,y:rnd(40,canvas.height-40),r:14,speed:125+space.level*13})}
  const hit=(a,b,r)=>Math.hypot(a.x-b.x,a.y-b.y)<r;
  for(const rock of space.asteroids){rock.x-=rock.speed*dt;rock.rot+=dt*.8;if(space.invuln<=0&&hit(rock,space.ship,rock.r+12)){space.lives--;space.invuln=1.4;rock.x=-100;updateSpaceUI();if(space.lives<=0){stopSpace();drawSpace();return}}}
- for(const gem of space.gems){gem.x-=gem.speed*dt;if(hit(gem,space.ship,26)){gem.x=-100;space.score+=10;const next=1+Math.floor(space.score/70);if(next>space.level){space.level=next;space.lives=Math.min(5,space.lives+1)}updateSpaceUI()}}
+ for(const gem of space.gems){gem.x-=gem.speed*dt;if(hit(gem,space.ship,26)){gem.x=-100;space.score+=10;const next=1+Math.floor(space.score/70);if(next>space.level){space.level=Math.min(20,next);space.lives=Math.min(5,space.lives+1);if(space.level===20){try{localStorage.setItem('cp:v8:space-veteran','yes')}catch{}}}updateSpaceUI()}}
  space.asteroids=space.asteroids.filter(x=>x.x>-50);space.gems=space.gems.filter(x=>x.x>-50);
  drawSpace();space.raf=requestAnimationFrame(tickSpace)
 }
@@ -65,7 +65,7 @@ document.addEventListener('visibilitychange',()=>{if(document.hidden)pauseSpace(
 import {QUESTIONS} from './questions-v6.js';
 let selectedLevel='all',quiz=[],quizIndex=0,quizScore=0,quizAnswered=false;
 const shuffled=arr=>arr.map(x=>({x,r:Math.random()})).sort((a,b)=>a.r-b.r).map(r=>r.x);
-function resetQuiz(){const pool=selectedLevel==='all'?QUESTIONS:QUESTIONS.filter(x=>x.level===selectedLevel);quiz=shuffled(pool).slice(0,selectedLevel==='all'?18:Math.min(12,pool.length));quizIndex=0;quizScore=0;paintQuiz()}
+function resetQuiz(){const pool=selectedLevel==='all'?QUESTIONS:QUESTIONS.filter(x=>x.level===selectedLevel);quiz=shuffled(pool).slice(0,selectedLevel==='all'?25:Math.min(15,pool.length));quizIndex=0;quizScore=0;paintQuiz()}
 function paintQuiz(){const d=quiz[quizIndex];$('v5ForecastScore').textContent=String(quizScore);$('v5ForecastAnswers').replaceChildren();$('v5ForecastFeedback').textContent='';$('v5ForecastNext').disabled=true;quizAnswered=false;
  if(!d){$('v5ForecastTopic').textContent='اكتمل التحدي';$('v5ForecastQuestion').textContent='النتيجة: '+quizScore+' / '+quiz.length*10+' نقطة';$('v5ForecastCount').textContent='اكتمل التحدي';$('v5ForecastFacts').replaceChildren();$('v6QuizSymbol').textContent='🏆';$('v5ForecastFeedback').textContent='يمكنك إعادة المحاولة أو تغيير المستوى.';return}
  $('v5ForecastTopic').textContent=d.tag;$('v5ForecastQuestion').textContent=d.question;$('v5ForecastCount').textContent=`السؤال ${quizIndex+1} من ${quiz.length}`;$('v6QuizSymbol').textContent=d.icon||'🌤️';$('v6QuizIllustration').dataset.level=d.level;
@@ -73,7 +73,7 @@ function paintQuiz(){const d=quiz[quizIndex];$('v5ForecastScore').textContent=St
  d.answers.forEach((answer,i)=>{const b=document.createElement('button');b.type='button';b.textContent=answer;b.addEventListener('click',()=>answerQuiz(i));$('v5ForecastAnswers').append(b)});
  $('v5ForecastNext').textContent=quizIndex===quiz.length-1?'عرض النتيجة':'السؤال التالي';
 }
-function answerQuiz(choice){if(quizAnswered)return;const d=quiz[quizIndex];quizAnswered=true;const correct=choice===d.correct;if(correct)quizScore+=10;$('v5ForecastScore').textContent=String(quizScore);for(const [i,b] of [...$('v5ForecastAnswers').children].entries()){b.disabled=true;b.classList.toggle('correct',i===d.correct);b.classList.toggle('wrong',i===choice&&!correct)}
+function answerQuiz(choice){if(quizAnswered)return;const d=quiz[quizIndex];quizAnswered=true;const correct=choice===d.correct;if(correct)quizScore+=10;try{const key='cp:v8:quiz-best',old=Number(localStorage.getItem(key)||0);if(quizScore>old)localStorage.setItem(key,String(quizScore))}catch{}$('v5ForecastScore').textContent=String(quizScore);for(const [i,b] of [...$('v5ForecastAnswers').children].entries()){b.disabled=true;b.classList.toggle('correct',i===d.correct);b.classList.toggle('wrong',i===choice&&!correct)}
  const strong=document.createElement('strong');strong.textContent=correct?'إجابة صحيحة · +10 نقاط':'إجابة غير صحيحة';const info=document.createElement('p');info.textContent=d.why;$('v5ForecastFeedback').replaceChildren(strong,info);$('v5ForecastNext').disabled=false;
 }
 $('v5ForecastNext').addEventListener('click',()=>{quizIndex++;paintQuiz()});$('v5ForecastRestart').addEventListener('click',resetQuiz);

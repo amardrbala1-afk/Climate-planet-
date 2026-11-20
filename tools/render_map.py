@@ -96,8 +96,8 @@ def main():
     if a.field not in permitted:ap.error('field/region combination not supported')
     if a.model not in ('ECMWF','GFS','ICON'):ap.error('model must be ECMWF, GFS or ICON')
     if a.forecast_hour<0 or a.forecast_hour>384:ap.error('forecast hour is out of supported range')
-    if a.field=='rain' and (a.accum_hours not in (6,12,18,24) or a.forecast_hour<a.accum_hours):
-        ap.error('precipitation must provide --accum-hours 6,12,18 or 24; input CSV must contain that specific interval, not an entire-run total')
+    if a.field=='rain' and (a.accum_hours not in (6,12,18,24,48,72) or a.forecast_hour<a.accum_hours):
+        ap.error('precipitation must provide --accum-hours 6,12,18,24,48 or 72; input CSV must contain that specific interval, not an entire-run total')
     try:run=dt.datetime.strptime(a.run,'%Y-%m-%dT%H').replace(tzinfo=dt.timezone.utc)
     except ValueError:ap.error('--run must be YYYY-MM-DDTHH, UTC')
     if not 750<=a.pixels<=3000:ap.error('pixels must be in 750–3000')
@@ -169,6 +169,7 @@ def main():
         out=Image.fromarray(arr,'RGBA').filter(ImageFilter.GaussianBlur(1.3))
     else:out=Image.fromarray(arr,'RGBA')
     sid=f'{a.model.lower()}-{a.region}-{a.field}-{run:%Y%m%d%H}-f{a.forecast_hour:03d}'
+    if a.field=='rain' and a.accum_hours!=6: sid+=f'-a{a.accum_hours:03d}'
     loc=ROOT/'site/images/maps/forecast';loc.mkdir(parents=True,exist_ok=True)
     path=loc/f'{sid}.png';out.save(path,optimize=True)
     catalog=ROOT/'data/map-products/catalog.json';data=json.loads(catalog.read_text());data=[x for x in data if x.get('id')!=sid]

@@ -9,7 +9,7 @@ class SiteSuite(unittest.TestCase):
   self.assertIsNone(soup.select_one('#v4Studio'))
   self.assertFalse(soup.select('[data-v5-game="geology"], [data-v5-game-panel="geology"]'))
   self.assertEqual([x['data-v5-game'] for x in soup.select('[data-v5-game]')],['space','forecast'])
-  for key in ['v6CardDay','v6CardStyle','downloadWeatherCard','v6QuizIllustration','v5MapBase']:
+  for key in ['v6CardDay','v8PosterSize','downloadWeatherCard','v6QuizIllustration','v5MapBase']:
    self.assertIsNotNone(soup.find(id=key),key)
   for s in soup.select('script[src]'):
    self.assertTrue((ROOT/'site'/s['src'].lstrip('/')).exists(),s['src'])
@@ -18,10 +18,10 @@ class SiteSuite(unittest.TestCase):
  def test_real_source_not_misrepresented(self):
   catalog=json.loads((ROOT/'data/map-products/catalog.json').read_text())
   self.assertIsInstance(catalog,list)
-  self.assertEqual(len(catalog),0,'Do not ship synthetic weather forecast layers')
+  self.assertFalse(any(str(x.get('source','')).lower().startswith('synthetic') for x in catalog),'Never ship synthetic weather')
  def test_dist_build_exists(self):
   self.assertTrue((ROOT/'dist/index.html').is_file())
-  self.assertTrue((ROOT/'dist/assets/daily-card-v6.js').is_file())
+  self.assertTrue((ROOT/'dist/assets/v8-card.js').is_file())
   self.assertTrue((ROOT/'dist/assets/questions-v6.js').is_file())
  def test_city_seed_count(self):
   rows=json.loads((ROOT/'data/cities.json').read_text())

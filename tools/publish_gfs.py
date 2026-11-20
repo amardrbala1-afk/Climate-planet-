@@ -250,6 +250,8 @@ def main():
     p.add_argument('--forecast-hour',type=int,required=True);p.add_argument('--region',choices=['europe','levant'],required=True)
     p.add_argument('--field',choices=['z500','t850','t2m','rain'],required=True)
     p.add_argument('--accum-hours',type=int,choices=[6,12,18,24]);p.add_argument('--calibration',type=Path)
+    p.add_argument('--cache-precip-dir',type=Path,help='Temporary cache for verified six-hour raw precipitation grid')
+    p.add_argument('--pixels',type=int,default=1450)
     p.add_argument('--dry-run',action='store_true')
     args=p.parse_args();spec=SPEC.get((args.region,args.field))
     if not spec:p.error('Unsupported region/field pairing')
@@ -280,8 +282,13 @@ def main():
             arr,unit=select_field(file,spec,args.date,args.cycle,args.forecast_hour,args.field,args.accum_hours)
             n=write_csv(arr,grid)
         print('Verified real model grid points:',n)
+        if args.field=='rain' and args.cache_precip_dir:
+            import shutil
+            args.cache_precip_dir.mkdir(parents=True,exist_ok=True)
+            shutil.copyfile(grid,args.cache_precip_dir/f'rain-f{args.forecast_hour:03d}.csv')
         cmd=[sys.executable,str(ROOT/'tools/render_map.py'),'--csv',str(grid),'--region',args.region,'--field',args.field,'--model','GFS','--run',f'{args.date[:4]}-{args.date[4:6]}-{args.date[6:8]}T{args.cycle}','--forecast-hour',str(args.forecast_hour),'--unit',unit,'--worldfile',str(worldfile),'--source','NOAA NOMADS GFS 0.25°']
         if args.field=='rain':cmd+=['--accum-hours',str(args.accum_hours)]
+        cmd+=['--pixels',str(args.pixels)]
         subprocess.run(cmd,check=True)
         # A subprocess exit code alone is not proof that a new map was created.
         # Reject silent/no-op rendering and retain pre-existing verified products.
@@ -303,6 +310,6 @@ def main():
 
 # This guard MUST be at column zero, outside main(), so the publisher actually runs.
 if __name__ == '__main__':
-    print('PUBLISH_GFS_ENTRY: executing tools/publish_gfs.py',flush=True)
+    print('PUBLISH_GFS_ENTRY: V8_72H_APCP_DEDUP_SAFE / tools/publish_gfs.py',flush=True)
     main()
 

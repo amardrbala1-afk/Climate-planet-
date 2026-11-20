@@ -18,7 +18,7 @@ def prune(keep=3):
     for rec in records:
         if rec.get('model')!='GFS':
             retained.append(rec);continue
-        buckets[(rec.get('region'),rec.get('field'),rec.get('forecastHour'))].append(rec)
+        buckets[(rec.get('region'),rec.get('field'),rec.get('forecastHour'),rec.get('accumHours',0))].append(rec)
     for key,entries in buckets.items():
         # Deduplicate by id; newest run first.
         entries.sort(key=lambda rec:(str(rec.get('run','')),str(rec.get('id',''))),reverse=True)

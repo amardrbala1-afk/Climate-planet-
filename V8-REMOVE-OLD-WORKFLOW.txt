@@ -1,0 +1,5 @@
+IMPORTANT — GITHUB ACTIONS
+If your repository contains .github/workflows/forecast-maps.yml from older V7 builds,
+DELETE that OLD file using GitHub Code view. Do NOT delete forecast-main.yml.
+V8 uses .github/workflows/forecast-main.yml and must not run in parallel with V7.
+Preserve data/map-products/catalog.json and site/images/maps/forecast/ during upgrade.
