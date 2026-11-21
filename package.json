@@ -1,8 +1,8 @@
 {
   "name": "planet-of-climate",
   "private": true,
-  "version": "11.0.0",
-  "description": "V11 editorial redesign: clear Arabic navigation, accessible search and simplified science-first layout",
+  "version": "11.2.0",
+  "description": "V11 rebuilt information architecture — new navigation, complete page restructuring and public-first design",
   "type": "module",
   "scripts": {
     "build": "node scripts/sync-cities.mjs && node scripts/build.mjs",
@@ -11,12 +11,13 @@
     "preview": "npx serve dist",
     "archive:seed": "node scripts/create-jerusalem.mjs",
     "maps:help": "python tools/render_map.py --help",
-    "test": "python tests/test_v6_static.py && python tests/test_gfs_safety.py && python tests/test_v7_georef.py && python tests/test_v8.py && python tests/test_v9.py && python tests/test_v10.py",
+    "test": "python tests/test_v6_static.py && python tests/test_gfs_safety.py && python tests/test_v7_georef.py && python tests/test_v8.py && python tests/test_v9.py && python tests/test_v10.py && python tests/test_v11.py && python tests/test_v12.py",
     "maps:dry-run": "python tools/schedule_gfs.py --dry-run",
     "test:v9": "python tests/test_v9.py",
     "test:v10": "python tests/test_v10.py",
     "test:v11": "python tests/test_v11.py",
-    "test:browser-v11": "python tests/browser-v11.py"
+    "test:browser-v11": "python tests/browser-v11.py",
+    "test:browser-layout": "python tests/browser-v12.py"
   },
   "engines": {
     "node": ">=18"

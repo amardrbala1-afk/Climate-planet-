@@ -1,0 +1,30 @@
+/* Readable publication article, part of the complete Climate Planet redesign. */
+body.v11-article{background:#f6f4ef!important;color:#203630!important;font-family:'IBM Plex Sans Arabic','Cairo',sans-serif;line-height:1.9}
+body.v11-article .header{background:#fffefa!important;border-bottom:1px solid #dae0d9!important;box-shadow:none!important}
+body.v11-article .header-inner{min-height:70px}
+body.v11-article .header .brand{display:flex;align-items:center;gap:10px;color:#183b33!important;text-decoration:none}
+body.v11-article .header .brand strong{color:#183b33;font-size:19px}
+body.v11-article .header .brand small{color:#6f8278}
+body.v11-article .dashboard-link{background:#f2f5f0!important;color:#1b5b4c!important;border:1px solid #d3dfd4!important;border-radius:4px!important;padding:8px 12px!important}
+body.v11-article .article-main{max-width:1160px;margin:35px auto 120px;padding:0 25px}
+body.v11-article .article-main>.article-back{display:inline-block;margin-bottom:24px;color:#255c50;font-weight:700;font-size:12px;text-decoration:none}
+body.v11-article .article-main>.article-tag{border-bottom:1px solid #d1ded1;padding:0 0 14px;margin:0!important;color:#a16242!important;font-size:12px}
+body.v11-article .article-main>h1{font-family:'IBM Plex Sans Arabic','Cairo',sans-serif;font-size:clamp(32px,5vw,52px)!important;line-height:1.5;color:#1d3431!important;font-weight:800;margin:13px 0 8px}
+body.v11-article .article-summary{font-size:17px!important;color:#63736b!important;line-height:2;max-width:790px}
+body.v11-article .article-main>img{border-radius:4px!important;max-height:480px;object-fit:cover;margin:20px 0!important}
+body.v11-article .v12-article-grid{display:grid;grid-template-columns:205px minmax(0,1fr);gap:35px;align-items:start;margin:33px 0}
+body.v11-article .v12-article-toc{position:sticky;top:95px;padding:18px 12px;background:#edf1eb;border-right:3px solid #a55c3a}
+body.v11-article .v12-article-toc h2{font-size:14px;color:#203630;margin:0 0 12px}
+body.v11-article .v12-article-toc a{display:block;color:#456359;font-size:12px;text-decoration:none;padding:7px 4px;border-bottom:1px solid #d6ded3;line-height:1.7}
+body.v11-article .v12-article-toc a:last-child{border:0}
+body.v11-article .article-body{margin:0!important;padding:0!important;color:#2d413c!important;border:0!important;min-width:0;font-size:16px!important;line-height:2.25!important}
+body.v11-article .article-body :is(h2,h3){font-family:'IBM Plex Sans Arabic','Cairo',sans-serif;color:#193b35!important;scroll-margin-top:95px}
+body.v11-article .article-body h2{margin:35px 0 10px;padding:0 0 9px;border-bottom:1px solid #d8ddd5;font-size:23px;font-weight:800}
+body.v11-article .article-body h3{font-size:18px;margin:27px 0 9px}
+body.v11-article .article-body p{margin:0 0 16px;color:#344d43!important}
+body.v11-article .article-body a{color:#17624f}
+body.v11-article .share-article{background:#185749!important;color:#fff!important;border:0;border-radius:3px!important;padding:13px 22px!important;margin:25px 0;font-family:inherit}
+body.v11-article footer{background:#233d34;color:#f8faf6;padding:22px}
+body.v11-article footer a{color:#d2e6dc}
+body.v11-article .v12-reading-bar{position:fixed;height:3px;top:0;right:0;z-index:1000;background:#ad633e;width:0;pointer-events:none}
+@media(max-width:780px){body.v11-article .article-main{margin:18px auto 80px;padding:0 19px}body.v11-article .v12-article-grid{display:flex;flex-direction:column;gap:15px;margin-top:20px}body.v11-article .v12-article-toc{position:static;width:100%;padding:15px}body.v11-article .v12-article-toc a{display:inline-block;border:1px solid #d6ded3;border-radius:4px;margin:3px;padding:6px 9px}body.v11-article .article-body{font-size:15px!important}body.v11-article .article-main>h1{font-size:32px!important}}
