@@ -1,8 +1,8 @@
 {
   "name": "planet-of-climate",
   "private": true,
-  "version": "10.0.0",
-  "description": "V10: Jerusalem winter atlas, expanded 106-object Arabic astronomy museum, cosmic tools and refreshed homepage",
+  "version": "11.0.0",
+  "description": "V11 editorial redesign: clear Arabic navigation, accessible search and simplified science-first layout",
   "type": "module",
   "scripts": {
     "build": "node scripts/sync-cities.mjs && node scripts/build.mjs",
@@ -14,7 +14,9 @@
     "test": "python tests/test_v6_static.py && python tests/test_gfs_safety.py && python tests/test_v7_georef.py && python tests/test_v8.py && python tests/test_v9.py && python tests/test_v10.py",
     "maps:dry-run": "python tools/schedule_gfs.py --dry-run",
     "test:v9": "python tests/test_v9.py",
-    "test:v10": "python tests/test_v10.py"
+    "test:v10": "python tests/test_v10.py",
+    "test:v11": "python tests/test_v11.py",
+    "test:browser-v11": "python tests/browser-v11.py"
   },
   "engines": {
     "node": ">=18"

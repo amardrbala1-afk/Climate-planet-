@@ -1,0 +1,29 @@
+{
+  "version": "11.0.0",
+  "based_on": "V10 full source snapshot",
+  "target": "GitHub/Cloudflare Workers",
+  "changed_files": [
+    "CHANGELOG-V11.md",
+    "README-V11-AR.md",
+    "package.json",
+    "scripts/build.mjs",
+    "site/assets/v11-article.css",
+    "site/assets/v11.css",
+    "site/assets/v11.js",
+    "site/assets/v3.js",
+    "site/index.html",
+    "site/manifest.webmanifest",
+    "site/sw.js",
+    "tests/browser-v11.py",
+    "tests/test_v11.py"
+  ],
+  "preserved_not_in_upgrade": [
+    "tools/",
+    "data/",
+    "content/",
+    ".github/workflows/",
+    "site/images/maps/",
+    "site/images/brand/"
+  ],
+  "notes": "Use upgrade only over current V10 repository. Keeps live GFS scripts, forecast images and metadata untouched. Static/full archives are reference builds and may contain older forecast snapshots."
+}
